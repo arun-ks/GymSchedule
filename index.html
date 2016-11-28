@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<title>Gym Schedule</title>
 <style>
 * {
   box-sizing: border-box;
@@ -58,24 +59,28 @@
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
+
+#sourceLink {
+   position:relative;
+   bottom:0;
+   right:0;
+   width:100%;
+   height:60px;
+}
 </style>
 </head>
 <body>
 
 <h2>My Training Plan</h2>
 
-<button id="Day1"  class="button" onclick="myDay1()">Day 1:Chest+Triceps</button>
-
-<button id="Day2" class="button" onclick="myDay2()">Day 2:Shoulders+Legs</button>
-
-<button id="Day3"  class="button" onclick="myDay3()">Day 3:Back+Biceps</button>
-
-<button id="DayQue"  class="button" onclick="myDayQ()">Day ?:Cardio+Abs+Low Back</button>
-
-<button id="NoDay"  class="button" onclick="myDayNone()">Not Selected</button>
-<button id="ShowAll" class="button"  onclick="myDayAll()">Show All</button>                                                                        
+<button id="Day1"    class="button" onclick="FilterTableByDayCode('Day 1')">Day 1:Chest+Triceps</button>
+<button id="Day2"    class="button" onclick="FilterTableByDayCode('Day 2')">Day 2:Shoulders+Legs</button>
+<button id="Day3"    class="button" onclick="FilterTableByDayCode('Day 3')">Day 3:Back+Biceps</button>
+<button id="DayX"    class="button" onclick="FilterTableByDayCode('Day x')">Day ?:Cardio+Abs+Low Back</button>
+<button id="DayNon"  class="button" onclick="FilterTableByDayCode('No Day')">Not Selected</button>
+<button id="DayAll"  class="button" onclick="FilterTableByDayCode('All')">Show All</button>                                                                        
 <br>                  
-<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for body part.." title="Type in a name">
+<input type="text" id="myInput" onkeyup="FilterTableByTypedText()" placeholder="Search by Muscle section or Machine name.." title="Type in a name">
 
 <table id="myTable">
 <tr class="header"><th>Section</th><th>Exercise</th><th>Machine #</th><th>Sets</th><th>Rep</th><th>Break</th><th>Day</th><th>No</th></tr>
@@ -144,16 +149,17 @@
 </table>
 
 <script>
-function myFunction() {
+function FilterTableByTypedText() {
   var input, filter, table, tr, td, i;
   input = document.getElementById("myInput");
   filter = input.value.toUpperCase();
   table = document.getElementById("myTable");
   tr = table.getElementsByTagName("tr");
   for (i = 0; i < tr.length; i++) {
-    td = tr[i].getElementsByTagName("td")[0];
+    td = tr[i].getElementsByTagName("td")[0];  // Section Name
+    td1 =  tr[i].getElementsByTagName("td")[1]; //Exercise Machine
     if (td) {
-      if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+      if (td.innerHTML.toUpperCase().indexOf(filter) > -1 || td1.innerHTML.toUpperCase().indexOf(filter) > -1) {
         tr[i].style.display = "";
       } else {
         tr[i].style.display = "none";
@@ -162,7 +168,7 @@ function myFunction() {
   }
 }
 
-function myDayFilter(filter) {
+function FilterTableByDayCode(filter) {
   var input, filter0, table, tr, td, i;
   filter= filter.toUpperCase();
   table = document.getElementById("myTable");
@@ -170,23 +176,21 @@ function myDayFilter(filter) {
   for (i = 0; i < tr.length; i++) {
     td = tr[i].getElementsByTagName("td")[6];
     if (td) {
-      if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
-        tr[i].style.display = "";
-      } else {
-        tr[i].style.display = "none";
+    	if ( filter == "ALL") {
+    		 tr[i].style.display = "";
+    	} else {
+         if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+           tr[i].style.display = "";
+         } else {
+           tr[i].style.display = "none";
+         }
       }
     }       
   }
 }
 
-function myDay1()     { 	myDayFilter("Day 1 Yellow"); }
-function myDay2()     { 	myDayFilter("Day 2 Green"); }
-function myDay3()     { 	myDayFilter("Day 3 Blue"); }
-function myDayQ()     { 	myDayFilter("Day x White"); }
-function myDayNone()  { 	myDayFilter("No Day"); } 
-function myDayAll()  { 	myDayFilter(" "); } 
-
 </script>
 
+<div id="sourceLink"><a href="https://github.com/arun-ks/GymSchedule">Source</a></div>
 </body>
 </html>
