@@ -1,6 +1,7 @@
 # GymSchedule
 
 My Gym Exercise Schedule, with easy access to schedule for each day.
+
 It uses as  template the Exercise Schedule of [Sanctum Spa, Limassol, Cyprus](https://www.facebook.com/SanctumLimassolMarina/)
 
 ## Customizing it for your schedule
