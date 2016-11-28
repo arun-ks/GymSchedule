@@ -4,6 +4,8 @@ My Gym Exercise Schedule, with easy access to schedule for each day.
 
 It uses as  template the Exercise Schedule of [Sanctum Spa, Limassol, Cyprus](https://www.facebook.com/SanctumLimassolMarina/)
 
+The live website can be seen [here](https://arun-ks.github.io/GymSchedule/)
+
 ## Customizing it for your schedule
 1. Download the excel file(GymScheduleCreator.xlsx) which is part of this repository.
 2. Update your plan, update the Day# and Color in the column "Day"
