@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Keto Diet</title>
+<link rel="icon" href="css/favicon.ico" />
+<style>
+* {
+  box-sizing: border-box;
+}
+
+#myInput {
+  background-image: url('css/searchicon.png');
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+#myTable {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #ddd;
+  font-size: 18px;
+}
+
+#myTable th, #myTable td {
+  text-align: left;
+  padding: 12px;
+}
+
+#myTable tr {
+  border-bottom: 1px solid #ddd;
+}
+
+#myTable tr.header, #myTable tr:hover {
+  background-color: #f1f1f1;
+}
+
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 8px 10px;   /*padding: 15px 32px;*/
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+    /*box-shadow: 0 9px #999;*/
+}
+.button:hover {background-color: #3e8e41}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+#sourceLink {
+   position:relative;
+   bottom:0;
+   left:0;
+   width:100%;
+   height:60px;
+}
+</style>
+</head>
+<body>
+
+<h2>Keto Food selection</h2>
+
+<button id="Green"    class="button" onclick="FilterTableByDayCode('GreenCarb')">Green</button>
+<button id="Orange"    class="button" onclick="FilterTableByDayCode('OrangeCarb')">Orange</button>
+<button id="Red"    class="button" onclick="FilterTableByDayCode('RedCarb')">Red</button>
+<button id="DayAll"  class="button" onclick="FilterTableByDayCode('All')">Show All</button>
+<button id="Exercise"    class="button" onclick="location.href='index.html';">Exercise</button>                                                                                                                                                
+<br>                  
+<input type="text" id="myInput" onkeyup="FilterTableByTypedText()" placeholder="Search by Muscle section or Machine name.." title="Type in a name">
+
+<table id="myTable">
+<tr class='header'><th>Group</th><th>Item</th><th>Count</th><th>Color</th></tr>
+<tr><td>Alcohol</td><td>Beer</td><td>13</td><td>OrangeCarb</td></tr>
+<tr><td>Alcohol</td><td>Bloody Mary</td><td>7</td><td>OrangeCarb</td></tr>
+<tr><td>Alcohol</td><td>Brandy</td><td>0</td><td>GreenCarb</td></tr>
+<tr><td>Alcohol</td><td>Champagne</td><td>1</td><td>GreenCarb</td></tr>
+<tr><td>Alcohol</td><td>Cosmopolitan</td><td>13</td><td>OrangeCarb</td></tr>
+<tr><td>Alcohol</td><td>Gin & Tonic</td><td>16</td><td>RedCarb</td></tr>
+<tr><td>Alcohol</td><td>Margarita</td><td>8</td><td>OrangeCarb</td></tr>
+<tr><td>Alcohol</td><td>Martini</td><td>0</td><td>GreenCarb</td></tr>
+<tr><td>Alcohol</td><td>Red wine</td><td>2</td><td>GreenCarb</td></tr>
+<tr><td>Alcohol</td><td>Rum & Coke</td><td>39</td><td>RedCarb</td></tr>
+<tr><td>Alcohol</td><td>Tequila shot</td><td>0</td><td>GreenCarb</td></tr>
+<tr><td>Alcohol</td><td>Vodka & Orange Juice</td><td>28</td><td>RedCarb</td></tr>
+<tr><td>Alcohol</td><td>Whiskey</td><td>0</td><td>GreenCarb</td></tr>
+<tr><td>Alcohol</td><td>White Russian</td><td>17</td><td>RedCarb</td></tr>
+<tr><td>Alcohol</td><td>White wine</td><td>2</td><td>GreenCarb</td></tr>
+<tr><td>Fruits & Berries</td><td>Apple</td><td>12</td><td>OrangeCarb</td></tr>
+<tr><td>Fruits & Berries</td><td>Banana</td><td>20</td><td>RedCarb</td></tr>
+<tr><td>Fruits & Berries</td><td>Blackberry</td><td>5</td><td>GreenCarb</td></tr>
+<tr><td>Fruits & Berries</td><td>Blueberry</td><td>12</td><td>OrangeCarb</td></tr>
+<tr><td>Fruits & Berries</td><td>Cantaloupe</td><td>7</td><td>OrangeCarb</td></tr>
+<tr><td>Fruits & Berries</td><td>Cherries</td><td>10</td><td>OrangeCarb</td></tr>
+<tr><td>Fruits & Berries</td><td>Clementine</td><td>10</td><td>OrangeCarb</td></tr>
+<tr><td>Fruits & Berries</td><td>Coconut(meat)</td><td>6</td><td>OrangeCarb</td></tr>
+<tr><td>Fruits & Berries</td><td>Grapes</td><td>16</td><td>RedCarb</td></tr>
+<tr><td>Fruits & Berries</td><td>Kiwi</td><td>12</td><td>OrangeCarb</td></tr>
+<tr><td>Fruits & Berries</td><td>Mango</td><td>13</td><td>OrangeCarb</td></tr>
+<tr><td>Fruits & Berries</td><td>Orange</td><td>10</td><td>OrangeCarb</td></tr>
+<tr><td>Fruits & Berries</td><td>Peach</td><td>9</td><td>OrangeCarb</td></tr>
+<tr><td>Fruits & Berries</td><td>Pear</td><td>12</td><td>OrangeCarb</td></tr>
+<tr><td>Fruits & Berries</td><td>Pineapple</td><td>12</td><td>OrangeCarb</td></tr>
+<tr><td>Fruits & Berries</td><td>Plum</td><td>7</td><td>OrangeCarb</td></tr>
+<tr><td>Fruits & Berries</td><td>Raspberry</td><td>5</td><td>GreenCarb</td></tr>
+<tr><td>Fruits & Berries</td><td>Strawberry</td><td>6</td><td>OrangeCarb</td></tr>
+<tr><td>Fruits & Berries</td><td>Watermelon</td><td>10</td><td>OrangeCarb</td></tr>
+<tr><td>Grains & Pulses</td><td>Baked Beans</td><td>16</td><td>RedCarb</td></tr>
+<tr><td>Grains & Pulses</td><td>Bread</td><td>46</td><td>RedCarb</td></tr>
+<tr><td>Grains & Pulses</td><td>Chocolate</td><td>56</td><td>RedCarb</td></tr>
+<tr><td>Grains & Pulses</td><td>Cookies</td><td>58</td><td>RedCarb</td></tr>
+<tr><td>Grains & Pulses</td><td>Corn</td><td>15</td><td>RedCarb</td></tr>
+<tr><td>Grains & Pulses</td><td>Lentils</td><td>12</td><td>OrangeCarb</td></tr>
+<tr><td>Grains & Pulses</td><td>Pasta</td><td>26</td><td>RedCarb</td></tr>
+<tr><td>Grains & Pulses</td><td>Peas</td><td>9</td><td>OrangeCarb</td></tr>
+<tr><td>Grains & Pulses</td><td>Quinoa</td><td>18</td><td>RedCarb</td></tr>
+<tr><td>Grains & Pulses</td><td>Rice</td><td>28</td><td>RedCarb</td></tr>
+<tr><td>Meat & Dairy</td><td>Butter</td><td>-1</td><td>GreenCarb</td></tr>
+<tr><td>Meat & Dairy</td><td>Cheese</td><td>2</td><td>GreenCarb</td></tr>
+<tr><td>Meat & Dairy</td><td>Cold Cuts</td><td>2</td><td>GreenCarb</td></tr>
+<tr><td>Meat & Dairy</td><td>Cream (40% fat)</td><td>-1</td><td>GreenCarb</td></tr>
+<tr><td>Meat & Dairy</td><td>Creame Cheese</td><td>4</td><td>GreenCarb</td></tr>
+<tr><td>Meat & Dairy</td><td>Eggs</td><td>1</td><td>GreenCarb</td></tr>
+<tr><td>Meat & Dairy</td><td>Fish seafood</td><td>0</td><td>GreenCarb</td></tr>
+<tr><td>Meat & Dairy</td><td>Milk</td><td>99</td><td>RedCarb</td></tr>
+<tr><td>Nuts</td><td>Almond</td><td>10</td><td>OrangeCarb</td></tr>
+<tr><td>Nuts</td><td>Brazil</td><td>4</td><td>GreenCarb</td></tr>
+<tr><td>Nuts</td><td>Cashew</td><td>27</td><td>RedCarb</td></tr>
+<tr><td>Nuts</td><td>Hazelnut</td><td>7</td><td>OrangeCarb</td></tr>
+<tr><td>Nuts</td><td>Macadamia</td><td>5</td><td>GreenCarb</td></tr>
+<tr><td>Nuts</td><td>Peanut</td><td>7</td><td>OrangeCarb</td></tr>
+<tr><td>Nuts</td><td>Pecan</td><td>4</td><td>GreenCarb</td></tr>
+<tr><td>Nuts</td><td>Pine seeds</td><td>9</td><td>OrangeCarb</td></tr>
+<tr><td>Nuts</td><td>Pistachio</td><td>18</td><td>RedCarb</td></tr>
+<tr><td>Nuts</td><td>Walnut</td><td>7</td><td>OrangeCarb</td></tr>
+<tr><td>Sweets & Snacks</td><td>Café Latte</td><td>18</td><td>RedCarb</td></tr>
+<tr><td>Sweets & Snacks</td><td>Chocolate 70%</td><td>34</td><td>RedCarb</td></tr>
+<tr><td>Sweets & Snacks</td><td>Chocolate 86%</td><td>19</td><td>RedCarb</td></tr>
+<tr><td>Sweets & Snacks</td><td>Chocolate Bar</td><td>60</td><td>RedCarb</td></tr>
+<tr><td>Sweets & Snacks</td><td>Dark Chocolate</td><td>54</td><td>RedCarb</td></tr>
+<tr><td>Sweets & Snacks</td><td>Donut</td><td>49</td><td>RedCarb</td></tr>
+<tr><td>Sweets & Snacks</td><td>M&M</td><td>70</td><td>RedCarb</td></tr>
+<tr><td>Sweets & Snacks</td><td>Milk Chocolate</td><td>56</td><td>RedCarb</td></tr>
+<tr><td>Sweets & Snacks</td><td>Potato Chips</td><td>53</td><td>RedCarb</td></tr>
+<tr><td>Sweets & Snacks</td><td>White Chocolate</td><td>59</td><td>RedCarb</td></tr>
+<tr><td>Veggies (Overground)</td><td>Asparagus</td><td>2</td><td>GreenCarb</td></tr>
+<tr><td>Veggies (Overground)</td><td>Avocado</td><td>2</td><td>GreenCarb</td></tr>
+<tr><td>Veggies (Overground)</td><td>Broccoli</td><td>4</td><td>GreenCarb</td></tr>
+<tr><td>Veggies (Overground)</td><td>Brussels sprouts</td><td>5</td><td>GreenCarb</td></tr>
+<tr><td>Veggies (Overground)</td><td>Cabbage</td><td>3</td><td>GreenCarb</td></tr>
+<tr><td>Veggies (Overground)</td><td>Cauliflower</td><td>4</td><td>GreenCarb</td></tr>
+<tr><td>Veggies (Overground)</td><td>Celery</td><td>1</td><td>GreenCarb</td></tr>
+<tr><td>Veggies (Overground)</td><td>Cucumber</td><td>3</td><td>GreenCarb</td></tr>
+<tr><td>Veggies (Overground)</td><td>Eggplant</td><td>3</td><td>GreenCarb</td></tr>
+<tr><td>Veggies (Overground)</td><td>Kale</td><td>4</td><td>GreenCarb</td></tr>
+<tr><td>Veggies (Overground)</td><td>Lettuce</td><td>2</td><td>GreenCarb</td></tr>
+<tr><td>Veggies (Overground)</td><td>Olives</td><td>3</td><td>GreenCarb</td></tr>
+<tr><td>Veggies (Overground)</td><td>Pepper, Green</td><td>3</td><td>GreenCarb</td></tr>
+<tr><td>Veggies (Overground)</td><td>Pepper, red</td><td>4</td><td>GreenCarb</td></tr>
+<tr><td>Veggies (Overground)</td><td>Pepper, yellow</td><td>5</td><td>GreenCarb</td></tr>
+<tr><td>Veggies (Overground)</td><td>Spinach</td><td>1</td><td>GreenCarb</td></tr>
+<tr><td>Veggies (Overground)</td><td>Tomato</td><td>3</td><td>GreenCarb</td></tr>
+<tr><td>Veggies (Overground)</td><td>Zucchini</td><td>3</td><td>GreenCarb</td></tr>
+<tr><td>Veggies (Underground)</td><td>Beetroot</td><td>7</td><td>OrangeCarb</td></tr>
+<tr><td>Veggies (Underground)</td><td>Carrot</td><td>7</td><td>OrangeCarb</td></tr>
+<tr><td>Veggies (Underground)</td><td>Onion</td><td>7</td><td>OrangeCarb</td></tr>
+<tr><td>Veggies (Underground)</td><td>Parsnip</td><td>13</td><td>OrangeCarb</td></tr>
+<tr><td>Veggies (Underground)</td><td>Potato</td><td>15</td><td>RedCarb</td></tr>
+<tr><td>Veggies (Underground)</td><td>Sweet Potato</td><td>17</td><td>RedCarb</td></tr>
+
+</table>
+
+<script>
+function FilterTableByTypedText() {
+  var input, filter, table, tr, td, i;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTable");
+  tr = table.getElementsByTagName("tr");
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[0];  // Section Name
+    td1 =  tr[i].getElementsByTagName("td")[1]; //Exercise Machine
+    if (td) {
+      if (td.innerHTML.toUpperCase().indexOf(filter) > -1 || td1.innerHTML.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }       
+  }
+}
+
+function FilterTableByDayCode(filter) {
+  var input, filter0, table, tr, td, i;
+  filter= filter.toUpperCase();
+  table = document.getElementById("myTable");
+  tr = table.getElementsByTagName("tr");
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[3];
+    if (td) {
+    	if ( filter == "ALL") {
+    		 tr[i].style.display = "";
+    	} else {
+         if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+           tr[i].style.display = "";
+         } else {
+           tr[i].style.display = "none";
+         }
+      }
+    }       
+  }
+}
+
+</script>
+<br>
+<div id="sourceLink"><a href="https://github.com/arun-ks/GymSchedule">Source</a></div>
+</body>
+</html>
