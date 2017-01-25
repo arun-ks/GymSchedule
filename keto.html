@@ -1,74 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Keto Diet</title>
-<link rel="icon" href="css/favicon.ico" />
-<style>
-* {
-  box-sizing: border-box;
-}
-
-#myInput {
-  background-image: url('css/searchicon.png');
-  background-position: 10px 10px;
-  background-repeat: no-repeat;
-  width: 100%;
-  font-size: 16px;
-  padding: 12px 20px 12px 40px;
-  border: 1px solid #ddd;
-  margin-bottom: 12px;
-}
-
-#myTable {
-  border-collapse: collapse;
-  width: 100%;
-  border: 1px solid #ddd;
-  font-size: 18px;
-}
-
-#myTable th, #myTable td {
-  text-align: left;
-  padding: 12px;
-}
-
-#myTable tr {
-  border-bottom: 1px solid #ddd;
-}
-
-#myTable tr.header, #myTable tr:hover {
-  background-color: #f1f1f1;
-}
-
-.button {
-    background-color: #4CAF50; /* Green */
-    border: none;
-    color: white;
-    padding: 8px 10px;   /*padding: 15px 32px;*/
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    border-radius: 12px;
-    /*box-shadow: 0 9px #999;*/
-}
-.button:hover {background-color: #3e8e41}
-
-.button:active {
-  background-color: #3e8e41;
-  box-shadow: 0 5px #666;
-  transform: translateY(4px);
-}
-
-#sourceLink {
-   position:relative;
-   bottom:0;
-   left:0;
-   width:100%;
-   height:60px;
-}
-</style>
+  <title>Keto Diet</title>
+  <link rel="icon" href="css/favicon.ico" />
+  <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
 
@@ -78,7 +13,7 @@
 <button id="Orange"    class="button" onclick="FilterTableByDayCode('OrangeCarb')">Orange</button>
 <button id="Red"    class="button" onclick="FilterTableByDayCode('RedCarb')">Red</button>
 <button id="DayAll"  class="button" onclick="FilterTableByDayCode('All')">Show All</button>
-<button id="Exercise"    class="button" onclick="location.href='index.html';">Exercise</button>                                                                                                                                                
+<button id="Exercise"    class="button buttonforLink" onclick="location.href='index.html';">Exercise</button>                                                                                                                                                
 <br>                  
 <input type="text" id="myInput" onkeyup="FilterTableByTypedText()" placeholder="Search by Food or Group" title="Type in a name">
 
@@ -155,7 +90,7 @@
 <tr><td>Grains & Pulses</td><td>Peas</td><td>9</td><td>OrangeCarb</td></tr>
 <tr><td>Grains & Pulses</td><td>Quinoa</td><td>18</td><td>RedCarb</td></tr>
 <tr><td>Grains & Pulses</td><td>Rice</td><td>28</td><td>RedCarb</td></tr>
-<tr><td>Sweets & Snacks</td><td>CafÃ© Latte</td><td>18</td><td>RedCarb</td></tr>
+<tr><td>Sweets & Snacks</td><td>Café Latte</td><td>18</td><td>RedCarb</td></tr>
 <tr><td>Sweets & Snacks</td><td>Chocolate 70%</td><td>34</td><td>RedCarb</td></tr>
 <tr><td>Sweets & Snacks</td><td>Chocolate 86%</td><td>19</td><td>RedCarb</td></tr>
 <tr><td>Sweets & Snacks</td><td>Chocolate Bar</td><td>60</td><td>RedCarb</td></tr>
