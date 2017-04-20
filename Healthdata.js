@@ -1,5 +1,5 @@
+// Generated on 2017-04-20 11:06:43
 var myData0 = [
- // Starting to read excel from Cell B2 For Weight
    {
      type: "line", showInLegend: true, legendText: "Weight", name: "Weight",
      dataPoints: [
@@ -191,10 +191,10 @@ var myData0 = [
        { x: new Date(2017,4,16,0,0,0), y: 70.6},
        { x: new Date(2017,4,17,0,0,0), y: 71.2},
        { x: new Date(2017,4,18,0,0,0), y: 71},
-       { x: new Date(2017,4,19,0,0,0), y: 71.2},
+       { x: new Date(2017,4,19,0,0,0), y: 71},
+       { x: new Date(2017,4,20,0,0,0), y: 71},
      ]
    },
- // Starting to read excel from Cell B2 For Situps
    {
      type: "column", showInLegend: true, legendText: "Situps", name: "Situps",
      axisYType: "secondary",
@@ -321,7 +321,6 @@ var myData0 = [
        { x: new Date(2017,4,19,0,0,0), y: 270},
      ]
    },
- // Starting to read excel from Cell B2 For *HIIT*
    {
      type: "column", showInLegend: true, legendText: "*HIIT*", name: "*HIIT*",
      axisYType: "secondary",
@@ -432,6 +431,7 @@ var myData0 = [
        { x: new Date(2017,4,12,0,0,0), y: 99},
        { x: new Date(2017,4,15,0,0,0), y: 99},
        { x: new Date(2017,4,18,0,0,0), y: 99},
+       { x: new Date(2017,4,19,0,0,0), y: 99},
        { x: new Date(2017,4,19,0,0,0), y: 99},
      ]
    },
