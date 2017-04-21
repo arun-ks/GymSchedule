@@ -1,8 +1,8 @@
-// Generated on 2017-04-21 09:59:41
+var myGenrDate = "2017-04-21 10:37:32"; 
 var myData0 = [
    {
      type: "line", showInLegend: true, legendText: "Weight", name: "Weight",
-     axisYType: "secondary",
+     axisYType: "secondary",  interval: 1, 
      dataPoints: [
        { x: new Date(2016,9,6,0,0,0), y: 80.9},
        { x: new Date(2016,9,8,0,0,0), y: 79.8},

@@ -4,44 +4,43 @@
   <title>Progress </title>
   <link rel="icon" href="css/favicon.ico" />
   <link rel="stylesheet" type="text/css" href="css/style.css">
-  
   <script type="text/javascript" src="Healthdata.js"></script> 
   <script type="text/javascript">
   window.onload = function () {
-
-  var chart1 = new CanvasJS.Chart("chart1",
-  {
-      zoomEnabled: true,
-      //title:{ text: "Weight Tracking"  },
-      toolTip: { shared: "true" },
-      axisX:{title: "Date", valueFormatString: "DD-MMM YY" , labelAngle: -50},
-      axisY2:{title: "Kgs", minimum:67, maximum:83 },
-	  axisX2:{title: "Date", valueFormatString: "DD-MMM YY" , labelAngle: -50},
-      axisY:{title: "Count", maximum:315},  
-      legend: { horizontalAlign: "right", verticalAlign: "top"}, 
-      data: myData0 ,
-	  legend: {
-		cursor: "pointer",
-		itemclick: function (e) {
-			if (typeof (e.dataSeries.visible) === "undefined" || e.dataSeries.visible) {
-				e.dataSeries.visible = false;
-			} else {
-				e.dataSeries.visible = true;
-			}
-			e.chart.render();
-		}
-	  },
-  });
-
+     var chart1 = new CanvasJS.Chart("chart1",
+     {
+         zoomEnabled: true,
+         //title:{ text: "Weight Tracking"  },
+         toolTip: { shared: "true" },
+         axisX:{title: "Date", valueFormatString: "DD-MMM YY" , labelAngle: -50},
+         axisY:{title: "Count", maximum:315},  
+         axisY2:{title: "Kgs", minimum:67, maximum:83 },
+         axisX2:{title: "Date", valueFormatString: "DD-MMM YY" , labelAngle: -50},
+         legend: { horizontalAlign: "right", verticalAlign: "top"}, 
+         data: myData0 ,
+         legend: {
+  	         cursor: "pointer",
+  	         itemclick: function (e) {
+  	         	if (typeof (e.dataSeries.visible) === "undefined" || e.dataSeries.visible) {
+  	         		e.dataSeries.visible = false;
+  	         	} else {
+  	         		e.dataSeries.visible = true;
+  	         	}
+  	         	e.chart.render();
+  	         }
+         },
+     });
     chart1.render();
  }
  </script>
  <script type="text/javascript" src="canvasjs.min.js"></script>
  </head>
  <body>
- <h2>My Progress</h2>
-<button id="Food"    class="button buttonforLink" onclick="location.href='keto.html';">Food</button>
-<button id="Exercise"    class="button buttonforLink" onclick="location.href='index.html';">Exercise</button>
+ <h2>My Progress ( as of <script> document.write(myGenrDate);</script> )</h2>
+ 
+<!---button id="Food"    class="button buttonforLink" onclick="location.href='keto.html';">Food</button>
+<button id="Exercise"    class="button buttonforLink" onclick="location.href='index.html';">Exercise</button!--->
 <div id="chart1" style="height: 800px; width: 100%;"></div>
+
 </body>
 </html>
