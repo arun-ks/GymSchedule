@@ -11,7 +11,19 @@
      {
          zoomEnabled: true,
          //title:{ text: "Weight Tracking"  },
-         toolTip: { shared: "true" },
+		 toolTip: {
+            shared: true,
+            contentFormatter: function(e){
+                var str = "";
+				    for (var i = 0; i < e.entries.length; i++){
+                      var  temp = e.entries[i].dataSeries.name + ": <strong>"+  e.entries[i].dataPoint.y + "</strong> <br/>"  ; 
+                      str = str.concat(temp);
+                }
+				str = e.entries[i-1].dataPoint.x.toISOString().slice(0,10) + ": <br/>" + str;
+                return (str);
+            }
+         },
+         //toolTip: { shared: "false" },
          axisX:{title: "Date", valueFormatString: "DD-MMM YY" , labelAngle: -50},
          axisY:{title: "Count", maximum:315},  
          axisY2:{title: "Kgs", minimum:67, maximum:83 },
