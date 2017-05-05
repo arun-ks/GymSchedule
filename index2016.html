@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Gym Schedule</title>
+  <link rel="icon" href="css/favicon.ico" />
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+
+<h2>My Training Plan</h2>
+
+<button id="Day1"     class="button" onclick="FilterTableByDayCode('Day 1')">Day 1:Chest+Triceps</button>
+<button id="Day2"     class="button" onclick="FilterTableByDayCode('Day 2')">Day 2:Shoulders+Legs</button>
+<button id="Day3"     class="button" onclick="FilterTableByDayCode('Day 3')">Day 3:Back+Biceps</button>
+<button id="DayX"     class="button" onclick="FilterTableByDayCode('Day x')">Day ?:Cardio+Abs+Low Back</button>
+<button id="DayNon"   class="button" onclick="FilterTableByDayCode('No Day')">Not Selected</button>
+<button id="DayAll"   class="button" onclick="FilterTableByDayCode('All')">Show All</button>
+<button id="Food"     class="button buttonforLink" onclick="location.href='keto.html';">Food</button>
+<!---button id="Progress" class="button buttonforLink" onclick="location.href='progress.html';">Progress</button--->
+                                                                                                                                                
+<br>                  
+<input type="text" id="myInput" onkeyup="FilterTableByTypedText()" placeholder="Search by Muscle section or Machine name.." title="Type in a name">
+
+<table id="myTable">
+<tr class="header"><th>Section</th><th>Exercise</th><th>Machine #</th><th>Sets</th><th>Rep</th><th>Break</th><th>Day</th><th>No</th></tr>
+<tr><td>Cardio</td><td>Treadmill</td><td>10'-15'</td><td></td><td></td><td></td><td>Day x White</td><td>1</td></tr>
+<tr><td>Cardio</td><td>Vario</td><td>10'-15'</td><td></td><td></td><td></td><td>Day x White</td><td>2</td></tr>
+<tr><td>Cardio</td><td>Recline</td><td>-</td><td></td><td></td><td></td><td>No Day</td><td>3</td></tr>
+<tr><td>Cardio</td><td>Bike</td><td>-</td><td></td><td></td><td></td><td>No Day</td><td>4</td></tr>
+<tr><td>Cardio</td><td>Concept II Rowers</td><td>-</td><td></td><td></td><td></td><td>No Day</td><td>5</td></tr>
+<tr><td>Chest</td><td>Horizontal Bench Press</td><td>24</td><td>3</td><td>12</td><td>30"</td><td>Day 1 Yellow</td><td>6</td></tr>
+<tr><td>Chest</td><td>Incline Bench Press</td><td>23</td><td>3</td><td>12</td><td>30"</td><td>Day 1 Yellow</td><td>7</td></tr>
+<tr><td>Chest</td><td>Chest Press</td><td>3</td><td>3</td><td>12</td><td>30"</td><td>Day 1 Yellow</td><td>8</td></tr>
+<tr><td>Chest</td><td>Pectoral Machine</td><td>2</td><td>3</td><td>12</td><td>30"</td><td>Day 1 Yellow</td><td>9</td></tr>
+<tr><td>Chest</td><td>Dumbbell Flies - Incline/Horizontal Flies</td><td>27/28</td><td></td><td></td><td></td><td>No Day</td><td>10</td></tr>
+<tr><td>Chest</td><td>Dumbbell Press -  Incline/Horizontal Press</td><td>27/28</td><td></td><td></td><td></td><td>No Day</td><td>11</td></tr>
+<tr><td>Chest</td><td>Multipower (Smith Machine) - Incline/Horizontal Press</td><td>22</td><td></td><td></td><td></td><td>No Day</td><td>12</td></tr>
+<tr><td>Chest</td><td>Dual Adjustable Pulley - Cable Flies/Press</td><td>26</td><td></td><td></td><td></td><td>No Day</td><td>13</td></tr>
+<tr><td>Shoulders</td><td>Shoulder Press</td><td>16</td><td>3</td><td>12</td><td>30"</td><td>Day 2 Green</td><td>14</td></tr>
+<tr><td>Shoulders</td><td>Delts</td><td>17</td><td>3</td><td>12</td><td>30"</td><td>Day 2 Green</td><td>15</td></tr>
+<tr><td>Shoulders</td><td>Shoulder Dumbbell Press</td><td>27/28</td><td></td><td></td><td></td><td>No Day</td><td>16</td></tr>
+<tr><td>Shoulders</td><td>Smith Machine Press</td><td>22</td><td></td><td></td><td></td><td>No Day</td><td>17</td></tr>
+<tr><td>Shoulders</td><td>Front/lateral Dumbbell Raises</td><td>26</td><td></td><td></td><td></td><td>No Day</td><td>18</td></tr>
+<tr><td>Shoulders</td><td>Front/lateral Cable Raises</td><td>27/28</td><td></td><td></td><td></td><td>No Day</td><td>19</td></tr>
+<tr><td>Shoulders</td><td>Upright Row (Bar/Cable)</td><td>14</td><td></td><td></td><td></td><td>No Day</td><td>20</td></tr>
+<tr><td>Shoulders</td><td>Shrugs</td><td>-</td><td></td><td></td><td></td><td>No Day</td><td>21</td></tr>
+<tr><td>Forearm</td><td>Hammer Curls</td><td>-</td><td></td><td></td><td></td><td>No Day</td><td>22</td></tr>
+<tr><td>Forearm</td><td>Barbell Forearm Extension</td><td>-</td><td></td><td></td><td></td><td>No Day</td><td>23</td></tr>
+<tr><td>Forearm</td><td>Barbell Forearm curl</td><td>-</td><td></td><td></td><td></td><td>No Day</td><td>24</td></tr>
+<tr><td>Back</td><td>Low Row</td><td>18</td><td>3</td><td>12</td><td>30"</td><td>Day 3 Blue</td><td>25</td></tr>
+<tr><td>Back</td><td>Lat Machine</td><td>12</td><td>3</td><td>12</td><td>30"</td><td>Day 3 Blue</td><td>26</td></tr>
+<tr><td>Back</td><td>Vertical Traction</td><td>4</td><td>3</td><td>12</td><td>30"</td><td>Day 3 Blue</td><td>27</td></tr>
+<tr><td>Back</td><td>Bent Over Dumbbell/Barbell Cable Row</td><td>14/26</td><td>3</td><td>12</td><td>30"</td><td>Day 3 Blue</td><td>28</td></tr>
+<tr><td>Back</td><td>Row (Cable Jungle Or Dual Adjustable Pulley)</td><td>14/26</td><td></td><td></td><td></td><td>No Day</td><td>29</td></tr>
+<tr><td>Back</td><td>Pull Ups (Easy Chin)</td><td>13</td><td></td><td></td><td></td><td>No Day</td><td>30</td></tr>
+<tr><td>Back</td><td>Chin Ups (Easy Chin)</td><td>13</td><td></td><td></td><td></td><td>No Day</td><td>31</td></tr>
+<tr><td>Biceps</td><td>Scott Bench</td><td>15</td><td></td><td></td><td></td><td>No Day</td><td>32</td></tr>
+<tr><td>Biceps</td><td>Arm Curl Machine</td><td>1</td><td>3</td><td>12</td><td>30"</td><td>Day 3 Blue</td><td>33</td></tr>
+<tr><td>Biceps</td><td>Dumbbell/Barbell Curls - standing Bench/on ball</td><td>27/28</td><td></td><td></td><td></td><td>No Day</td><td>34</td></tr>
+<tr><td>Biceps</td><td>Cable Curls(Cable Jungle)</td><td>14</td><td>3</td><td>12</td><td>30"</td><td>Day 3 Blue</td><td>35</td></tr>
+<tr><td>Biceps</td><td>Dumbbell Concentration curls</td><td>-</td><td></td><td></td><td></td><td>No Day</td><td>36</td></tr>
+<tr><td>Triceps</td><td>Triceps Pressdown Bar/rope (Cable Jungle)</td><td>14</td><td>3</td><td>12</td><td>30"</td><td>Day 1 Yellow</td><td>37</td></tr>
+<tr><td>Triceps</td><td>Dumbbell Kick Back</td><td>-</td><td></td><td></td><td></td><td>No Day</td><td>38</td></tr>
+<tr><td>Triceps</td><td>Dips (Easy Chin Dip)</td><td></td><td></td><td></td><td></td><td>No Day</td><td>39</td></tr>
+<tr><td>Triceps</td><td>Dumbbell/Barbell Triceps Extension</td><td>14/27</td><td>3</td><td>12</td><td>30"</td><td>Day 1 Yellow</td><td>40</td></tr>
+<tr><td>Triceps</td><td>Reverse Barbell Triceps Press Down</td><td>14/26</td><td></td><td></td><td></td><td>No Day</td><td>41</td></tr>
+<tr><td>Legs</td><td>Squat</td><td>-</td><td></td><td></td><td></td><td>No Day</td><td>42</td></tr>
+<tr><td>Legs</td><td>Smith Machine Squal/Lunges</td><td>22</td><td></td><td></td><td></td><td>No Day</td><td>43</td></tr>
+<tr><td>Legs</td><td>Lunges with Barbell/Dumbbells</td><td>-</td><td></td><td></td><td></td><td>No Day</td><td>44</td></tr>
+<tr><td>Legs</td><td>Deadlift - Stiff Deadlift</td><td>-</td><td></td><td></td><td></td><td>No Day</td><td>45</td></tr>
+<tr><td>Legs</td><td>Leg Extension</td><td>8</td><td>3</td><td>15</td><td>30"</td><td>Day 2 Green</td><td>46</td></tr>
+<tr><td>Legs</td><td>Leg Curl</td><td>9</td><td>3</td><td>15</td><td>30"</td><td>Day 2 Green</td><td>47</td></tr>
+<tr><td>Legs</td><td>Leg Press</td><td>6</td><td>3</td><td>15</td><td>30"</td><td>Day 2 Green</td><td>48</td></tr>
+<tr><td>Legs</td><td>Adductor</td><td>11</td><td></td><td></td><td></td><td>No Day</td><td>49</td></tr>
+<tr><td>Legs</td><td>Abductor</td><td>10</td><td></td><td></td><td></td><td>No Day</td><td>50</td></tr>
+<tr><td>Legs</td><td>Glute</td><td>5</td><td></td><td></td><td></td><td>No Day</td><td>51</td></tr>
+<tr><td>Legs</td><td>Multi Hip</td><td>7</td><td></td><td></td><td></td><td>No Day</td><td>52</td></tr>
+<tr><td>Legs</td><td>Calf</td><td>9</td><td></td><td></td><td></td><td>No Day</td><td>53</td></tr>
+<tr><td>Abs</td><td>Total Abdominal Machine</td><td>20</td><td></td><td></td><td></td><td>No Day</td><td>54</td></tr>
+<tr><td>Abs</td><td>Rotary Torso Machine</td><td>21</td><td></td><td></td><td></td><td>No Day</td><td>55</td></tr>
+<tr><td>Abs</td><td>Crunch Bench</td><td>29</td><td>3</td><td>15</td><td>30"</td><td>Day x White</td><td>56</td></tr>
+<tr><td>Abs</td><td>Fit Ball siting crunches/sight crunches</td><td>-</td><td>3</td><td>15</td><td>30"</td><td>Day x White</td><td>57</td></tr>
+<tr><td>Abs</td><td>Roller Crunches</td><td></td><td></td><td></td><td></td><td>No Day</td><td>58</td></tr>
+<tr><td>Abs</td><td>Plank/Hover</td><td></td><td></td><td></td><td></td><td>No Day</td><td>59</td></tr>
+<tr><td>Low Back</td><td>Lower Back Machine</td><td>19</td><td></td><td></td><td></td><td>No Day</td><td>60</td></tr>
+<tr><td>Low Back</td><td>Low Back Extension (Lower Back Bench)</td><td>30</td><td>4</td><td>15</td><td>30"</td><td>Day x White</td><td>61</td></tr>
+<tr><td>Low Back</td><td>Low Back Extension (Fit Ball)</td><td>-</td><td></td><td></td><td></td><td>No Day</td><td>62</td></tr>
+</table>
+
+<script>
+function FilterTableByTypedText() {
+  var input, filter, table, tr, td, i;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTable");
+  tr = table.getElementsByTagName("tr");
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[0];  // Section Name
+    td1 =  tr[i].getElementsByTagName("td")[1]; //Exercise Machine
+    if (td) {
+      if (td.innerHTML.toUpperCase().indexOf(filter) > -1 || td1.innerHTML.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }       
+  }
+}
+
+function FilterTableByDayCode(filter) {
+  var input, filter0, table, tr, td, i;
+  filter= filter.toUpperCase();
+  table = document.getElementById("myTable");
+  tr = table.getElementsByTagName("tr");
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[6];
+    if (td) {
+    	if ( filter == "ALL") {
+    		 tr[i].style.display = "";
+    	} else {
+         if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+           tr[i].style.display = "";
+         } else {
+           tr[i].style.display = "none";
+         }
+      }
+    }       
+  }
+}
+
+</script>
+<br>
+<div id="sourceLink"><a href="https://github.com/arun-ks/GymSchedule">Source</a></div>
+</body>
+</html>
