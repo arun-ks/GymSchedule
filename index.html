@@ -9,9 +9,9 @@
 
 <h2>My Training Plan</h2>
 
-<button id="Day1"     class="button" onclick="FilterTableByDayCode('Day 1')">Day 1:Biceps+Back</button>
-<button id="Day2"     class="button" onclick="FilterTableByDayCode('Day 2')">Day 2:Triceps+Chest</button>
-<button id="Day3"     class="button" onclick="FilterTableByDayCode('Day 3')">Day 3:Shoulders+Legs</button>
+<button id="Day1"     class="button" onclick="FilterTableByDayCodeAndCommon('Day 1', 'Day x')">Day 1:Biceps+Back</button>
+<button id="Day2"     class="button" onclick="FilterTableByDayCodeAndCommon('Day 2', 'Day x')">Day 2:Triceps+Chest</button>
+<button id="Day3"     class="button" onclick="FilterTableByDayCodeAndCommon('Day 3', 'Day x')">Day 3:Shoulders+Legs</button>
 <button id="DayX"     class="button" onclick="FilterTableByDayCode('Day x')">Day x:Cardio+Abs+Low Back</button>
 <button id="DayNon"   class="button" onclick="FilterTableByDayCode('No Day')">Not Selected</button>
 <button id="DayAll"   class="button" onclick="FilterTableByDayCode('All')">Show All</button>
@@ -108,7 +108,7 @@
 <tr><td>Legs</td><td>Calves</td><td>Standing</td><td></td><td></td><td></td><td>No Day</td><td>82</td></tr>
 <tr><td>Legs</td><td>Calves</td><td>Smith Machine 22</td><td></td><td></td><td></td><td>No Day</td><td>83</td></tr>
 <tr><td>Core (Abs & Back)</td><td>Cruches</td><td>Floor</td><td>3</td><td>15</td><td></td><td>Day x White</td><td>84</td></tr>
-<tr><td>Core (Abs & Back)</td><td>Leg Ra</td><td>Floor or Bench</td><td>3</td><td>15</td><td></td><td>Day x White</td><td>85</td></tr>
+<tr><td>Core (Abs & Back)</td><td>Leg Raises</td><td>Floor or Bench</td><td>3</td><td>15</td><td></td><td>Day x White</td><td>85</td></tr>
 <tr><td>Core (Abs & Back)</td><td>Back Extension</td><td>Bench</td><td>4</td><td>15</td><td></td><td>Day x White</td><td>86</td></tr>
 
 </table>
@@ -145,6 +145,28 @@ function FilterTableByDayCode(filter) {
     		 tr[i].style.display = "";
     	} else {
          if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+           tr[i].style.display = "";
+         } else {
+           tr[i].style.display = "none";
+         }
+      }
+    }       
+  }
+}
+
+function FilterTableByDayCodeAndCommon(filter1, filter2) {
+  var input, filter0, table, tr, td, i;
+  filter1= filter1.toUpperCase();
+  filter2= filter2.toUpperCase();
+  table = document.getElementById("myTable");
+  tr = table.getElementsByTagName("tr");
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[6];
+    if (td) {
+    	if ( filter1 == "ALL") {
+    		 tr[i].style.display = "";
+    	} else {
+         if (td.innerHTML.toUpperCase().indexOf(filter1) > -1 || td.innerHTML.toUpperCase().indexOf(filter2) > -1   ) {
            tr[i].style.display = "";
          } else {
            tr[i].style.display = "none";
