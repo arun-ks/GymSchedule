@@ -1,0 +1,1029 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Nutrient Chart</title>
+  <link rel="icon" href="css/favicon.ico" />
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+
+<h2>Food Nutrients</h2>
+
+<button id="DayAll"    class="button" onclick="FilterTableByDayCode('All')">Show All</button>
+<button id="Exercise"  class="button buttonforLink" onclick="location.href='index.html';">Exercise</button>
+<button id="Keto"      class="button buttonforLink" onclick="location.href='keto.html';">Keto Diet</button>
+<!---button id="Progress" class="button buttonforLink" onclick="location.href='progress.html';">Progress</button--->
+
+<br>                  
+<input type="text" id="myInput" onkeyup="FilterTableByTypedText()" placeholder="Search by Food" title="Type in a name">
+<table id="myTable">
+<tr class='header'><th>Description</th><th>Amount</th><th>Fat(g)</th><th>Energy(Cal)</th><th>Carbs(g)</th><th>Protein(g)</th><th>Cholesterol (mg)</th><th>Weight(g)</th><th>Satu. Fat(g)</th></tr>
+<tr><td>1000 Island, Salad Drsng,Local</td><td>1 Tbsp</td><td>2</td><td>25</td><td>2</td><td>0</td><td>2</td><td>15</td><td>0.2</td></tr>
+<tr><td>1000 Island, Salad Drsng,Reglr</td><td>1 Tbsp</td><td>6</td><td>60</td><td>2</td><td>0</td><td>4</td><td>16</td><td>1</td></tr>
+<tr><td>100% Natural Cereal</td><td>1 Oz</td><td>6</td><td>135</td><td>18</td><td>3</td><td>0</td><td>28.35</td><td>4.1</td></tr>
+<tr><td>40% Bran Flakes, Kellogg'S</td><td>1 Oz</td><td>1</td><td>90</td><td>22</td><td>4</td><td>0</td><td>28.35</td><td>0.1</td></tr>
+<tr><td>40% Bran Flakes, Post</td><td>1 Oz</td><td>0</td><td>90</td><td>22</td><td>3</td><td>0</td><td>28.35</td><td>0.1</td></tr>
+<tr><td>Alfalfa Seeds, Sprouted, Raw</td><td>1 Cup</td><td>0</td><td>10</td><td>1</td><td>1</td><td>0</td><td>33</td><td>0</td></tr>
+<tr><td>All-Bran Cereal</td><td>1 Oz</td><td>1</td><td>70</td><td>21</td><td>4</td><td>0</td><td>28.35</td><td>0.1</td></tr>
+<tr><td>Almonds, Slivered</td><td>1 Cup</td><td>70</td><td>795</td><td>28</td><td>27</td><td>0</td><td>135</td><td>6.7</td></tr>
+<tr><td>Almonds, Whole</td><td>1 Oz</td><td>15</td><td>165</td><td>6</td><td>6</td><td>0</td><td>28.35</td><td>1.4</td></tr>
+<tr><td>Angelfood Cake, From Mix</td><td>1 Cake</td><td>2</td><td>1510</td><td>342</td><td>38</td><td>0</td><td>635</td><td>0.4</td></tr>
+<tr><td>Angelfood Cake, From Mix</td><td>1 Piece</td><td>0</td><td>125</td><td>29</td><td>3</td><td>0</td><td>53</td><td>0</td></tr>
+<tr><td>Apple Juice, Canned</td><td>1 Cup</td><td>0</td><td>115</td><td>29</td><td>0</td><td>0</td><td>248</td><td>0</td></tr>
+<tr><td>Apple Pie</td><td>1 Pie</td><td>105</td><td>2420</td><td>360</td><td>21</td><td>0</td><td>945</td><td>27.4</td></tr>
+<tr><td>Apple Pie</td><td>1 Piece</td><td>18</td><td>405</td><td>60</td><td>3</td><td>0</td><td>158</td><td>4.6</td></tr>
+<tr><td>Applesauce, Canned, Sweetened</td><td>1 Cup</td><td>0</td><td>195</td><td>51</td><td>0</td><td>0</td><td>255</td><td>0.1</td></tr>
+<tr><td>Applesauce, Canned,Unsweetened</td><td>1 Cup</td><td>0</td><td>105</td><td>28</td><td>0</td><td>0</td><td>244</td><td>0</td></tr>
+<tr><td>Apples, Dried, Sulfured</td><td>10 Rings</td><td>0</td><td>155</td><td>42</td><td>1</td><td>0</td><td>64</td><td>0</td></tr>
+<tr><td>Apples, Raw, Peeled, Sliced</td><td>1 Cup</td><td>0</td><td>65</td><td>16</td><td>0</td><td>0</td><td>110</td><td>0.1</td></tr>
+<tr><td>Apples, Raw, Unpeeled,2 Per Lb</td><td>1 Apple</td><td>1</td><td>125</td><td>32</td><td>0</td><td>0</td><td>212</td><td>0.1</td></tr>
+<tr><td>Apples, Raw, Unpeeled,3 Per Lb</td><td>1 Apple</td><td>0</td><td>80</td><td>21</td><td>0</td><td>0</td><td>138</td><td>0.1</td></tr>
+<tr><td>Apricot Nectar, No Added Vit C</td><td>1 Cup</td><td>0</td><td>140</td><td>36</td><td>1</td><td>0</td><td>251</td><td>0</td></tr>
+<tr><td>Apricots, Canned, Juice Pack</td><td>1 Cup</td><td>0</td><td>120</td><td>31</td><td>2</td><td>0</td><td>248</td><td>0</td></tr>
+<tr><td>Apricots, Canned, Juice Pack</td><td>3 Halves</td><td>0</td><td>40</td><td>10</td><td>1</td><td>0</td><td>84</td><td>0</td></tr>
+<tr><td>Apricots, Dried, Cooked,Unswtn</td><td>1 Cup</td><td>0</td><td>210</td><td>55</td><td>3</td><td>0</td><td>250</td><td>0</td></tr>
+<tr><td>Apricots, Dried, Uncooked</td><td>1 Cup</td><td>1</td><td>310</td><td>80</td><td>5</td><td>0</td><td>130</td><td>0</td></tr>
+<tr><td>Apricots, Raw</td><td>3 Aprcot</td><td>0</td><td>50</td><td>12</td><td>1</td><td>0</td><td>106</td><td>0</td></tr>
+<tr><td>Apricot, Canned, Heavy Syrup</td><td>1 Cup</td><td>0</td><td>215</td><td>55</td><td>1</td><td>0</td><td>258</td><td>0</td></tr>
+<tr><td>Apricot, Canned, Heavy Syrup</td><td>3 Halves</td><td>0</td><td>70</td><td>18</td><td>0</td><td>0</td><td>85</td><td>0</td></tr>
+<tr><td>Artichokes, Globe, Cooked, Drn</td><td>1 Artchk</td><td>0</td><td>55</td><td>12</td><td>3</td><td>0</td><td>120</td><td>0</td></tr>
+<tr><td>Asparagus, Ckd Frm Frz,Drn,Cut</td><td>1 Cup</td><td>1</td><td>50</td><td>9</td><td>5</td><td>0</td><td>180</td><td>0.2</td></tr>
+<tr><td>Asparagus, Ckd Frm Frz,Dr,Sper</td><td>4 Spears</td><td>0</td><td>15</td><td>3</td><td>2</td><td>0</td><td>60</td><td>0.1</td></tr>
+<tr><td>Asparagus, Ckd Frm Raw, Dr,Cut</td><td>1 Cup</td><td>1</td><td>45</td><td>8</td><td>5</td><td>0</td><td>180</td><td>0.1</td></tr>
+<tr><td>Asparagus, Ckd Frm Raw,Dr,Sper</td><td>4 Spears</td><td>0</td><td>15</td><td>3</td><td>2</td><td>0</td><td>60</td><td>0</td></tr>
+<tr><td>Asparagus,Canned,Spears,Nosalt</td><td>4 Spears</td><td>0</td><td>10</td><td>2</td><td>1</td><td>0</td><td>80</td><td>0</td></tr>
+<tr><td>Asparagus,Canned,Spears,W/Salt</td><td>4 Spears</td><td>0</td><td>10</td><td>2</td><td>1</td><td>0</td><td>80</td><td>0</td></tr>
+<tr><td>Avocados, California</td><td>1 Avocdo</td><td>30</td><td>305</td><td>12</td><td>4</td><td>0</td><td>173</td><td>4.5</td></tr>
+<tr><td>Avocados, Florida</td><td>1 Avocdo</td><td>27</td><td>340</td><td>27</td><td>5</td><td>0</td><td>304</td><td>5.3</td></tr>
+<tr><td>Bagels, Egg</td><td>1 Bagel</td><td>2</td><td>200</td><td>38</td><td>7</td><td>44</td><td>68</td><td>0.3</td></tr>
+<tr><td>Bagels, Plain</td><td>1 Bagel</td><td>2</td><td>200</td><td>38</td><td>7</td><td>0</td><td>68</td><td>0.3</td></tr>
+<tr><td>Baking Powder, Low Sodium</td><td>1 Tsp</td><td>0</td><td>5</td><td>1</td><td>0</td><td>0</td><td>4.3</td><td>0</td></tr>
+<tr><td>Baking Powder, Strght Phosphat</td><td>1 Tsp</td><td>0</td><td>5</td><td>1</td><td>0</td><td>0</td><td>3.8</td><td>0</td></tr>
+<tr><td>Baking Powder,Sas, Ca Po4</td><td>1 Tsp</td><td>0</td><td>5</td><td>1</td><td>0</td><td>0</td><td>3</td><td>0</td></tr>
+<tr><td>Baking Powder,Sas,Capo4+Caso4</td><td>1 Tsp</td><td>0</td><td>5</td><td>1</td><td>0</td><td>0</td><td>2.9</td><td>0</td></tr>
+<tr><td>Baking Pwdr Biscuits,From Mix</td><td>1 Biscut</td><td>3</td><td>95</td><td>14</td><td>2</td><td>0</td><td>28</td><td>0.8</td></tr>
+<tr><td>Baking Pwdr Biscuits,Homerecpe</td><td>1 Biscut</td><td>5</td><td>100</td><td>13</td><td>2</td><td>0</td><td>28</td><td>1.2</td></tr>
+<tr><td>Baking Pwdr Biscuits,Refrgdogh</td><td>1 Biscut</td><td>2</td><td>65</td><td>10</td><td>1</td><td>1</td><td>20</td><td>0.6</td></tr>
+<tr><td>Bamboo Shoots, Canned, Drained</td><td>1 Cup</td><td>1</td><td>25</td><td>4</td><td>2</td><td>0</td><td>131</td><td>0.1</td></tr>
+<tr><td>Bananas</td><td>1 Banana</td><td>1</td><td>105</td><td>27</td><td>1</td><td>0</td><td>114</td><td>0.2</td></tr>
+<tr><td>Bananas, Sliced</td><td>1 Cup</td><td>1</td><td>140</td><td>35</td><td>2</td><td>0</td><td>150</td><td>0.3</td></tr>
+<tr><td>Barbecue Sauce</td><td>1 Tbsp</td><td>0</td><td>10</td><td>2</td><td>0</td><td>0</td><td>16</td><td>0</td></tr>
+<tr><td>Barley, Pearled,Light, Uncookd</td><td>1 Cup</td><td>2</td><td>700</td><td>158</td><td>16</td><td>0</td><td>200</td><td>0.3</td></tr>
+<tr><td>Bean Sprouts, Mung, Cookd,Dran</td><td>1 Cup</td><td>0</td><td>25</td><td>5</td><td>3</td><td>0</td><td>124</td><td>0</td></tr>
+<tr><td>Bean Sprouts, Mung, Raw</td><td>1 Cup</td><td>0</td><td>30</td><td>6</td><td>3</td><td>0</td><td>104</td><td>0</td></tr>
+<tr><td>Bean With Bacon Soup, Canned</td><td>1 Cup</td><td>6</td><td>170</td><td>23</td><td>8</td><td>3</td><td>253</td><td>1.5</td></tr>
+<tr><td>Beans,Dry,Canned,W/Frankfurter</td><td>1 Cup</td><td>18</td><td>365</td><td>32</td><td>19</td><td>30</td><td>255</td><td>7.4</td></tr>
+<tr><td>Beans,Dry,Canned,W/Pork+Swtsce</td><td>1 Cup</td><td>12</td><td>385</td><td>54</td><td>16</td><td>10</td><td>255</td><td>4.3</td></tr>
+<tr><td>Beans,Dry,Canned,W/Pork+Tomsce</td><td>1 Cup</td><td>7</td><td>310</td><td>48</td><td>16</td><td>10</td><td>255</td><td>2.4</td></tr>
+<tr><td>Beef And Vegetable Stew,Hm Rcp</td><td>1 Cup</td><td>11</td><td>220</td><td>15</td><td>16</td><td>71</td><td>245</td><td>4.4</td></tr>
+<tr><td>Beef Broth, Boulln, Consm,Cnnd</td><td>1 Cup</td><td>1</td><td>15</td><td>0</td><td>3</td><td>0</td><td>240</td><td>0.3</td></tr>
+<tr><td>Beef Gravy, Canned</td><td>1 Cup</td><td>5</td><td>125</td><td>11</td><td>9</td><td>7</td><td>233</td><td>2.7</td></tr>
+<tr><td>Beef Heart, Braised</td><td>3 Oz</td><td>5</td><td>150</td><td>0</td><td>24</td><td>164</td><td>85</td><td>1.2</td></tr>
+<tr><td>Beef Liver, Fried</td><td>3 Oz</td><td>7</td><td>185</td><td>7</td><td>23</td><td>410</td><td>85</td><td>2.5</td></tr>
+<tr><td>Beef Noodle Soup, Canned</td><td>1 Cup</td><td>3</td><td>85</td><td>9</td><td>5</td><td>5</td><td>244</td><td>1.1</td></tr>
+<tr><td>Beef Potpie, Home Recipe</td><td>1 Piece</td><td>30</td><td>515</td><td>39</td><td>21</td><td>42</td><td>210</td><td>7.9</td></tr>
+<tr><td>Beef Roast, Eye O Rnd, Lean</td><td>2.6 Oz</td><td>5</td><td>135</td><td>0</td><td>22</td><td>52</td><td>75</td><td>1.9</td></tr>
+<tr><td>Beef Roast, Eye O Rnd,Lean+Fat</td><td>3 Oz</td><td>12</td><td>205</td><td>0</td><td>23</td><td>62</td><td>85</td><td>4.9</td></tr>
+<tr><td>Beef Roast, Rib, Lean Only</td><td>2.2 Oz</td><td>9</td><td>150</td><td>0</td><td>17</td><td>49</td><td>61</td><td>3.6</td></tr>
+<tr><td>Beef Roast, Rib, Lean + Fat</td><td>3 Oz</td><td>26</td><td>315</td><td>0</td><td>19</td><td>72</td><td>85</td><td>10.8</td></tr>
+<tr><td>Beef Steak,Sirloin,Broil,Lean</td><td>2.5 Oz</td><td>6</td><td>150</td><td>0</td><td>22</td><td>64</td><td>72</td><td>2.6</td></tr>
+<tr><td>Beef Steak,Sirloin,Broil,Ln+Ft</td><td>3 Oz</td><td>15</td><td>240</td><td>0</td><td>23</td><td>77</td><td>85</td><td>6.4</td></tr>
+<tr><td>Beef, Canned, Corned</td><td>3 Oz</td><td>10</td><td>185</td><td>0</td><td>22</td><td>80</td><td>85</td><td>4.2</td></tr>
+<tr><td>Beef, Ckd,Bttm Round,Lean Only</td><td>2.8 Oz</td><td>8</td><td>175</td><td>0</td><td>25</td><td>75</td><td>78</td><td>2.7</td></tr>
+<tr><td>Beef, Ckd,Bttm Round,Lean+ Fat</td><td>3 Oz</td><td>13</td><td>220</td><td>0</td><td>25</td><td>81</td><td>85</td><td>4.8</td></tr>
+<tr><td>Beef, Ckd,Chuck Blade,Leanonly</td><td>2.2 Oz</td><td>9</td><td>170</td><td>0</td><td>19</td><td>66</td><td>62</td><td>3.9</td></tr>
+<tr><td>Beef, Ckd,Chuck Blade,Lean+Fat</td><td>3 Oz</td><td>26</td><td>325</td><td>0</td><td>22</td><td>87</td><td>85</td><td>10.8</td></tr>
+<tr><td>Beef, Dried, Chipped</td><td>2.5 Oz</td><td>4</td><td>145</td><td>0</td><td>24</td><td>46</td><td>72</td><td>1.8</td></tr>
+<tr><td>Beer, Light</td><td>12 Fl Oz</td><td>0</td><td>95</td><td>5</td><td>1</td><td>0</td><td>355</td><td>0</td></tr>
+<tr><td>Beer, Regular</td><td>12 Fl Oz</td><td>0</td><td>150</td><td>13</td><td>1</td><td>0</td><td>360</td><td>0</td></tr>
+<tr><td>Beet Greens, Cooked, Drained</td><td>1 Cup</td><td>0</td><td>40</td><td>8</td><td>4</td><td>0</td><td>144</td><td>0</td></tr>
+<tr><td>Beets, Canned, Drained,No Salt</td><td>1 Cup</td><td>0</td><td>55</td><td>12</td><td>2</td><td>0</td><td>170</td><td>0</td></tr>
+<tr><td>Beets, Canned, Drained,W/ Salt</td><td>1 Cup</td><td>0</td><td>55</td><td>12</td><td>2</td><td>0</td><td>170</td><td>0</td></tr>
+<tr><td>Beets, Cooked, Drained, Diced</td><td>1 Cup</td><td>0</td><td>55</td><td>11</td><td>2</td><td>0</td><td>170</td><td>0</td></tr>
+<tr><td>Beets, Cooked, Drained, Whole</td><td>2 Beets</td><td>0</td><td>30</td><td>7</td><td>1</td><td>0</td><td>100</td><td>0</td></tr>
+<tr><td>Black-Eyed Peas, Dry, Cooked</td><td>1 Cup</td><td>1</td><td>190</td><td>35</td><td>13</td><td>0</td><td>250</td><td>0.2</td></tr>
+<tr><td>Black Beans, Dry, Cooked,Drand</td><td>1 Cup</td><td>1</td><td>225</td><td>41</td><td>15</td><td>0</td><td>171</td><td>0.1</td></tr>
+<tr><td>Blackberries, Raw</td><td>1 Cup</td><td>1</td><td>75</td><td>18</td><td>1</td><td>0</td><td>144</td><td>0.2</td></tr>
+<tr><td>Blackeye Peas, Immatr,Raw,Cked</td><td>1 Cup</td><td>1</td><td>180</td><td>30</td><td>13</td><td>0</td><td>165</td><td>0.3</td></tr>
+<tr><td>Blackeye Peas,Immtr,Frzn,Cked</td><td>1 Cup</td><td>1</td><td>225</td><td>40</td><td>14</td><td>0</td><td>170</td><td>0.3</td></tr>
+<tr><td>Blue Cheese</td><td>1 Oz</td><td>8</td><td>100</td><td>1</td><td>6</td><td>21</td><td>28.35</td><td>5.3</td></tr>
+<tr><td>Blue Cheese Salad Dressing</td><td>1 Tbsp</td><td>8</td><td>75</td><td>1</td><td>1</td><td>3</td><td>15</td><td>1.5</td></tr>
+<tr><td>Blueberries, Frozen, Sweetened</td><td>1 Cup</td><td>0</td><td>185</td><td>50</td><td>1</td><td>0</td><td>230</td><td>0</td></tr>
+<tr><td>Blueberries, Frozen, Sweetened</td><td>10 Oz</td><td>0</td><td>230</td><td>62</td><td>1</td><td>0</td><td>284</td><td>0</td></tr>
+<tr><td>Blueberries, Raw</td><td>1 Cup</td><td>1</td><td>80</td><td>20</td><td>1</td><td>0</td><td>145</td><td>0</td></tr>
+<tr><td>Blueberry Muffins, Home Recipe</td><td>1 Muffin</td><td>5</td><td>135</td><td>20</td><td>3</td><td>19</td><td>45</td><td>1.5</td></tr>
+<tr><td>Blueberry Muffins,From Com Mix</td><td>1 Muffin</td><td>5</td><td>140</td><td>22</td><td>3</td><td>45</td><td>45</td><td>1.4</td></tr>
+<tr><td>Blueberry Pie</td><td>1 Pie</td><td>102</td><td>2285</td><td>330</td><td>23</td><td>0</td><td>945</td><td>25.5</td></tr>
+<tr><td>Blueberry Pie</td><td>1 Piece</td><td>17</td><td>380</td><td>55</td><td>4</td><td>0</td><td>158</td><td>4.3</td></tr>
+<tr><td>Bologna</td><td>2 Slices</td><td>16</td><td>180</td><td>2</td><td>7</td><td>31</td><td>57</td><td>6.1</td></tr>
+<tr><td>Boston Brown Bread,W/Whtecrnm</td><td>1 Slice</td><td>1</td><td>95</td><td>21</td><td>2</td><td>3</td><td>45</td><td>0.3</td></tr>
+<tr><td>Boston Brown Bread,W/Yllwcrnml</td><td>1 Slice</td><td>1</td><td>95</td><td>21</td><td>2</td><td>3</td><td>45</td><td>0.3</td></tr>
+<tr><td>Bouillon, Dehydrtd, Unprepared</td><td>1 Pkt</td><td>1</td><td>15</td><td>1</td><td>1</td><td>1</td><td>6</td><td>0.3</td></tr>
+<tr><td>Bran Muffins, From Commerl Mix</td><td>1 Muffin</td><td>4</td><td>140</td><td>24</td><td>3</td><td>28</td><td>45</td><td>1.3</td></tr>
+<tr><td>Bran Muffins, Home Recipe</td><td>1 Muffin</td><td>6</td><td>125</td><td>19</td><td>3</td><td>24</td><td>45</td><td>1.4</td></tr>
+<tr><td>Braunschweiger</td><td>2 Slices</td><td>18</td><td>205</td><td>2</td><td>8</td><td>89</td><td>57</td><td>6.2</td></tr>
+<tr><td>Brazil Nuts</td><td>1 Oz</td><td>19</td><td>185</td><td>4</td><td>4</td><td>0</td><td>28.35</td><td>4.6</td></tr>
+<tr><td>Bread Stuffing,From Mx,Drytype</td><td>1 Cup</td><td>31</td><td>500</td><td>50</td><td>9</td><td>0</td><td>140</td><td>6.1</td></tr>
+<tr><td>Bread Stuffing,From Mx,Moist</td><td>1 Cup</td><td>26</td><td>420</td><td>40</td><td>9</td><td>67</td><td>203</td><td>5.3</td></tr>
+<tr><td>Breadcrumbs, Dry, Grated</td><td>1 Cup</td><td>5</td><td>390</td><td>73</td><td>13</td><td>5</td><td>100</td><td>1.5</td></tr>
+<tr><td>Broccoli, Frzn, Cooked, Draned</td><td>1 Cup</td><td>0</td><td>50</td><td>10</td><td>6</td><td>0</td><td>185</td><td>0</td></tr>
+<tr><td>Broccoli, Frzn, Cooked, Draned</td><td>1 Piece</td><td>0</td><td>10</td><td>2</td><td>1</td><td>0</td><td>30</td><td>0</td></tr>
+<tr><td>Broccoli, Raw</td><td>1 Spear</td><td>1</td><td>40</td><td>8</td><td>4</td><td>0</td><td>151</td><td>0.1</td></tr>
+<tr><td>Broccoli, Raw, Cooked, Drained</td><td>1 Cup</td><td>0</td><td>45</td><td>9</td><td>5</td><td>0</td><td>155</td><td>0.1</td></tr>
+<tr><td>Broccoli, Raw, Cooked, Drained</td><td>1 Spear</td><td>1</td><td>50</td><td>10</td><td>5</td><td>0</td><td>180</td><td>0.1</td></tr>
+<tr><td>Brown And Serve Sausage,Brwnd</td><td>1 Link</td><td>5</td><td>50</td><td>0</td><td>2</td><td>9</td><td>13</td><td>1.7</td></tr>
+<tr><td>Brown Gravy From Dry Mix</td><td>1 Cup</td><td>2</td><td>80</td><td>14</td><td>3</td><td>2</td><td>261</td><td>0.9</td></tr>
+<tr><td>Brownies W/ Nuts,Frm Home Recp</td><td>1 Browne</td><td>6</td><td>95</td><td>11</td><td>1</td><td>18</td><td>20</td><td>1.4</td></tr>
+<tr><td>Brownies W/ Nuts,Frstng,Cmmrcl</td><td>1 Browne</td><td>4</td><td>100</td><td>16</td><td>1</td><td>14</td><td>25</td><td>1.6</td></tr>
+<tr><td>Brussels Sprouts, Frzn, Cooked</td><td>1 Cup</td><td>1</td><td>65</td><td>13</td><td>6</td><td>0</td><td>155</td><td>0.1</td></tr>
+<tr><td>Brussels Sprouts, Raw, Cooked</td><td>1 Cup</td><td>1</td><td>60</td><td>13</td><td>4</td><td>0</td><td>155</td><td>0.2</td></tr>
+<tr><td>Buckwheat Flour, Light, Sifted</td><td>1 Cup</td><td>1</td><td>340</td><td>78</td><td>6</td><td>0</td><td>98</td><td>0.2</td></tr>
+<tr><td>Bulgur, Uncooked</td><td>1 Cup</td><td>3</td><td>600</td><td>129</td><td>19</td><td>0</td><td>170</td><td>1.2</td></tr>
+<tr><td>Buttermilk, Dried</td><td>1 Cup</td><td>7</td><td>465</td><td>59</td><td>41</td><td>83</td><td>120</td><td>4.3</td></tr>
+<tr><td>Buttermilk, Fluid</td><td>1 Cup</td><td>2</td><td>100</td><td>12</td><td>8</td><td>9</td><td>245</td><td>1.3</td></tr>
+<tr><td>Butter, Salted</td><td>1 Pat</td><td>4</td><td>35</td><td>0</td><td>0</td><td>11</td><td>5</td><td>2.5</td></tr>
+<tr><td>Butter, Salted</td><td>1 Tbsp</td><td>11</td><td>100</td><td>0</td><td>0</td><td>31</td><td>14</td><td>7.1</td></tr>
+<tr><td>Butter, Salted</td><td>1/2 Cup</td><td>92</td><td>810</td><td>0</td><td>1</td><td>247</td><td>113</td><td>57.1</td></tr>
+<tr><td>Butter, Unsalted</td><td>1 Pat</td><td>4</td><td>35</td><td>0</td><td>0</td><td>11</td><td>5</td><td>2.5</td></tr>
+<tr><td>Butter, Unsalted</td><td>1 Tbsp</td><td>11</td><td>100</td><td>0</td><td>0</td><td>31</td><td>14</td><td>7.1</td></tr>
+<tr><td>Butter, Unsalted</td><td>1/2 Cup</td><td>92</td><td>810</td><td>0</td><td>1</td><td>247</td><td>113</td><td>57.1</td></tr>
+<tr><td>Cabbage, Chinese, Pak-Choi,Ckd</td><td>1 Cup</td><td>0</td><td>20</td><td>3</td><td>3</td><td>0</td><td>170</td><td>0</td></tr>
+<tr><td>Cabbage, Chinese,Pe-Tsai, Raw</td><td>1 Cup</td><td>0</td><td>10</td><td>2</td><td>1</td><td>0</td><td>76</td><td>0</td></tr>
+<tr><td>Cabbage, Common, Cooked, Drned</td><td>1 Cup</td><td>0</td><td>30</td><td>7</td><td>1</td><td>0</td><td>150</td><td>0</td></tr>
+<tr><td>Cabbage, Common, Raw</td><td>1 Cup</td><td>0</td><td>15</td><td>4</td><td>1</td><td>0</td><td>70</td><td>0</td></tr>
+<tr><td>Cabbage, Red, Raw</td><td>1 Cup</td><td>0</td><td>20</td><td>4</td><td>1</td><td>0</td><td>70</td><td>0</td></tr>
+<tr><td>Cabbage, Savoy, Raw</td><td>1 Cup</td><td>0</td><td>20</td><td>4</td><td>1</td><td>0</td><td>70</td><td>0</td></tr>
+<tr><td>Cake Or Pastry Flour, Sifted</td><td>1 Cup</td><td>1</td><td>350</td><td>76</td><td>7</td><td>0</td><td>96</td><td>0.1</td></tr>
+<tr><td>Camembert Cheese</td><td>1 Wedge</td><td>9</td><td>115</td><td>0</td><td>8</td><td>27</td><td>38</td><td>5.8</td></tr>
+<tr><td>Cantaloup, Raw</td><td>1/2 Meln</td><td>1</td><td>95</td><td>22</td><td>2</td><td>0</td><td>267</td><td>0.1</td></tr>
+<tr><td>Cap'N Crunch Cereal</td><td>1 Oz</td><td>3</td><td>120</td><td>23</td><td>1</td><td>0</td><td>28.35</td><td>1.7</td></tr>
+<tr><td>Caramels, Plain Or Chocolate</td><td>1 Oz</td><td>3</td><td>115</td><td>22</td><td>1</td><td>1</td><td>28.35</td><td>2.2</td></tr>
+<tr><td>Carob Flour</td><td>1 Cup</td><td>0</td><td>255</td><td>126</td><td>6</td><td>0</td><td>140</td><td>0</td></tr>
+<tr><td>Carrot Cake,Cremchese Frst,Rec</td><td>1 Cake</td><td>328</td><td>6175</td><td>775</td><td>63</td><td>1183</td><td>1536</td><td>66</td></tr>
+<tr><td>Carrot Cake,Cremchese Frst,Rec</td><td>1 Piece</td><td>21</td><td>385</td><td>48</td><td>4</td><td>74</td><td>96</td><td>4.1</td></tr>
+<tr><td>Carrots, Canned, Drn, W/ Salt</td><td>1 Cup</td><td>0</td><td>35</td><td>8</td><td>1</td><td>0</td><td>146</td><td>0.1</td></tr>
+<tr><td>Carrots, Canned,Drnd, W/O Salt</td><td>1 Cup</td><td>0</td><td>35</td><td>8</td><td>1</td><td>0</td><td>146</td><td>0.1</td></tr>
+<tr><td>Carrots, Cooked From Frozen</td><td>1 Cup</td><td>0</td><td>55</td><td>12</td><td>2</td><td>0</td><td>146</td><td>0</td></tr>
+<tr><td>Carrots, Cooked From Raw</td><td>1 Cup</td><td>0</td><td>70</td><td>16</td><td>2</td><td>0</td><td>156</td><td>0.1</td></tr>
+<tr><td>Carrots, Raw, Grated</td><td>1 Cup</td><td>0</td><td>45</td><td>11</td><td>1</td><td>0</td><td>110</td><td>0</td></tr>
+<tr><td>Carrots, Raw, Whole</td><td>1 Carrot</td><td>0</td><td>30</td><td>7</td><td>1</td><td>0</td><td>72</td><td>0</td></tr>
+<tr><td>Cashew Nuts, Dry Roastd,Salted</td><td>1 Oz</td><td>13</td><td>165</td><td>9</td><td>4</td><td>0</td><td>28.35</td><td>2.6</td></tr>
+<tr><td>Cashew Nuts, Dry Roastd,Unsalt</td><td>1 Cup</td><td>63</td><td>785</td><td>45</td><td>21</td><td>0</td><td>137</td><td>12.5</td></tr>
+<tr><td>Cashew Nuts, Dry Roastd,Unsalt</td><td>1 Oz</td><td>13</td><td>165</td><td>9</td><td>4</td><td>0</td><td>28.35</td><td>2.6</td></tr>
+<tr><td>Cashew Nuts, Dry Roasted,Saltd</td><td>1 Cup</td><td>63</td><td>785</td><td>45</td><td>21</td><td>0</td><td>137</td><td>12.5</td></tr>
+<tr><td>Cashew Nuts, Oil Roastd,Salted</td><td>1 Cup</td><td>63</td><td>750</td><td>37</td><td>21</td><td>0</td><td>130</td><td>12.4</td></tr>
+<tr><td>Cashew Nuts, Oil Roastd,Salted</td><td>1 Oz</td><td>14</td><td>165</td><td>8</td><td>5</td><td>0</td><td>28.35</td><td>2.7</td></tr>
+<tr><td>Cashew Nuts, Oil Roastd,Unsalt</td><td>1 Cup</td><td>63</td><td>750</td><td>37</td><td>21</td><td>0</td><td>130</td><td>12.4</td></tr>
+<tr><td>Cashew Nuts, Oil Roastd,Unsalt</td><td>1 Oz</td><td>14</td><td>165</td><td>8</td><td>5</td><td>0</td><td>28.35</td><td>2.7</td></tr>
+<tr><td>Catsup</td><td>1 Cup</td><td>1</td><td>290</td><td>69</td><td>5</td><td>0</td><td>273</td><td>0.2</td></tr>
+<tr><td>Catsup</td><td>1 Tbsp</td><td>0</td><td>15</td><td>4</td><td>0</td><td>0</td><td>15</td><td>0</td></tr>
+<tr><td>Cauliflower, Cooked From Frozn</td><td>1 Cup</td><td>0</td><td>35</td><td>7</td><td>3</td><td>0</td><td>180</td><td>0.1</td></tr>
+<tr><td>Cauliflower, Cooked From Raw</td><td>1 Cup</td><td>0</td><td>30</td><td>6</td><td>2</td><td>0</td><td>125</td><td>0</td></tr>
+<tr><td>Cauliflower, Raw</td><td>1 Cup</td><td>0</td><td>25</td><td>5</td><td>2</td><td>0</td><td>100</td><td>0</td></tr>
+<tr><td>Celery Seed</td><td>1 Tsp</td><td>1</td><td>10</td><td>1</td><td>0</td><td>0</td><td>2</td><td>0</td></tr>
+<tr><td>Celery, Pascal Type, Raw,Piece</td><td>1 Cup</td><td>0</td><td>20</td><td>4</td><td>1</td><td>0</td><td>120</td><td>0</td></tr>
+<tr><td>Celery, Pascal Type, Raw,Stalk</td><td>1 Stalk</td><td>0</td><td>5</td><td>1</td><td>0</td><td>0</td><td>40</td><td>0</td></tr>
+<tr><td>Cheddar Cheese</td><td>1 Cu In</td><td>6</td><td>70</td><td>0</td><td>4</td><td>18</td><td>17</td><td>3.6</td></tr>
+<tr><td>Cheddar Cheese</td><td>1 Oz</td><td>9</td><td>115</td><td>0</td><td>7</td><td>30</td><td>28.35</td><td>6</td></tr>
+<tr><td>Chedddar Cheese, Shredded</td><td>1 Cup</td><td>37</td><td>455</td><td>1</td><td>28</td><td>119</td><td>113</td><td>23.8</td></tr>
+<tr><td>Cheerios Cereal</td><td>1 Oz</td><td>2</td><td>110</td><td>20</td><td>4</td><td>0</td><td>28.35</td><td>0.3</td></tr>
+<tr><td>Cheese Crackers, Plain</td><td>10 Crack</td><td>3</td><td>50</td><td>6</td><td>1</td><td>6</td><td>10</td><td>0.9</td></tr>
+<tr><td>Cheese Crackers, Sandwch,Peant</td><td>1 Sandwh</td><td>2</td><td>40</td><td>5</td><td>1</td><td>1</td><td>8</td><td>0.4</td></tr>
+<tr><td>Cheese Sauce W/ Milk, Frm Mix</td><td>1 Cup</td><td>17</td><td>305</td><td>23</td><td>16</td><td>53</td><td>279</td><td>9.3</td></tr>
+<tr><td>Cheeseburger, 4Oz Patty</td><td>1 Sandwh</td><td>31</td><td>525</td><td>40</td><td>30</td><td>104</td><td>194</td><td>15.1</td></tr>
+<tr><td>Cheeseburger, Regular</td><td>1 Sandwh</td><td>15</td><td>300</td><td>28</td><td>15</td><td>44</td><td>112</td><td>7.3</td></tr>
+<tr><td>Cheesecake</td><td>1 Cake</td><td>213</td><td>3350</td><td>317</td><td>60</td><td>2053</td><td>1110</td><td>119.9</td></tr>
+<tr><td>Cheesecake</td><td>1 Piece</td><td>18</td><td>280</td><td>26</td><td>5</td><td>170</td><td>92</td><td>9.9</td></tr>
+<tr><td>Cherries, Sour,Red,Cannd,Water</td><td>1 Cup</td><td>0</td><td>90</td><td>22</td><td>2</td><td>0</td><td>244</td><td>0.1</td></tr>
+<tr><td>Cherries, Sweet, Raw</td><td>10 Chery</td><td>1</td><td>50</td><td>11</td><td>1</td><td>0</td><td>68</td><td>0.1</td></tr>
+<tr><td>Cherry Pie</td><td>1 Pie</td><td>107</td><td>2465</td><td>363</td><td>25</td><td>0</td><td>945</td><td>28.4</td></tr>
+<tr><td>Cherry Pie</td><td>1 Piece</td><td>18</td><td>410</td><td>61</td><td>4</td><td>0</td><td>158</td><td>4.7</td></tr>
+<tr><td>Chestnuts, European, Roasted</td><td>1 Cup</td><td>3</td><td>350</td><td>76</td><td>5</td><td>0</td><td>143</td><td>0.6</td></tr>
+<tr><td>Chicken A La King, Home Recipe</td><td>1 Cup</td><td>34</td><td>470</td><td>12</td><td>27</td><td>221</td><td>245</td><td>12.9</td></tr>
+<tr><td>Chicken And Noodles, Home Recp</td><td>1 Cup</td><td>18</td><td>365</td><td>26</td><td>22</td><td>103</td><td>240</td><td>5.1</td></tr>
+<tr><td>Chicken Chow Mein, Canned</td><td>1 Cup</td><td>0</td><td>95</td><td>18</td><td>7</td><td>8</td><td>250</td><td>0.1</td></tr>
+<tr><td>Chicken Chow Mein, Home Recipe</td><td>1 Cup</td><td>10</td><td>255</td><td>10</td><td>31</td><td>75</td><td>250</td><td>4.1</td></tr>
+<tr><td>Chicken Frankfurter</td><td>1 Frank</td><td>9</td><td>115</td><td>3</td><td>6</td><td>45</td><td>45</td><td>2.5</td></tr>
+<tr><td>Chicken Gravy From Dry Mix</td><td>1 Cup</td><td>2</td><td>85</td><td>14</td><td>3</td><td>3</td><td>260</td><td>0.5</td></tr>
+<tr><td>Chicken Gravy, Canned</td><td>1 Cup</td><td>14</td><td>190</td><td>13</td><td>5</td><td>5</td><td>238</td><td>3.4</td></tr>
+<tr><td>Chicken Liver, Cooked</td><td>1 Liver</td><td>1</td><td>30</td><td>0</td><td>5</td><td>126</td><td>20</td><td>0.4</td></tr>
+<tr><td>Chicken Noodle Soup, Canned</td><td>1 Cup</td><td>2</td><td>75</td><td>9</td><td>4</td><td>7</td><td>241</td><td>0.7</td></tr>
+<tr><td>Chicken Noodle Soup,Dehyd,Prpd</td><td>1 Pkt</td><td>1</td><td>40</td><td>6</td><td>2</td><td>2</td><td>188</td><td>0.2</td></tr>
+<tr><td>Chicken Potpie, Home Recipe</td><td>1 Piece</td><td>31</td><td>545</td><td>42</td><td>23</td><td>56</td><td>232</td><td>10.3</td></tr>
+<tr><td>Chicken Rice Soup, Canned</td><td>1 Cup</td><td>2</td><td>60</td><td>7</td><td>4</td><td>7</td><td>241</td><td>0.5</td></tr>
+<tr><td>Chicken Roll, Light</td><td>2 Slices</td><td>4</td><td>90</td><td>1</td><td>11</td><td>28</td><td>57</td><td>1.1</td></tr>
+<tr><td>Chicken, Canned, Boneless</td><td>5 Oz</td><td>11</td><td>235</td><td>0</td><td>31</td><td>88</td><td>142</td><td>3.1</td></tr>
+<tr><td>Chicken, Fried, Batter, Breast</td><td>4.9 Oz</td><td>18</td><td>365</td><td>13</td><td>35</td><td>119</td><td>140</td><td>4.9</td></tr>
+<tr><td>Chicken, Fried, Batter,Drmstck</td><td>2.5 Oz</td><td>11</td><td>195</td><td>6</td><td>16</td><td>62</td><td>72</td><td>3</td></tr>
+<tr><td>Chicken, Fried, Flour, Breast</td><td>3.5 Oz</td><td>9</td><td>220</td><td>2</td><td>31</td><td>87</td><td>98</td><td>2.4</td></tr>
+<tr><td>Chicken, Fried, Flour, Drmstck</td><td>1.7 Oz</td><td>7</td><td>120</td><td>1</td><td>13</td><td>44</td><td>49</td><td>1.8</td></tr>
+<tr><td>Chicken, Roasted, Breast</td><td>3.0 Oz</td><td>3</td><td>140</td><td>0</td><td>27</td><td>73</td><td>86</td><td>0.9</td></tr>
+<tr><td>Chicken, Roasted, Drumstick</td><td>1.6 Oz</td><td>2</td><td>75</td><td>0</td><td>12</td><td>41</td><td>44</td><td>0.7</td></tr>
+<tr><td>Chicken, Stewed, Light + Dark</td><td>1 Cup</td><td>9</td><td>250</td><td>0</td><td>38</td><td>116</td><td>140</td><td>2.6</td></tr>
+<tr><td>Chickpeas, Cooked, Drained</td><td>1 Cup</td><td>4</td><td>270</td><td>45</td><td>15</td><td>0</td><td>163</td><td>0.4</td></tr>
+<tr><td>Chili Con Carne W/ Beans, Cnnd</td><td>1 Cup</td><td>16</td><td>340</td><td>31</td><td>19</td><td>28</td><td>255</td><td>5.8</td></tr>
+<tr><td>Chili Powder</td><td>1 Tsp</td><td>0</td><td>10</td><td>1</td><td>0</td><td>0</td><td>2.6</td><td>0.1</td></tr>
+<tr><td>Chocolate Chip Cookies,Commrcl</td><td>4 Cookie</td><td>9</td><td>180</td><td>28</td><td>2</td><td>5</td><td>42</td><td>2.9</td></tr>
+<tr><td>Chocolate Chip Cookies,Hme Rcp</td><td>4 Cookie</td><td>11</td><td>185</td><td>26</td><td>2</td><td>18</td><td>40</td><td>3.9</td></tr>
+<tr><td>Chocolate Chip Cookies,Refrig</td><td>4 Cookie</td><td>11</td><td>225</td><td>32</td><td>2</td><td>22</td><td>48</td><td>4</td></tr>
+<tr><td>Chocolate Milk, Lowfat 1%</td><td>1 Cup</td><td>3</td><td>160</td><td>26</td><td>8</td><td>7</td><td>250</td><td>1.5</td></tr>
+<tr><td>Chocolate Milk, Lowfat 2%</td><td>1 Cup</td><td>5</td><td>180</td><td>26</td><td>8</td><td>17</td><td>250</td><td>3.1</td></tr>
+<tr><td>Chocolate Milk, Regular</td><td>1 Cup</td><td>8</td><td>210</td><td>26</td><td>8</td><td>31</td><td>250</td><td>5.3</td></tr>
+<tr><td>Chocolate, Bitter Ot Baking</td><td>1 Oz</td><td>15</td><td>145</td><td>8</td><td>3</td><td>0</td><td>28.35</td><td>9</td></tr>
+<tr><td>Chop Suey W/ Beef + Pork,Hmrcp</td><td>1 Cup</td><td>17</td><td>300</td><td>13</td><td>26</td><td>68</td><td>250</td><td>4.3</td></tr>
+<tr><td>Cinnamon</td><td>1 Tsp</td><td>0</td><td>5</td><td>2</td><td>0</td><td>0</td><td>2.3</td><td>0</td></tr>
+<tr><td>Clam Chowder, Manhattan, Cannd</td><td>1 Cup</td><td>2</td><td>80</td><td>12</td><td>4</td><td>2</td><td>244</td><td>0.4</td></tr>
+<tr><td>Clam Chowder, New Eng, W/ Milk</td><td>1 Cup</td><td>7</td><td>165</td><td>17</td><td>9</td><td>22</td><td>248</td><td>3</td></tr>
+<tr><td>Clams, Canned, Drained</td><td>3 Oz</td><td>2</td><td>85</td><td>2</td><td>13</td><td>54</td><td>85</td><td>0.5</td></tr>
+<tr><td>Clams, Raw</td><td>3 Oz</td><td>1</td><td>65</td><td>2</td><td>11</td><td>43</td><td>85</td><td>0.3</td></tr>
+<tr><td>Club Soda</td><td>12 Fl Oz</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>355</td><td>0</td></tr>
+<tr><td>Coca Pwdr W/O Nofat Drymlk,Prd</td><td>1 Servng</td><td>9</td><td>225</td><td>30</td><td>9</td><td>33</td><td>265</td><td>5.4</td></tr>
+<tr><td>Coca Pwdr W/O Nonfat Dry Milk</td><td>3/4 Oz</td><td>1</td><td>75</td><td>19</td><td>1</td><td>0</td><td>21</td><td>0.3</td></tr>
+<tr><td>Cocoa Pwdr With Nonfat Drymilk</td><td>1 Oz</td><td>1</td><td>100</td><td>22</td><td>3</td><td>1</td><td>28.35</td><td>0.6</td></tr>
+<tr><td>Cocoa Pwdr W/ Nofat Drmlk,Prpd</td><td>1 Servng</td><td>1</td><td>100</td><td>22</td><td>3</td><td>1</td><td>206</td><td>0.6</td></tr>
+<tr><td>Coconut, Dried, Sweetnd,Shredd</td><td>1 Cup</td><td>33</td><td>470</td><td>44</td><td>3</td><td>0</td><td>93</td><td>29.3</td></tr>
+<tr><td>Coconut, Raw, Piece</td><td>1 Piece</td><td>15</td><td>160</td><td>7</td><td>1</td><td>0</td><td>45</td><td>13.4</td></tr>
+<tr><td>Coconut, Raw, Shredded</td><td>1 Cup</td><td>27</td><td>285</td><td>12</td><td>3</td><td>0</td><td>80</td><td>23.8</td></tr>
+<tr><td>Coffeecake, Crumb, From Mix</td><td>1 Cake</td><td>41</td><td>1385</td><td>225</td><td>27</td><td>279</td><td>430</td><td>11.8</td></tr>
+<tr><td>Coffeecake, Crumb, From Mix</td><td>1 Piece</td><td>7</td><td>230</td><td>38</td><td>5</td><td>47</td><td>72</td><td>2</td></tr>
+<tr><td>Coffee, Brewed</td><td>6 Fl Oz</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>180</td><td>0</td></tr>
+<tr><td>Coffee, Instant, Prepared</td><td>6 Fl Oz</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td><td>182</td><td>0</td></tr>
+<tr><td>Cola, Diet, Aspartame Only</td><td>12 Fl Oz</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>355</td><td>0</td></tr>
+<tr><td>Cola, Diet, Asprtame + Sacchrn</td><td>12 Fl Oz</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>355</td><td>0</td></tr>
+<tr><td>Cola, Diet, Saccharin Only</td><td>12 Fl Oz</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>355</td><td>0</td></tr>
+<tr><td>Cola, Regular</td><td>12 Fl Oz</td><td>0</td><td>160</td><td>41</td><td>0</td><td>0</td><td>369</td><td>0</td></tr>
+<tr><td>Collards, Cooked From Frozen</td><td>1 Cup</td><td>1</td><td>60</td><td>12</td><td>5</td><td>0</td><td>170</td><td>0.1</td></tr>
+<tr><td>Collards, Cooked From Raw</td><td>1 Cup</td><td>0</td><td>25</td><td>5</td><td>2</td><td>0</td><td>190</td><td>0.1</td></tr>
+<tr><td>Cooked Salad Drssing, Home Rcp</td><td>1 Tbsp</td><td>2</td><td>25</td><td>2</td><td>1</td><td>9</td><td>16</td><td>0.5</td></tr>
+<tr><td>Corn Chips</td><td>1 Oz</td><td>9</td><td>155</td><td>16</td><td>2</td><td>0</td><td>28.35</td><td>1.4</td></tr>
+<tr><td>Corn Flakes, Kellogg'S</td><td>1 Oz</td><td>0</td><td>110</td><td>24</td><td>2</td><td>0</td><td>28.35</td><td>0</td></tr>
+<tr><td>Corn Flakes, Toasties</td><td>1 Oz</td><td>0</td><td>110</td><td>24</td><td>2</td><td>0</td><td>28.35</td><td>0</td></tr>
+<tr><td>Corn Grits, Cooked, Instant</td><td>1 Pkt</td><td>0</td><td>80</td><td>18</td><td>2</td><td>0</td><td>137</td><td>0</td></tr>
+<tr><td>Corn Grits,Ckd,Reg,Whte,Nosalt</td><td>1 Cup</td><td>0</td><td>145</td><td>31</td><td>3</td><td>0</td><td>242</td><td>0</td></tr>
+<tr><td>Corn Grits,Ckd,Reg,Whte,W/Salt</td><td>1 Cup</td><td>0</td><td>145</td><td>31</td><td>3</td><td>0</td><td>242</td><td>0</td></tr>
+<tr><td>Corn Grits,Ckd,Reg,Yllw,Nosalt</td><td>1 Cup</td><td>0</td><td>145</td><td>31</td><td>3</td><td>0</td><td>242</td><td>0</td></tr>
+<tr><td>Corn Grits,Ckd,Reg,Yllw,W/Salt</td><td>1 Cup</td><td>0</td><td>145</td><td>31</td><td>3</td><td>0</td><td>242</td><td>0</td></tr>
+<tr><td>Corn Muffins, From Commerl Mix</td><td>1 Muffin</td><td>6</td><td>145</td><td>22</td><td>3</td><td>42</td><td>45</td><td>1.7</td></tr>
+<tr><td>Corn Muffins, Home Recipe</td><td>1 Muffin</td><td>5</td><td>145</td><td>21</td><td>3</td><td>23</td><td>45</td><td>1.5</td></tr>
+<tr><td>Corn Oil</td><td>1 Cup</td><td>218</td><td>1925</td><td>0</td><td>0</td><td>0</td><td>218</td><td>27.7</td></tr>
+<tr><td>Corn Oil</td><td>1 Tbsp</td><td>14</td><td>125</td><td>0</td><td>0</td><td>0</td><td>14</td><td>1.8</td></tr>
+<tr><td>Cornmeal,Bolted,Dry Form</td><td>1 Cup</td><td>4</td><td>440</td><td>91</td><td>11</td><td>0</td><td>122</td><td>0.5</td></tr>
+<tr><td>Cornmeal,Degermed,Enrched,Cook</td><td>1 Cup</td><td>0</td><td>120</td><td>26</td><td>3</td><td>0</td><td>240</td><td>0</td></tr>
+<tr><td>Cornmeal,Degermed,Enriched,Dry</td><td>1 Cup</td><td>2</td><td>500</td><td>108</td><td>11</td><td>0</td><td>138</td><td>0.2</td></tr>
+<tr><td>Cornmeal,Whole-Grnd,Unbolt,Dry</td><td>1 Cup</td><td>5</td><td>435</td><td>90</td><td>11</td><td>0</td><td>122</td><td>0.5</td></tr>
+<tr><td>Corn, Cnnd,Crm Stl,Whit,No Sal</td><td>1 Cup</td><td>1</td><td>185</td><td>46</td><td>4</td><td>0</td><td>256</td><td>0.2</td></tr>
+<tr><td>Corn, Cnnd,Crm Stl,Whit,W/Salt</td><td>1 Cup</td><td>1</td><td>185</td><td>46</td><td>4</td><td>0</td><td>256</td><td>0.2</td></tr>
+<tr><td>Corn, Cnnd,Crm Stl,Yllw,No Sal</td><td>1 Cup</td><td>1</td><td>185</td><td>46</td><td>4</td><td>0</td><td>256</td><td>0.2</td></tr>
+<tr><td>Corn, Cnnd,Crm Stl,Yllw,W/Salt</td><td>1 Cup</td><td>1</td><td>185</td><td>46</td><td>4</td><td>0</td><td>256</td><td>0.2</td></tr>
+<tr><td>Corn, Cooked Frm Frozn, White</td><td>1 Cup</td><td>0</td><td>135</td><td>34</td><td>5</td><td>0</td><td>165</td><td>0</td></tr>
+<tr><td>Corn, Cooked Frm Frozn, White</td><td>1 Ear</td><td>0</td><td>60</td><td>14</td><td>2</td><td>0</td><td>63</td><td>0.1</td></tr>
+<tr><td>Corn, Cooked Frm Frozn, Yellow</td><td>1 Cup</td><td>0</td><td>135</td><td>34</td><td>5</td><td>0</td><td>165</td><td>0</td></tr>
+<tr><td>Corn, Cooked Frm Frozn, Yellow</td><td>1 Ear</td><td>0</td><td>60</td><td>14</td><td>2</td><td>0</td><td>63</td><td>0.1</td></tr>
+<tr><td>Corn, Cooked From Raw, White</td><td>1 Ear</td><td>1</td><td>85</td><td>19</td><td>3</td><td>0</td><td>77</td><td>0.2</td></tr>
+<tr><td>Corn, Cooked From Raw, Yellow</td><td>1 Ear</td><td>1</td><td>85</td><td>19</td><td>3</td><td>0</td><td>77</td><td>0.2</td></tr>
+<tr><td>Corn,Cnnd,Whl Krnl,Whte,No Sal</td><td>1 Cup</td><td>1</td><td>165</td><td>41</td><td>5</td><td>0</td><td>210</td><td>0.2</td></tr>
+<tr><td>Corn,Cnnd,Whl Krnl,Whte,W/Salt</td><td>1 Cup</td><td>1</td><td>165</td><td>41</td><td>5</td><td>0</td><td>210</td><td>0.2</td></tr>
+<tr><td>Corn,Cnnd,Whl Krnl,Yllw,No Sal</td><td>1 Cup</td><td>1</td><td>165</td><td>41</td><td>5</td><td>0</td><td>210</td><td>0.2</td></tr>
+<tr><td>Corn,Cnnd,Whl Krnl,Yllw,W/Salt</td><td>1 Cup</td><td>1</td><td>165</td><td>41</td><td>5</td><td>0</td><td>210</td><td>0.2</td></tr>
+<tr><td>Cottage Cheese,Cremd,Lrge Curd</td><td>1 Cup</td><td>10</td><td>235</td><td>6</td><td>28</td><td>34</td><td>225</td><td>6.4</td></tr>
+<tr><td>Cottage Cheese,Cremd,Smll Curd</td><td>1 Cup</td><td>9</td><td>215</td><td>6</td><td>26</td><td>31</td><td>210</td><td>6</td></tr>
+<tr><td>Cottage Cheese,Cremd,W/Fruit</td><td>1 Cup</td><td>8</td><td>280</td><td>30</td><td>22</td><td>25</td><td>226</td><td>4.9</td></tr>
+<tr><td>Cottage Cheese,Lowfat 2%</td><td>1 Cup</td><td>4</td><td>205</td><td>8</td><td>31</td><td>19</td><td>226</td><td>2.8</td></tr>
+<tr><td>Cottage Cheese,Uncreamed</td><td>1 Cup</td><td>1</td><td>125</td><td>3</td><td>25</td><td>10</td><td>145</td><td>0.4</td></tr>
+<tr><td>Cr Of Chicken Soup W/ H20,Cnnd</td><td>1 Cup</td><td>7</td><td>115</td><td>9</td><td>3</td><td>10</td><td>244</td><td>2.1</td></tr>
+<tr><td>Cr Of Chicken Soup W/ Mlk,Cnnd</td><td>1 Cup</td><td>11</td><td>190</td><td>15</td><td>7</td><td>27</td><td>248</td><td>4.6</td></tr>
+<tr><td>Cr Of Mushrom Soup W/ H2O,Cnnd</td><td>1 Cup</td><td>9</td><td>130</td><td>9</td><td>2</td><td>2</td><td>244</td><td>2.4</td></tr>
+<tr><td>Cr Of Mushrom Soup W/ Mlk,Cnnd</td><td>1 Cup</td><td>14</td><td>205</td><td>15</td><td>6</td><td>20</td><td>248</td><td>5.1</td></tr>
+<tr><td>Crabmeat, Canned</td><td>1 Cup</td><td>3</td><td>135</td><td>1</td><td>23</td><td>135</td><td>135</td><td>0.5</td></tr>
+<tr><td>Cracked-Wheat Bread</td><td>1 Loaf</td><td>16</td><td>1190</td><td>227</td><td>42</td><td>0</td><td>454</td><td>3.1</td></tr>
+<tr><td>Cracked-Wheat Bread</td><td>1 Slice</td><td>1</td><td>65</td><td>12</td><td>2</td><td>0</td><td>25</td><td>0.2</td></tr>
+<tr><td>Cracked-Wheat Bread, Toasted</td><td>1 Slice</td><td>1</td><td>65</td><td>12</td><td>2</td><td>0</td><td>21</td><td>0.2</td></tr>
+<tr><td>Cranberry Juice Cocktal W/Vitc</td><td>1 Cup</td><td>0</td><td>145</td><td>38</td><td>0</td><td>0</td><td>253</td><td>0</td></tr>
+<tr><td>Cranberry Sauce, Canned,Swtnd</td><td>1 Cup</td><td>0</td><td>420</td><td>108</td><td>1</td><td>0</td><td>277</td><td>0</td></tr>
+<tr><td>Cream Cheese</td><td>1 Oz</td><td>10</td><td>100</td><td>1</td><td>2</td><td>31</td><td>28.35</td><td>6.2</td></tr>
+<tr><td>Cream Of Wheat,Ckd,Mix N Eat</td><td>1 Pkt</td><td>0</td><td>100</td><td>21</td><td>3</td><td>0</td><td>142</td><td>0</td></tr>
+<tr><td>Creme Pie</td><td>1 Pie</td><td>139</td><td>2710</td><td>351</td><td>20</td><td>46</td><td>910</td><td>90.1</td></tr>
+<tr><td>Creme Pie</td><td>1 Piece</td><td>23</td><td>455</td><td>59</td><td>3</td><td>8</td><td>152</td><td>15</td></tr>
+<tr><td>Crm Wheat,Ckd, Quick, No Salt</td><td>1 Cup</td><td>0</td><td>140</td><td>29</td><td>4</td><td>0</td><td>244</td><td>0.1</td></tr>
+<tr><td>Crm Wheat,Ckd,Quick, W/  Salt</td><td>1 Cup</td><td>0</td><td>140</td><td>29</td><td>4</td><td>0</td><td>244</td><td>0.1</td></tr>
+<tr><td>Crm Wheat,Ckd,Reg,Inst,No Salt</td><td>1 Cup</td><td>0</td><td>140</td><td>29</td><td>4</td><td>0</td><td>244</td><td>0.1</td></tr>
+<tr><td>Crm Wheat,Ckd,Reg,Inst,W/Salt</td><td>1 Cup</td><td>0</td><td>140</td><td>29</td><td>4</td><td>0</td><td>244</td><td>0.1</td></tr>
+<tr><td>Croissants</td><td>1 Crosst</td><td>12</td><td>235</td><td>27</td><td>5</td><td>13</td><td>57</td><td>3.5</td></tr>
+<tr><td>Cucumber, W/ Peel</td><td>6 Slices</td><td>0</td><td>5</td><td>1</td><td>0</td><td>0</td><td>28</td><td>0</td></tr>
+<tr><td>Curry Powder</td><td>1 Tsp</td><td>0</td><td>5</td><td>1</td><td>0</td><td>0</td><td>2</td><td>0</td></tr>
+<tr><td>Custard Pie</td><td>1 Pie</td><td>101</td><td>1985</td><td>213</td><td>56</td><td>1010</td><td>910</td><td>33.7</td></tr>
+<tr><td>Custard Pie</td><td>1 Piece</td><td>17</td><td>330</td><td>36</td><td>9</td><td>169</td><td>152</td><td>5.6</td></tr>
+<tr><td>Custard, Baked</td><td>1 Cup</td><td>15</td><td>305</td><td>29</td><td>14</td><td>278</td><td>265</td><td>6.8</td></tr>
+<tr><td>Dandelion Greens, Cooked, Drnd</td><td>1 Cup</td><td>1</td><td>35</td><td>7</td><td>2</td><td>0</td><td>105</td><td>0.1</td></tr>
+<tr><td>Danish Pastry, Fruit</td><td>1 Pastry</td><td>13</td><td>235</td><td>28</td><td>4</td><td>56</td><td>65</td><td>3.9</td></tr>
+<tr><td>Danish Pastry, Plain, No Nuts</td><td>1 Oz</td><td>6</td><td>110</td><td>13</td><td>2</td><td>24</td><td>28.35</td><td>1.8</td></tr>
+<tr><td>Danish Pastry, Plain, No Nuts</td><td>1 Pastry</td><td>12</td><td>220</td><td>26</td><td>4</td><td>49</td><td>57</td><td>3.6</td></tr>
+<tr><td>Danish Pastry, Plain, No Nuts</td><td>1 Ring</td><td>71</td><td>1305</td><td>152</td><td>21</td><td>292</td><td>340</td><td>21.8</td></tr>
+<tr><td>Dates</td><td>10 Dates</td><td>0</td><td>230</td><td>61</td><td>2</td><td>0</td><td>83</td><td>0.1</td></tr>
+<tr><td>Dates, Chopped</td><td>1 Cup</td><td>1</td><td>490</td><td>131</td><td>4</td><td>0</td><td>178</td><td>0.3</td></tr>
+<tr><td>Devil'S Food Cake,Chocfrst,Fmx</td><td>1 Cake</td><td>136</td><td>3755</td><td>645</td><td>49</td><td>598</td><td>1107</td><td>55.6</td></tr>
+<tr><td>Devil'S Food Cake,Chocfrst,Fmx</td><td>1 Cupcak</td><td>4</td><td>120</td><td>20</td><td>2</td><td>19</td><td>35</td><td>1.8</td></tr>
+<tr><td>Devil'S Food Cake,Chocfrst,Fmx</td><td>1 Piece</td><td>8</td><td>235</td><td>40</td><td>3</td><td>37</td><td>69</td><td>3.5</td></tr>
+<tr><td>Doughnuts, Cake Type, Plain</td><td>1 Donut</td><td>12</td><td>210</td><td>24</td><td>3</td><td>20</td><td>50</td><td>2.8</td></tr>
+<tr><td>Doughnuts, Yeast-Leavend,Glzed</td><td>1 Donut</td><td>13</td><td>235</td><td>26</td><td>4</td><td>21</td><td>60</td><td>5.2</td></tr>
+<tr><td>Duck, Roasted, Flesh Only</td><td>1/2 Duck</td><td>25</td><td>445</td><td>0</td><td>52</td><td>197</td><td>221</td><td>9.2</td></tr>
+<tr><td>Eggnog</td><td>1 Cup</td><td>19</td><td>340</td><td>34</td><td>10</td><td>149</td><td>254</td><td>11.3</td></tr>
+<tr><td>Eggplant, Cooked, Steamed</td><td>1 Cup</td><td>0</td><td>25</td><td>6</td><td>1</td><td>0</td><td>96</td><td>0</td></tr>
+<tr><td>Eggs, Cooked, Fried</td><td>1 Egg</td><td>7</td><td>90</td><td>1</td><td>6</td><td>211</td><td>46</td><td>1.9</td></tr>
+<tr><td>Eggs, Cooked, Hard-Cooked</td><td>1 Egg</td><td>5</td><td>75</td><td>1</td><td>6</td><td>213</td><td>50</td><td>1.6</td></tr>
+<tr><td>Eggs, Cooked, Poached</td><td>1 Egg</td><td>5</td><td>75</td><td>1</td><td>6</td><td>212</td><td>50</td><td>1.5</td></tr>
+<tr><td>Eggs, Cooked, Scrambled/Omelet</td><td>1 Egg</td><td>7</td><td>100</td><td>1</td><td>7</td><td>215</td><td>61</td><td>2.2</td></tr>
+<tr><td>Eggs, Raw, White</td><td>1 White</td><td>0</td><td>15</td><td>0</td><td>4</td><td>0</td><td>33</td><td>0</td></tr>
+<tr><td>Eggs, Raw, Whole</td><td>1 Egg</td><td>5</td><td>75</td><td>1</td><td>6</td><td>213</td><td>50</td><td>1.6</td></tr>
+<tr><td>Eggs, Raw, Yolk</td><td>1 Yolk</td><td>5</td><td>60</td><td>0</td><td>3</td><td>213</td><td>17</td><td>1.6</td></tr>
+<tr><td>Enchilada</td><td>1 Enchld</td><td>16</td><td>235</td><td>24</td><td>20</td><td>19</td><td>230</td><td>7.7</td></tr>
+<tr><td>Endive, Curly, Raw</td><td>1 Cup</td><td>0</td><td>10</td><td>2</td><td>1</td><td>0</td><td>50</td><td>0</td></tr>
+<tr><td>Eng Muffin, Egg, Cheese, Bacon</td><td>1 Sandwh</td><td>18</td><td>360</td><td>31</td><td>18</td><td>213</td><td>138</td><td>8</td></tr>
+<tr><td>English Muffins, Plain</td><td>1 Muffin</td><td>1</td><td>140</td><td>27</td><td>5</td><td>0</td><td>57</td><td>0.3</td></tr>
+<tr><td>English Muffins, Plain, Toastd</td><td>1 Muffin</td><td>1</td><td>140</td><td>27</td><td>5</td><td>0</td><td>50</td><td>0.3</td></tr>
+<tr><td>Evaporated Milk, Skim, Canned</td><td>1 Cup</td><td>1</td><td>200</td><td>29</td><td>19</td><td>9</td><td>255</td><td>0.3</td></tr>
+<tr><td>Evaporated Milk, Whole, Canned</td><td>1 Cup</td><td>19</td><td>340</td><td>25</td><td>17</td><td>74</td><td>252</td><td>11.6</td></tr>
+<tr><td>Fats, Cooking/Vegetbl Shorteng</td><td>1 Cup</td><td>205</td><td>1810</td><td>0</td><td>0</td><td>0</td><td>205</td><td>51.3</td></tr>
+<tr><td>Fats, Cooking/Vegetbl Shorteng</td><td>1 Tbsp</td><td>13</td><td>115</td><td>0</td><td>0</td><td>0</td><td>13</td><td>3.3</td></tr>
+<tr><td>Feta Cheese</td><td>1 Oz</td><td>6</td><td>75</td><td>1</td><td>4</td><td>25</td><td>28.35</td><td>4.2</td></tr>
+<tr><td>Fig Bars</td><td>4 Cookie</td><td>4</td><td>210</td><td>42</td><td>2</td><td>27</td><td>56</td><td>1</td></tr>
+<tr><td>Figs, Dried</td><td>10 Figs</td><td>2</td><td>475</td><td>122</td><td>6</td><td>0</td><td>187</td><td>0.4</td></tr>
+<tr><td>Filberts, (Hazelnuts) Chopped</td><td>1 Cup</td><td>72</td><td>725</td><td>18</td><td>15</td><td>0</td><td>115</td><td>5.3</td></tr>
+<tr><td>Filberts, (Hazelnuts) Chopped</td><td>1 Oz</td><td>18</td><td>180</td><td>4</td><td>4</td><td>0</td><td>28.35</td><td>1.3</td></tr>
+<tr><td>Fish Sandwich, Lge, W/O Cheese</td><td>1 Sandwh</td><td>27</td><td>470</td><td>41</td><td>18</td><td>91</td><td>170</td><td>6.3</td></tr>
+<tr><td>Fish Sandwich, Reg, W/ Cheese</td><td>1 Sandwh</td><td>23</td><td>420</td><td>39</td><td>16</td><td>56</td><td>140</td><td>6.3</td></tr>
+<tr><td>Fish Sticks, Frozen, Reheated</td><td>1 Stick</td><td>3</td><td>70</td><td>4</td><td>6</td><td>26</td><td>28</td><td>0.8</td></tr>
+<tr><td>Flounder Or Sole, Baked, Buttr</td><td>3 Oz</td><td>6</td><td>120</td><td>0</td><td>16</td><td>68</td><td>85</td><td>3.2</td></tr>
+<tr><td>Flounder Or Sole, Baked,Margrn</td><td>3 Oz</td><td>6</td><td>120</td><td>0</td><td>16</td><td>55</td><td>85</td><td>1.2</td></tr>
+<tr><td>Flounder Or Sole, Baked,W/Ofat</td><td>3 Oz</td><td>1</td><td>80</td><td>0</td><td>17</td><td>59</td><td>85</td><td>0.3</td></tr>
+<tr><td>Fondant, Uncoated</td><td>1 Oz</td><td>0</td><td>105</td><td>27</td><td>0</td><td>0</td><td>28.35</td><td>0</td></tr>
+<tr><td>Frankfurter, Cooked</td><td>1 Frank</td><td>13</td><td>145</td><td>1</td><td>5</td><td>23</td><td>45</td><td>4.8</td></tr>
+<tr><td>French Bread</td><td>1 Slice</td><td>1</td><td>100</td><td>18</td><td>3</td><td>0</td><td>35</td><td>0.3</td></tr>
+<tr><td>French Or Vienna Bread</td><td>1 Loaf</td><td>18</td><td>1270</td><td>230</td><td>43</td><td>0</td><td>454</td><td>3.8</td></tr>
+<tr><td>French Salad Dressing, Localor</td><td>1 Tbsp</td><td>2</td><td>25</td><td>2</td><td>0</td><td>0</td><td>16</td><td>0.2</td></tr>
+<tr><td>French Salad Dressing, Regular</td><td>1 Tbsp</td><td>9</td><td>85</td><td>1</td><td>0</td><td>0</td><td>16</td><td>1.4</td></tr>
+<tr><td>French Toast, Home Recipe</td><td>1 Slice</td><td>7</td><td>155</td><td>17</td><td>6</td><td>112</td><td>65</td><td>1.6</td></tr>
+<tr><td>Fried Pie, Apple</td><td>1 Pie</td><td>14</td><td>255</td><td>31</td><td>2</td><td>14</td><td>85</td><td>5.8</td></tr>
+<tr><td>Fried Pie, Cherry</td><td>1 Pie</td><td>14</td><td>250</td><td>32</td><td>2</td><td>13</td><td>85</td><td>5.8</td></tr>
+<tr><td>Froot Loops Cereal</td><td>1 Oz</td><td>1</td><td>110</td><td>25</td><td>2</td><td>0</td><td>28.35</td><td>0.2</td></tr>
+<tr><td>Fruit Cocktail,Cnnd,Heavysyrup</td><td>1 Cup</td><td>0</td><td>185</td><td>48</td><td>1</td><td>0</td><td>255</td><td>0</td></tr>
+<tr><td>Fruit Cocktail,Cnnd,Juice Pack</td><td>1 Cup</td><td>0</td><td>115</td><td>29</td><td>1</td><td>0</td><td>248</td><td>0</td></tr>
+<tr><td>Fruit Punch Drink, Canned</td><td>6 Fl Oz</td><td>0</td><td>85</td><td>22</td><td>0</td><td>0</td><td>190</td><td>0</td></tr>
+<tr><td>Fruitcake,Dark, From Homerecip</td><td>1 Cake</td><td>228</td><td>5185</td><td>783</td><td>74</td><td>640</td><td>1361</td><td>47.6</td></tr>
+<tr><td>Fruitcake,Dark, From Homerecip</td><td>1 Piece</td><td>7</td><td>165</td><td>25</td><td>2</td><td>20</td><td>43</td><td>1.5</td></tr>
+<tr><td>Fudge, Chocolate, Plain</td><td>1 Oz</td><td>3</td><td>115</td><td>21</td><td>1</td><td>1</td><td>28.35</td><td>2.1</td></tr>
+<tr><td>Garlic Powder</td><td>1 Tsp</td><td>0</td><td>10</td><td>2</td><td>0</td><td>0</td><td>2.8</td><td>0</td></tr>
+<tr><td>Gelatin Dessert, Prepared</td><td>1/2 Cup</td><td>0</td><td>70</td><td>17</td><td>2</td><td>0</td><td>120</td><td>0</td></tr>
+<tr><td>Gelatin, Dry</td><td>1 Envelp</td><td>0</td><td>25</td><td>0</td><td>6</td><td>0</td><td>7</td><td>0</td></tr>
+<tr><td>Ginger Ale</td><td>12 Fl Oz</td><td>0</td><td>125</td><td>32</td><td>0</td><td>0</td><td>366</td><td>0</td></tr>
+<tr><td>Gingerbread Cake, From Mix</td><td>1 Cake</td><td>39</td><td>1575</td><td>291</td><td>18</td><td>6</td><td>570</td><td>9.6</td></tr>
+<tr><td>Gingerbread Cake, From Mix</td><td>1 Piece</td><td>4</td><td>175</td><td>32</td><td>2</td><td>1</td><td>63</td><td>1.1</td></tr>
+<tr><td>Gin,Rum,Vodka,Whisky 80-Proof</td><td>1.5 F Oz</td><td>0</td><td>95</td><td>0</td><td>0</td><td>0</td><td>42</td><td>0</td></tr>
+<tr><td>Gin,Rum,Vodka,Whisky 86-Proof</td><td>1.5 F Oz</td><td>0</td><td>105</td><td>0</td><td>0</td><td>0</td><td>42</td><td>0</td></tr>
+<tr><td>Gin,Rum,Vodka,Whisky 90-Proof</td><td>1.5 F Oz</td><td>0</td><td>110</td><td>0</td><td>0</td><td>0</td><td>42</td><td>0</td></tr>
+<tr><td>Golden Grahams Cereal</td><td>1 Oz</td><td>1</td><td>110</td><td>24</td><td>2</td><td>0</td><td>28.35</td><td>0.7</td></tr>
+<tr><td>Graham Cracker, Plain</td><td>2 Crackr</td><td>1</td><td>60</td><td>11</td><td>1</td><td>0</td><td>14</td><td>0.4</td></tr>
+<tr><td>Grape-Nuts Cereal</td><td>1 Oz</td><td>0</td><td>100</td><td>23</td><td>3</td><td>0</td><td>28.35</td><td>0</td></tr>
+<tr><td>Grape Drink, Canned</td><td>6 Fl Oz</td><td>0</td><td>100</td><td>26</td><td>0</td><td>0</td><td>187</td><td>0</td></tr>
+<tr><td>Grape Juice, Canned</td><td>1 Cup</td><td>0</td><td>155</td><td>38</td><td>1</td><td>0</td><td>253</td><td>0.1</td></tr>
+<tr><td>Grape Soda</td><td>12 Fl Oz</td><td>0</td><td>180</td><td>46</td><td>0</td><td>0</td><td>372</td><td>0</td></tr>
+<tr><td>Grapefrt Jce,Frzn,Cncn,Unswten</td><td>6 Fl Oz</td><td>1</td><td>300</td><td>72</td><td>4</td><td>0</td><td>207</td><td>0.1</td></tr>
+<tr><td>Grapefrt Jce,Frzn,Dltd,Unswten</td><td>1 Cup</td><td>0</td><td>100</td><td>24</td><td>1</td><td>0</td><td>247</td><td>0</td></tr>
+<tr><td>Grapefruit Juice, Canned,Swtnd</td><td>1 Cup</td><td>0</td><td>115</td><td>28</td><td>1</td><td>0</td><td>250</td><td>0</td></tr>
+<tr><td>Grapefruit Juice, Canned,Unswt</td><td>1 Cup</td><td>0</td><td>95</td><td>22</td><td>1</td><td>0</td><td>247</td><td>0</td></tr>
+<tr><td>Grapefruit Juice, Raw</td><td>1 Cup</td><td>0</td><td>95</td><td>23</td><td>1</td><td>0</td><td>247</td><td>0</td></tr>
+<tr><td>Grapefruit, Canned, Syrup Pack</td><td>1 Cup</td><td>0</td><td>150</td><td>39</td><td>1</td><td>0</td><td>254</td><td>0</td></tr>
+<tr><td>Grapefruit, Raw, Pink</td><td>1/2 Frut</td><td>0</td><td>40</td><td>10</td><td>1</td><td>0</td><td>120</td><td>0</td></tr>
+<tr><td>Grapefruit, Raw, White</td><td>1/2 Frut</td><td>0</td><td>40</td><td>10</td><td>1</td><td>0</td><td>120</td><td>0</td></tr>
+<tr><td>Grapejce,Frzn,Concen,Swtnd,W/C</td><td>6 Fl Oz</td><td>1</td><td>385</td><td>96</td><td>1</td><td>0</td><td>216</td><td>0.2</td></tr>
+<tr><td>Grapejce,Frzn,Dilutd,Swtnd,W/C</td><td>1 Cup</td><td>0</td><td>125</td><td>32</td><td>0</td><td>0</td><td>250</td><td>0.1</td></tr>
+<tr><td>Grapes, European, Raw, Thompsn</td><td>10 Grape</td><td>0</td><td>35</td><td>9</td><td>0</td><td>0</td><td>50</td><td>0.1</td></tr>
+<tr><td>Grapes, European, Raw, Tokay</td><td>10 Grape</td><td>0</td><td>40</td><td>10</td><td>0</td><td>0</td><td>57</td><td>0.1</td></tr>
+<tr><td>Gravy And Turkey, Frozen</td><td>5 Oz</td><td>4</td><td>95</td><td>7</td><td>8</td><td>26</td><td>142</td><td>1.2</td></tr>
+<tr><td>Great Northn Beans,Dry,Ckd,Drn</td><td>1 Cup</td><td>1</td><td>210</td><td>38</td><td>14</td><td>0</td><td>180</td><td>0.1</td></tr>
+<tr><td>Ground Beef, Broiled, Lean</td><td>3 Oz</td><td>16</td><td>230</td><td>0</td><td>21</td><td>74</td><td>85</td><td>6.2</td></tr>
+<tr><td>Ground Beef, Broiled, Regular</td><td>3 Oz</td><td>18</td><td>245</td><td>0</td><td>20</td><td>76</td><td>85</td><td>6.9</td></tr>
+<tr><td>Gum Drops</td><td>1 Oz</td><td>0</td><td>100</td><td>25</td><td>0</td><td>0</td><td>28.35</td><td>0</td></tr>
+<tr><td>Haddock, Breaded, Fried</td><td>3 Oz</td><td>9</td><td>175</td><td>7</td><td>17</td><td>75</td><td>85</td><td>2.4</td></tr>
+<tr><td>Half And Half, Cream</td><td>1 Cup</td><td>28</td><td>315</td><td>10</td><td>7</td><td>89</td><td>242</td><td>17.3</td></tr>
+<tr><td>Half And Half, Cream</td><td>1 Tbsp</td><td>2</td><td>20</td><td>1</td><td>0</td><td>6</td><td>15</td><td>1.1</td></tr>
+<tr><td>Halibut, Broiled, Butter,Lemju</td><td>3 Oz</td><td>6</td><td>140</td><td>0</td><td>20</td><td>62</td><td>85</td><td>3.3</td></tr>
+<tr><td>Hamburger, 4Oz Patty</td><td>1 Sandwh</td><td>21</td><td>445</td><td>38</td><td>25</td><td>71</td><td>174</td><td>7.1</td></tr>
+<tr><td>Hamburger, Regular</td><td>1 Sandwh</td><td>11</td><td>245</td><td>28</td><td>12</td><td>32</td><td>98</td><td>4.4</td></tr>
+<tr><td>Hard Candy</td><td>1 Oz</td><td>0</td><td>110</td><td>28</td><td>0</td><td>0</td><td>28.35</td><td>0</td></tr>
+<tr><td>Herring, Pickled</td><td>3 Oz</td><td>13</td><td>190</td><td>0</td><td>17</td><td>85</td><td>85</td><td>4.3</td></tr>
+<tr><td>Hollandaise Sce, W/ H2O,Frm Mx</td><td>1 Cup</td><td>20</td><td>240</td><td>14</td><td>5</td><td>52</td><td>259</td><td>11.6</td></tr>
+<tr><td>Honey</td><td>1 Cup</td><td>0</td><td>1030</td><td>279</td><td>1</td><td>0</td><td>339</td><td>0</td></tr>
+<tr><td>Honey</td><td>1 Tbsp</td><td>0</td><td>65</td><td>17</td><td>0</td><td>0</td><td>21</td><td>0</td></tr>
+<tr><td>Honey Nut Cheerios Cereal</td><td>1 Oz</td><td>1</td><td>105</td><td>23</td><td>3</td><td>0</td><td>28.35</td><td>0.1</td></tr>
+<tr><td>Honeydew Melon, Raw</td><td>1/10 Mel</td><td>0</td><td>45</td><td>12</td><td>1</td><td>0</td><td>129</td><td>0</td></tr>
+<tr><td>Ice Cream, Vanlla, Regulr 11%</td><td>1 Cup</td><td>14</td><td>270</td><td>32</td><td>5</td><td>59</td><td>133</td><td>8.9</td></tr>
+<tr><td>Ice Cream, Vanlla, Regulr 11%</td><td>1/2 Galn</td><td>115</td><td>2155</td><td>254</td><td>38</td><td>476</td><td>1064</td><td>71.3</td></tr>
+<tr><td>Ice Cream, Vanlla, Regulr 11%</td><td>3 Fl Oz</td><td>5</td><td>100</td><td>12</td><td>2</td><td>22</td><td>50</td><td>3.4</td></tr>
+<tr><td>Ice Cream, Vanlla, Rich 16% Ft</td><td>1 Cup</td><td>24</td><td>350</td><td>32</td><td>4</td><td>88</td><td>148</td><td>14.7</td></tr>
+<tr><td>Ice Cream, Vanlla, Rich 16% Ft</td><td>1/2 Gal</td><td>190</td><td>2805</td><td>256</td><td>33</td><td>703</td><td>1188</td><td>118.3</td></tr>
+<tr><td>Ice Cream, Vanlla, Soft Serve</td><td>1 Cup</td><td>23</td><td>375</td><td>38</td><td>7</td><td>153</td><td>173</td><td>13.5</td></tr>
+<tr><td>Ice Milk, Vanilla, 4% Fat</td><td>1 Cup</td><td>6</td><td>185</td><td>29</td><td>5</td><td>18</td><td>131</td><td>3.5</td></tr>
+<tr><td>Ice Milk, Vanilla, 4% Fat</td><td>1/2 Gal</td><td>45</td><td>1470</td><td>232</td><td>41</td><td>146</td><td>1048</td><td>28.1</td></tr>
+<tr><td>Ice Milk, Vanilla,Softserv 3%</td><td>1 Cup</td><td>5</td><td>225</td><td>38</td><td>8</td><td>13</td><td>175</td><td>2.9</td></tr>
+<tr><td>Imitation Creamers, Liquid Frz</td><td>1 Tbsp</td><td>1</td><td>20</td><td>2</td><td>0</td><td>0</td><td>15</td><td>1.4</td></tr>
+<tr><td>Imitation Creamers, Powdered</td><td>1 Tsp</td><td>1</td><td>10</td><td>1</td><td>0</td><td>0</td><td>2</td><td>0.7</td></tr>
+<tr><td>Imitation Whipped Topping,Frzn</td><td>1 Cup</td><td>19</td><td>240</td><td>17</td><td>1</td><td>0</td><td>75</td><td>16.3</td></tr>
+<tr><td>Imitation Whipped Topping,Frzn</td><td>1 Tbsp</td><td>1</td><td>15</td><td>1</td><td>0</td><td>0</td><td>4</td><td>0.9</td></tr>
+<tr><td>Imitatn Sour Dressing</td><td>1 Cup</td><td>39</td><td>415</td><td>11</td><td>8</td><td>13</td><td>235</td><td>31.2</td></tr>
+<tr><td>Imitatn Sour Dressing</td><td>1 Tbsp</td><td>2</td><td>20</td><td>1</td><td>0</td><td>1</td><td>12</td><td>1.6</td></tr>
+<tr><td>Imitatn Whipd Toping,Pressrzd</td><td>1 Cup</td><td>16</td><td>185</td><td>11</td><td>1</td><td>0</td><td>70</td><td>13.2</td></tr>
+<tr><td>Imitatn Whipd Toping,Pressrzd</td><td>1 Tbsp</td><td>1</td><td>10</td><td>1</td><td>0</td><td>0</td><td>4</td><td>0.8</td></tr>
+<tr><td>Imitatn Whipd Toping,Pwdrd,Prp</td><td>1 Cup</td><td>10</td><td>150</td><td>13</td><td>3</td><td>8</td><td>80</td><td>8.5</td></tr>
+<tr><td>Imitatn Whipd Toping,Pwdrd,Prp</td><td>1 Tbsp</td><td>0</td><td>10</td><td>1</td><td>0</td><td>0</td><td>4</td><td>0.4</td></tr>
+<tr><td>Italian Bread</td><td>1 Loaf</td><td>4</td><td>1255</td><td>256</td><td>41</td><td>0</td><td>454</td><td>0.6</td></tr>
+<tr><td>Italian Bread</td><td>1 Slice</td><td>0</td><td>85</td><td>17</td><td>3</td><td>0</td><td>30</td><td>0</td></tr>
+<tr><td>Italian Salad Dressing,Localor</td><td>1 Tbsp</td><td>0</td><td>5</td><td>2</td><td>0</td><td>0</td><td>15</td><td>0</td></tr>
+<tr><td>Italian Salad Dressing,Regular</td><td>1 Tbsp</td><td>9</td><td>80</td><td>1</td><td>0</td><td>0</td><td>15</td><td>1.3</td></tr>
+<tr><td>Jams And Preserves</td><td>1 Pkt</td><td>0</td><td>40</td><td>10</td><td>0</td><td>0</td><td>14</td><td>0</td></tr>
+<tr><td>Jams And Preserves</td><td>1 Tbsp</td><td>0</td><td>55</td><td>14</td><td>0</td><td>0</td><td>20</td><td>0</td></tr>
+<tr><td>Jellies</td><td>1 Pkt</td><td>0</td><td>40</td><td>10</td><td>0</td><td>0</td><td>14</td><td>0</td></tr>
+<tr><td>Jellies</td><td>1 Tbsp</td><td>0</td><td>50</td><td>13</td><td>0</td><td>0</td><td>18</td><td>0</td></tr>
+<tr><td>Jelly Beans</td><td>1 Oz</td><td>0</td><td>105</td><td>26</td><td>0</td><td>0</td><td>28.35</td><td>0</td></tr>
+<tr><td>Jerusalem-Artichoke, Raw</td><td>1 Cup</td><td>0</td><td>115</td><td>26</td><td>3</td><td>0</td><td>150</td><td>0</td></tr>
+<tr><td>Kale, Cooked From Frozen</td><td>1 Cup</td><td>1</td><td>40</td><td>7</td><td>4</td><td>0</td><td>130</td><td>0.1</td></tr>
+<tr><td>Kale, Cooked From Raw</td><td>1 Cup</td><td>1</td><td>40</td><td>7</td><td>2</td><td>0</td><td>130</td><td>0.1</td></tr>
+<tr><td>Kiwifruit, Raw</td><td>1 Kiwi</td><td>0</td><td>45</td><td>11</td><td>1</td><td>0</td><td>76</td><td>0</td></tr>
+<tr><td>Kohlrabi, Cooked, Drained</td><td>1 Cup</td><td>0</td><td>50</td><td>11</td><td>3</td><td>0</td><td>165</td><td>0</td></tr>
+<tr><td>Lamb, Rib, Roasted, Lean Only</td><td>2 Oz</td><td>7</td><td>130</td><td>0</td><td>15</td><td>50</td><td>57</td><td>3.2</td></tr>
+<tr><td>Lamb, Rib, Roasted, Lean + Fat</td><td>3 Oz</td><td>26</td><td>315</td><td>0</td><td>18</td><td>77</td><td>85</td><td>12.1</td></tr>
+<tr><td>Lamb,Chops,Arm,Braised,Lean</td><td>1.7 Oz</td><td>7</td><td>135</td><td>0</td><td>17</td><td>59</td><td>48</td><td>2.9</td></tr>
+<tr><td>Lamb,Chops,Arm,Braised,Lean+Ft</td><td>2.2 Oz</td><td>15</td><td>220</td><td>0</td><td>20</td><td>77</td><td>63</td><td>6.9</td></tr>
+<tr><td>Lamb,Chops,Loin,Broil,Lean</td><td>2.3 Oz</td><td>6</td><td>140</td><td>0</td><td>19</td><td>60</td><td>64</td><td>2.6</td></tr>
+<tr><td>Lamb,Chops,Loin,Broil,Lean+Fat</td><td>2.8 Oz</td><td>16</td><td>235</td><td>0</td><td>22</td><td>78</td><td>80</td><td>7.3</td></tr>
+<tr><td>Lamb,Leg,Roasted, Lean Only</td><td>2.6 Oz</td><td>6</td><td>140</td><td>0</td><td>20</td><td>65</td><td>73</td><td>2.4</td></tr>
+<tr><td>Lamb,Leg,Roasted, Lean+ Fat</td><td>3 Oz</td><td>13</td><td>205</td><td>0</td><td>22</td><td>78</td><td>85</td><td>5.6</td></tr>
+<tr><td>Lard</td><td>1 Cup</td><td>205</td><td>1850</td><td>0</td><td>0</td><td>195</td><td>205</td><td>80.4</td></tr>
+<tr><td>Lard</td><td>1 Tbsp</td><td>13</td><td>115</td><td>0</td><td>0</td><td>12</td><td>13</td><td>5.1</td></tr>
+<tr><td>Lemon-Lime Soda</td><td>12 Fl Oz</td><td>0</td><td>155</td><td>39</td><td>0</td><td>0</td><td>372</td><td>0</td></tr>
+<tr><td>Lemon Juice, Canned</td><td>1 Cup</td><td>1</td><td>50</td><td>16</td><td>1</td><td>0</td><td>244</td><td>0.1</td></tr>
+<tr><td>Lemon Juice, Canned</td><td>1 Tbsp</td><td>0</td><td>5</td><td>1</td><td>0</td><td>0</td><td>15</td><td>0</td></tr>
+<tr><td>Lemon Juice, Raw</td><td>1 Cup</td><td>0</td><td>60</td><td>21</td><td>1</td><td>0</td><td>244</td><td>0</td></tr>
+<tr><td>Lemon Juice,Frzn,Single-Strngh</td><td>6 Fl Oz</td><td>1</td><td>55</td><td>16</td><td>1</td><td>0</td><td>244</td><td>0.1</td></tr>
+<tr><td>Lemon Meringue Pie</td><td>1 Pie</td><td>86</td><td>2140</td><td>317</td><td>31</td><td>857</td><td>840</td><td>26</td></tr>
+<tr><td>Lemon Meringue Pie</td><td>1 Piece</td><td>14</td><td>355</td><td>53</td><td>5</td><td>143</td><td>140</td><td>4.3</td></tr>
+<tr><td>Lemonade,Concentrate,Frz,Undil</td><td>6 Fl Oz</td><td>0</td><td>425</td><td>112</td><td>0</td><td>0</td><td>219</td><td>0</td></tr>
+<tr><td>Lemonade,Concen,Frzen,Diluted</td><td>6 Fl Oz</td><td>0</td><td>80</td><td>21</td><td>0</td><td>0</td><td>185</td><td>0</td></tr>
+<tr><td>Lemons, Raw</td><td>1 Lemon</td><td>0</td><td>15</td><td>5</td><td>1</td><td>0</td><td>58</td><td>0</td></tr>
+<tr><td>Lentils, Dry, Cooked</td><td>1 Cup</td><td>1</td><td>215</td><td>38</td><td>16</td><td>0</td><td>200</td><td>0.1</td></tr>
+<tr><td>Lettuce, Butterhead, Raw,Head</td><td>1 Head</td><td>0</td><td>20</td><td>4</td><td>2</td><td>0</td><td>163</td><td>0</td></tr>
+<tr><td>Lettuce, Butterhead, Raw,Leave</td><td>1 Leaf</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>15</td><td>0</td></tr>
+<tr><td>Lettuce, Crisphead, Raw, Head</td><td>1 Head</td><td>1</td><td>70</td><td>11</td><td>5</td><td>0</td><td>539</td><td>0.1</td></tr>
+<tr><td>Lettuce, Crisphead, Raw,Pieces</td><td>1 Cup</td><td>0</td><td>5</td><td>1</td><td>1</td><td>0</td><td>55</td><td>0</td></tr>
+<tr><td>Lettuce, Crisphead, Raw,Wedge</td><td>1 Wedge</td><td>0</td><td>20</td><td>3</td><td>1</td><td>0</td><td>135</td><td>0</td></tr>
+<tr><td>Lettuce, Looseleaf</td><td>1 Cup</td><td>0</td><td>10</td><td>2</td><td>1</td><td>0</td><td>56</td><td>0</td></tr>
+<tr><td>Light, Coffee Or Table Cream</td><td>1 Cup</td><td>46</td><td>470</td><td>9</td><td>6</td><td>159</td><td>240</td><td>28.8</td></tr>
+<tr><td>Light, Coffee Or Table Cream</td><td>1 Tbsp</td><td>3</td><td>30</td><td>1</td><td>0</td><td>10</td><td>15</td><td>1.8</td></tr>
+<tr><td>Lima Beans, Dry, Cooked,Draned</td><td>1 Cup</td><td>1</td><td>260</td><td>49</td><td>16</td><td>0</td><td>190</td><td>0.2</td></tr>
+<tr><td>Lima Beans,Baby, Frzn,Cked,Drn</td><td>1 Cup</td><td>1</td><td>190</td><td>35</td><td>12</td><td>0</td><td>180</td><td>0.1</td></tr>
+<tr><td>Lima Beans,Thick Seed,Frzn,Ckd</td><td>1 Cup</td><td>1</td><td>170</td><td>32</td><td>10</td><td>0</td><td>170</td><td>0.1</td></tr>
+<tr><td>Lime Juice, Raw</td><td>1 Cup</td><td>0</td><td>65</td><td>22</td><td>1</td><td>0</td><td>246</td><td>0</td></tr>
+<tr><td>Lime Juice,Canned</td><td>1 Cup</td><td>1</td><td>50</td><td>16</td><td>1</td><td>0</td><td>246</td><td>0.1</td></tr>
+<tr><td>Limeade,Concentrate,Frzn,Undil</td><td>6 Fl Oz</td><td>0</td><td>410</td><td>108</td><td>0</td><td>0</td><td>218</td><td>0</td></tr>
+<tr><td>Limeade,Concen,Frozen,Diluted</td><td>6 Fl Oz</td><td>0</td><td>75</td><td>20</td><td>0</td><td>0</td><td>185</td><td>0</td></tr>
+<tr><td>Lucky Charms Cereal</td><td>1 Oz</td><td>1</td><td>110</td><td>23</td><td>3</td><td>0</td><td>28.35</td><td>0.2</td></tr>
+<tr><td>Macadamia Nuts, Oilrstd,Salted</td><td>1 Cup</td><td>103</td><td>960</td><td>17</td><td>10</td><td>0</td><td>134</td><td>15.4</td></tr>
+<tr><td>Macadamia Nuts, Oilrstd,Salted</td><td>1 Oz</td><td>22</td><td>205</td><td>4</td><td>2</td><td>0</td><td>28.35</td><td>3.2</td></tr>
+<tr><td>Macadamia Nuts, Oilrstd,Unsalt</td><td>1 Cup</td><td>103</td><td>960</td><td>17</td><td>10</td><td>0</td><td>134</td><td>15.4</td></tr>
+<tr><td>Macadamia Nuts, Oilrstd,Unsalt</td><td>1 Oz</td><td>22</td><td>205</td><td>4</td><td>2</td><td>0</td><td>28.35</td><td>3.2</td></tr>
+<tr><td>Macaroni And Cheese, Canned</td><td>1 Cup</td><td>10</td><td>230</td><td>26</td><td>9</td><td>24</td><td>240</td><td>4.7</td></tr>
+<tr><td>Macaroni And Cheese, Home Rcpe</td><td>1 Cup</td><td>22</td><td>430</td><td>40</td><td>17</td><td>44</td><td>200</td><td>9.8</td></tr>
+<tr><td>Macaroni, Cooked, Firm</td><td>1 Cup</td><td>1</td><td>190</td><td>39</td><td>7</td><td>0</td><td>130</td><td>0.1</td></tr>
+<tr><td>Macaroni, Cooked, Tender, Hot</td><td>1 Cup</td><td>1</td><td>155</td><td>32</td><td>5</td><td>0</td><td>140</td><td>0.1</td></tr>
+<tr><td>Macaroni, Cooked, Tender,Cold</td><td>1 Cup</td><td>0</td><td>115</td><td>24</td><td>4</td><td>0</td><td>105</td><td>0.1</td></tr>
+<tr><td>Malt-O-Meal, With Salt</td><td>1 Cup</td><td>0</td><td>120</td><td>26</td><td>4</td><td>0</td><td>240</td><td>0</td></tr>
+<tr><td>Malt-O-Meal, W/O Salt</td><td>1 Cup</td><td>0</td><td>120</td><td>26</td><td>4</td><td>0</td><td>240</td><td>0</td></tr>
+<tr><td>Malted Milk, Chocolate, Powder</td><td>3/4 Oz</td><td>1</td><td>85</td><td>18</td><td>1</td><td>1</td><td>21</td><td>0.5</td></tr>
+<tr><td>Malted Milk,Chocolate, Pwdrppd</td><td>1 Servng</td><td>9</td><td>235</td><td>29</td><td>9</td><td>34</td><td>265</td><td>5.5</td></tr>
+<tr><td>Malted Milk,Natural, Powder</td><td>3/4 Oz</td><td>2</td><td>85</td><td>15</td><td>3</td><td>4</td><td>21</td><td>0.9</td></tr>
+<tr><td>Malted Milk,Natural, Pwdr Pprd</td><td>1 Servng</td><td>10</td><td>235</td><td>27</td><td>11</td><td>37</td><td>265</td><td>6</td></tr>
+<tr><td>Mangos, Raw</td><td>1 Mango</td><td>1</td><td>135</td><td>35</td><td>1</td><td>0</td><td>207</td><td>0.1</td></tr>
+<tr><td>Margarine, Imitation 40% Fat</td><td>1 Tbsp</td><td>5</td><td>50</td><td>0</td><td>0</td><td>0</td><td>14</td><td>1.1</td></tr>
+<tr><td>Margarine, Imitation 40% Fat</td><td>8 Oz</td><td>88</td><td>785</td><td>1</td><td>1</td><td>0</td><td>227</td><td>17.5</td></tr>
+<tr><td>Margarine, Regulr,Hard,80% Fat</td><td>1 Pat</td><td>4</td><td>35</td><td>0</td><td>0</td><td>0</td><td>5</td><td>0.8</td></tr>
+<tr><td>Margarine, Regulr,Hard,80% Fat</td><td>1 Tbsp</td><td>11</td><td>100</td><td>0</td><td>0</td><td>0</td><td>14</td><td>2.2</td></tr>
+<tr><td>Margarine, Regulr,Hard,80% Fat</td><td>1/2 Cup</td><td>91</td><td>810</td><td>1</td><td>1</td><td>0</td><td>113</td><td>17.9</td></tr>
+<tr><td>Margarine, Regulr,Soft,80% Fat</td><td>1 Tbsp</td><td>11</td><td>100</td><td>0</td><td>0</td><td>0</td><td>14</td><td>1.9</td></tr>
+<tr><td>Margarine, Regulr,Soft,80% Fat</td><td>8 Oz</td><td>183</td><td>1625</td><td>1</td><td>2</td><td>0</td><td>227</td><td>31.3</td></tr>
+<tr><td>Margarine, Spread,Hard,60% Fat</td><td>1 Pat</td><td>3</td><td>25</td><td>0</td><td>0</td><td>0</td><td>5</td><td>0.7</td></tr>
+<tr><td>Margarine, Spread,Hard,60% Fat</td><td>1 Tbsp</td><td>9</td><td>75</td><td>0</td><td>0</td><td>0</td><td>14</td><td>2</td></tr>
+<tr><td>Margarine, Spread,Hard,60% Fat</td><td>1/2 Cup</td><td>69</td><td>610</td><td>0</td><td>1</td><td>0</td><td>113</td><td>15.9</td></tr>
+<tr><td>Margarine, Spread,Soft,60% Fat</td><td>1 Tbsp</td><td>9</td><td>75</td><td>0</td><td>0</td><td>0</td><td>14</td><td>1.8</td></tr>
+<tr><td>Margarine, Spread,Soft,60% Fat</td><td>8 Oz</td><td>138</td><td>1225</td><td>0</td><td>1</td><td>0</td><td>227</td><td>29.1</td></tr>
+<tr><td>Marshmallows</td><td>1 Oz</td><td>0</td><td>90</td><td>23</td><td>1</td><td>0</td><td>28.35</td><td>0</td></tr>
+<tr><td>Mayonnaise Type Salad Dressing</td><td>1 Tbsp</td><td>5</td><td>60</td><td>4</td><td>0</td><td>4</td><td>15</td><td>0.7</td></tr>
+<tr><td>Mayonnaise, Imitation</td><td>1 Tbsp</td><td>3</td><td>35</td><td>2</td><td>0</td><td>4</td><td>15</td><td>0.5</td></tr>
+<tr><td>Mayonnaise, Regular</td><td>1 Tbsp</td><td>11</td><td>100</td><td>0</td><td>0</td><td>8</td><td>14</td><td>1.7</td></tr>
+<tr><td>Melba Toast, Plain</td><td>1 Piece</td><td>0</td><td>20</td><td>4</td><td>1</td><td>0</td><td>5</td><td>0.1</td></tr>
+<tr><td>Milk Chocolate Candy, Plain</td><td>1 Oz</td><td>9</td><td>145</td><td>16</td><td>2</td><td>6</td><td>28.35</td><td>5.4</td></tr>
+<tr><td>Milk Chocolate Candy,W/ Almond</td><td>1 Oz</td><td>10</td><td>150</td><td>15</td><td>3</td><td>5</td><td>28.35</td><td>4.8</td></tr>
+<tr><td>Milk Chocolate Candy,W/ Penuts</td><td>1 Oz</td><td>11</td><td>155</td><td>13</td><td>4</td><td>5</td><td>28.35</td><td>4.2</td></tr>
+<tr><td>Milk Chocolate Candy,W/ Rice C</td><td>1 Oz</td><td>7</td><td>140</td><td>18</td><td>2</td><td>6</td><td>28.35</td><td>4.4</td></tr>
+<tr><td>Milk, Lofat, 1%, Added Solids</td><td>1 Cup</td><td>2</td><td>105</td><td>12</td><td>9</td><td>10</td><td>245</td><td>1.5</td></tr>
+<tr><td>Milk, Lofat, 1%, No Addedsolid</td><td>1 Cup</td><td>3</td><td>100</td><td>12</td><td>8</td><td>10</td><td>244</td><td>1.6</td></tr>
+<tr><td>Milk, Lofat, 2%, Added Solids</td><td>1 Cup</td><td>5</td><td>125</td><td>12</td><td>9</td><td>18</td><td>245</td><td>2.9</td></tr>
+<tr><td>Milk, Lofat, 2%, No Addedsolid</td><td>1 Cup</td><td>5</td><td>120</td><td>12</td><td>8</td><td>18</td><td>244</td><td>2.9</td></tr>
+<tr><td>Milk, Skim, Added Milk Solids</td><td>1 Cup</td><td>1</td><td>90</td><td>12</td><td>9</td><td>5</td><td>245</td><td>0.4</td></tr>
+<tr><td>Milk, Skim, No Added Milksolid</td><td>1 Cup</td><td>0</td><td>85</td><td>12</td><td>8</td><td>4</td><td>245</td><td>0.3</td></tr>
+<tr><td>Milk, Whole, 3.3% Fat</td><td>1 Cup</td><td>8</td><td>150</td><td>11</td><td>8</td><td>33</td><td>244</td><td>5.1</td></tr>
+<tr><td>Minestrone Soup, Canned</td><td>1 Cup</td><td>3</td><td>80</td><td>11</td><td>4</td><td>2</td><td>241</td><td>0.6</td></tr>
+<tr><td>Miso</td><td>1 Cup</td><td>13</td><td>470</td><td>65</td><td>29</td><td>0</td><td>276</td><td>1.8</td></tr>
+<tr><td>Mixed Grain Bread</td><td>1 Loaf</td><td>17</td><td>1165</td><td>212</td><td>45</td><td>0</td><td>454</td><td>3.2</td></tr>
+<tr><td>Mixed Grain Bread</td><td>1 Slice</td><td>1</td><td>65</td><td>12</td><td>2</td><td>0</td><td>25</td><td>0.2</td></tr>
+<tr><td>Mixed Grain Bread, Toasted</td><td>1 Slice</td><td>1</td><td>65</td><td>12</td><td>2</td><td>0</td><td>23</td><td>0.2</td></tr>
+<tr><td>Mixed Nuts W/ Peants,Dry,Saltd</td><td>1 Oz</td><td>15</td><td>170</td><td>7</td><td>5</td><td>0</td><td>28.35</td><td>2</td></tr>
+<tr><td>Mixed Nuts W/ Peants,Dry,Unslt</td><td>1 Oz</td><td>15</td><td>170</td><td>7</td><td>5</td><td>0</td><td>28.35</td><td>2</td></tr>
+<tr><td>Mixed Nuts W/ Peants,Oil,Saltd</td><td>1 Oz</td><td>16</td><td>175</td><td>6</td><td>5</td><td>0</td><td>28.35</td><td>2.5</td></tr>
+<tr><td>Mixed Nuts W/ Peants,Oil,Unslt</td><td>1 Oz</td><td>16</td><td>175</td><td>6</td><td>5</td><td>0</td><td>28.35</td><td>2.5</td></tr>
+<tr><td>Molasses, Cane, Blackstrap</td><td>2 Tbsp</td><td>0</td><td>85</td><td>22</td><td>0</td><td>0</td><td>40</td><td>0</td></tr>
+<tr><td>Mozzarella Cheese, Whole Milk</td><td>1 Oz</td><td>6</td><td>80</td><td>1</td><td>6</td><td>22</td><td>28.35</td><td>3.7</td></tr>
+<tr><td>Mozzarella Chese,Skim, Lomoist</td><td>1 Oz</td><td>5</td><td>80</td><td>1</td><td>8</td><td>15</td><td>28.35</td><td>3.1</td></tr>
+<tr><td>Muenster Cheese</td><td>1 Oz</td><td>9</td><td>105</td><td>0</td><td>7</td><td>27</td><td>28.35</td><td>5.4</td></tr>
+<tr><td>Mushroom Gravy, Canned</td><td>1 Cup</td><td>6</td><td>120</td><td>13</td><td>3</td><td>0</td><td>238</td><td>1</td></tr>
+<tr><td>Mushrooms, Canned, Drnd,W/Salt</td><td>1 Cup</td><td>0</td><td>35</td><td>8</td><td>3</td><td>0</td><td>156</td><td>0.1</td></tr>
+<tr><td>Mushrooms, Cooked, Drained</td><td>1 Cup</td><td>1</td><td>40</td><td>8</td><td>3</td><td>0</td><td>156</td><td>0.1</td></tr>
+<tr><td>Mushrooms, Raw</td><td>1 Cup</td><td>0</td><td>20</td><td>3</td><td>1</td><td>0</td><td>70</td><td>0</td></tr>
+<tr><td>Mustard Greens, Cooked, Draned</td><td>1 Cup</td><td>0</td><td>20</td><td>3</td><td>3</td><td>0</td><td>140</td><td>0</td></tr>
+<tr><td>Mustard, Prepared, Yellow</td><td>1 Tsp</td><td>0</td><td>5</td><td>0</td><td>0</td><td>0</td><td>5</td><td>0</td></tr>
+<tr><td>Nature Valley Granola Cereal</td><td>1 Oz</td><td>5</td><td>125</td><td>19</td><td>3</td><td>0</td><td>28.35</td><td>3.3</td></tr>
+<tr><td>Nectarines, Raw</td><td>1 Nectrn</td><td>1</td><td>65</td><td>16</td><td>1</td><td>0</td><td>136</td><td>0.1</td></tr>
+<tr><td>Nonfat Dry Milk, Instantized</td><td>1 Cup</td><td>0</td><td>245</td><td>35</td><td>24</td><td>12</td><td>68</td><td>0.3</td></tr>
+<tr><td>Nonfat Dry Milk, Instantized</td><td>1 Envlpe</td><td>1</td><td>325</td><td>47</td><td>32</td><td>17</td><td>91</td><td>0.4</td></tr>
+<tr><td>Noodles, Chow Mein, Canned</td><td>1 Cup</td><td>11</td><td>220</td><td>26</td><td>6</td><td>5</td><td>45</td><td>2.1</td></tr>
+<tr><td>Noodles, Egg, Cooked</td><td>1 Cup</td><td>2</td><td>200</td><td>37</td><td>7</td><td>50</td><td>160</td><td>0.5</td></tr>
+<tr><td>Oatmeal Bread</td><td>1 Loaf</td><td>20</td><td>1145</td><td>212</td><td>38</td><td>0</td><td>454</td><td>3.7</td></tr>
+<tr><td>Oatmeal Bread</td><td>1 Slice</td><td>1</td><td>65</td><td>12</td><td>2</td><td>0</td><td>25</td><td>0.2</td></tr>
+<tr><td>Oatmeal Bread, Toasted</td><td>1 Slice</td><td>1</td><td>65</td><td>12</td><td>2</td><td>0</td><td>23</td><td>0.2</td></tr>
+<tr><td>Oatmeal W/ Raisins Cookies</td><td>4 Cookie</td><td>10</td><td>245</td><td>36</td><td>3</td><td>2</td><td>52</td><td>2.5</td></tr>
+<tr><td>Oatmeal,Ckd,Instnt,Flvrd,Fortf</td><td>1 Pkt</td><td>2</td><td>160</td><td>31</td><td>5</td><td>0</td><td>164</td><td>0.3</td></tr>
+<tr><td>Oatmeal,Ckd,Instnt,Plain,Fortf</td><td>1 Pkt</td><td>2</td><td>105</td><td>18</td><td>4</td><td>0</td><td>177</td><td>0.3</td></tr>
+<tr><td>Oatmeal,Ckd,Rg,Qck,Inst,W/Osal</td><td>1 Cup</td><td>2</td><td>145</td><td>25</td><td>6</td><td>0</td><td>234</td><td>0.4</td></tr>
+<tr><td>Oatmeal,Ckd,Rg,Qck,Inst,W/Salt</td><td>1 Cup</td><td>2</td><td>145</td><td>25</td><td>6</td><td>0</td><td>234</td><td>0.4</td></tr>
+<tr><td>Ocean Perch, Breaded, Fried</td><td>1 Fillet</td><td>11</td><td>185</td><td>7</td><td>16</td><td>66</td><td>85</td><td>2.6</td></tr>
+<tr><td>Okra Pods, Cooked</td><td>8 Pods</td><td>0</td><td>25</td><td>6</td><td>2</td><td>0</td><td>85</td><td>0</td></tr>
+<tr><td>Olive Oil</td><td>1 Cup</td><td>216</td><td>1910</td><td>0</td><td>0</td><td>0</td><td>216</td><td>29.2</td></tr>
+<tr><td>Olive Oil</td><td>1 Tbsp</td><td>14</td><td>125</td><td>0</td><td>0</td><td>0</td><td>14</td><td>1.9</td></tr>
+<tr><td>Olives, Canned, Green</td><td>4 Medium</td><td>2</td><td>15</td><td>0</td><td>0</td><td>0</td><td>13</td><td>0.2</td></tr>
+<tr><td>Olives, Canned, Ripe, Mission</td><td>3 Small</td><td>2</td><td>15</td><td>0</td><td>0</td><td>0</td><td>9</td><td>0.3</td></tr>
+<tr><td>Onion Powder</td><td>1 Tsp</td><td>0</td><td>5</td><td>2</td><td>0</td><td>0</td><td>2.1</td><td>0</td></tr>
+<tr><td>Onion Rings, Breaded,Frzn,Prpd</td><td>2 Rings</td><td>5</td><td>80</td><td>8</td><td>1</td><td>0</td><td>20</td><td>1.7</td></tr>
+<tr><td>Onion Soup, Dehydratd, Prepred</td><td>1 Pkt</td><td>0</td><td>20</td><td>4</td><td>1</td><td>0</td><td>184</td><td>0.1</td></tr>
+<tr><td>Onion Soup, Dehydrtd, Unprpred</td><td>1 Pkt</td><td>0</td><td>20</td><td>4</td><td>1</td><td>0</td><td>7</td><td>0.1</td></tr>
+<tr><td>Onions, Raw, Chopped</td><td>1 Cup</td><td>0</td><td>55</td><td>12</td><td>2</td><td>0</td><td>160</td><td>0.1</td></tr>
+<tr><td>Onions, Raw, Cooked, Drained</td><td>1 Cup</td><td>0</td><td>60</td><td>13</td><td>2</td><td>0</td><td>210</td><td>0.1</td></tr>
+<tr><td>Onions, Raw, Sliced</td><td>1 Cup</td><td>0</td><td>40</td><td>8</td><td>1</td><td>0</td><td>115</td><td>0.1</td></tr>
+<tr><td>Onions, Spring, Raw</td><td>6 Onion</td><td>0</td><td>10</td><td>2</td><td>1</td><td>0</td><td>30</td><td>0</td></tr>
+<tr><td>Orange Juice, Canned</td><td>1 Cup</td><td>0</td><td>105</td><td>25</td><td>1</td><td>0</td><td>249</td><td>0</td></tr>
+<tr><td>Orange Juice, Chilled</td><td>1 Cup</td><td>1</td><td>110</td><td>25</td><td>2</td><td>0</td><td>249</td><td>0.1</td></tr>
+<tr><td>Orange Juice, Raw</td><td>1 Cup</td><td>0</td><td>110</td><td>26</td><td>2</td><td>0</td><td>248</td><td>0.1</td></tr>
+<tr><td>Orange Juice,Frozen Concentrte</td><td>6 Fl Oz</td><td>0</td><td>340</td><td>81</td><td>5</td><td>0</td><td>213</td><td>0.1</td></tr>
+<tr><td>Orange Juice,Frzn,Cncn,Diluted</td><td>1 Cup</td><td>0</td><td>110</td><td>27</td><td>2</td><td>0</td><td>249</td><td>0</td></tr>
+<tr><td>Orange Soda</td><td>12 Fl Oz</td><td>0</td><td>180</td><td>46</td><td>0</td><td>0</td><td>372</td><td>0</td></tr>
+<tr><td>Orange + Grapefruit Juce,Cannd</td><td>1 Cup</td><td>0</td><td>105</td><td>25</td><td>1</td><td>0</td><td>247</td><td>0</td></tr>
+<tr><td>Oranges, Raw</td><td>1 Orange</td><td>0</td><td>60</td><td>15</td><td>1</td><td>0</td><td>131</td><td>0</td></tr>
+<tr><td>Oranges, Raw, Sections</td><td>1 Cup</td><td>0</td><td>85</td><td>21</td><td>2</td><td>0</td><td>180</td><td>0</td></tr>
+<tr><td>Oregano</td><td>1 Tsp</td><td>0</td><td>5</td><td>1</td><td>0</td><td>0</td><td>1.5</td><td>0</td></tr>
+<tr><td>Oysters, Breaded, Fried</td><td>1 Oyster</td><td>5</td><td>90</td><td>5</td><td>5</td><td>35</td><td>45</td><td>1.4</td></tr>
+<tr><td>Oysters, Raw</td><td>1 Cup</td><td>4</td><td>160</td><td>8</td><td>20</td><td>120</td><td>240</td><td>1.4</td></tr>
+<tr><td>Pancakes, Buckwheat, From Mix</td><td>1 Pancak</td><td>2</td><td>55</td><td>6</td><td>2</td><td>20</td><td>27</td><td>0.9</td></tr>
+<tr><td>Pancakes, Plain, From Mix</td><td>1 Pancak</td><td>2</td><td>60</td><td>8</td><td>2</td><td>16</td><td>27</td><td>0.5</td></tr>
+<tr><td>Pancakes, Plain, Home Recipe</td><td>1 Pancak</td><td>2</td><td>60</td><td>9</td><td>2</td><td>16</td><td>27</td><td>0.5</td></tr>
+<tr><td>Papayas, Raw</td><td>1 Cup</td><td>0</td><td>65</td><td>17</td><td>1</td><td>0</td><td>140</td><td>0.1</td></tr>
+<tr><td>Paprika</td><td>1 Tsp</td><td>0</td><td>5</td><td>1</td><td>0</td><td>0</td><td>2.1</td><td>0</td></tr>
+<tr><td>Parmesan Cheese, Grated</td><td>1 Cup</td><td>30</td><td>455</td><td>4</td><td>42</td><td>79</td><td>100</td><td>19.1</td></tr>
+<tr><td>Parmesan Cheese, Grated</td><td>1 Oz</td><td>9</td><td>130</td><td>1</td><td>12</td><td>22</td><td>28.35</td><td>5.4</td></tr>
+<tr><td>Parmesan Cheese, Grated</td><td>1 Tbsp</td><td>2</td><td>25</td><td>0</td><td>2</td><td>4</td><td>5</td><td>1</td></tr>
+<tr><td>Parsley, Freeze-Dried</td><td>1 Tbsp</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.4</td><td>0</td></tr>
+<tr><td>Parsley, Raw</td><td>10 Sprig</td><td>0</td><td>5</td><td>1</td><td>0</td><td>0</td><td>10</td><td>0</td></tr>
+<tr><td>Parsnips, Cooked, Drained</td><td>1 Cup</td><td>0</td><td>125</td><td>30</td><td>2</td><td>0</td><td>156</td><td>0.1</td></tr>
+<tr><td>Pasterzd Proces Cheese, Swiss</td><td>1 Oz</td><td>7</td><td>95</td><td>1</td><td>7</td><td>24</td><td>28.35</td><td>4.5</td></tr>
+<tr><td>Pasterzd Proces Cheese,Americn</td><td>1 Oz</td><td>9</td><td>105</td><td>0</td><td>6</td><td>27</td><td>28.35</td><td>5.6</td></tr>
+<tr><td>Pasterzd Proces Chese Food,Amr</td><td>1 Oz</td><td>7</td><td>95</td><td>2</td><td>6</td><td>18</td><td>28.35</td><td>4.4</td></tr>
+<tr><td>Pasterzd Proces Chese Spred,Am</td><td>1 Oz</td><td>6</td><td>80</td><td>2</td><td>5</td><td>16</td><td>28.35</td><td>3.8</td></tr>
+<tr><td>Pea Beans, Dry, Cooked,Drained</td><td>1 Cup</td><td>1</td><td>225</td><td>40</td><td>15</td><td>0</td><td>190</td><td>0.1</td></tr>
+<tr><td>Peach Pie</td><td>1 Pie</td><td>101</td><td>2410</td><td>361</td><td>24</td><td>0</td><td>945</td><td>24.6</td></tr>
+<tr><td>Peach Pie</td><td>1 Piece</td><td>17</td><td>405</td><td>60</td><td>4</td><td>0</td><td>158</td><td>4.1</td></tr>
+<tr><td>Peaches, Canned, Heavy Syrup</td><td>1 Cup</td><td>0</td><td>190</td><td>51</td><td>1</td><td>0</td><td>256</td><td>0</td></tr>
+<tr><td>Peaches, Canned, Heavy Syrup</td><td>1 Half</td><td>0</td><td>60</td><td>16</td><td>0</td><td>0</td><td>81</td><td>0</td></tr>
+<tr><td>Peaches, Canned, Juice Pack</td><td>1 Cup</td><td>0</td><td>110</td><td>29</td><td>2</td><td>0</td><td>248</td><td>0</td></tr>
+<tr><td>Peaches, Canned, Juice Pack</td><td>1 Half</td><td>0</td><td>35</td><td>9</td><td>0</td><td>0</td><td>77</td><td>0</td></tr>
+<tr><td>Peaches, Dried</td><td>1 Cup</td><td>1</td><td>380</td><td>98</td><td>6</td><td>0</td><td>160</td><td>0.1</td></tr>
+<tr><td>Peaches, Dried,Cooked,Unswetnd</td><td>1 Cup</td><td>1</td><td>200</td><td>51</td><td>3</td><td>0</td><td>258</td><td>0.1</td></tr>
+<tr><td>Peaches, Frozen,Swetned,W/Vitc</td><td>1 Cup</td><td>0</td><td>235</td><td>60</td><td>2</td><td>0</td><td>250</td><td>0</td></tr>
+<tr><td>Peaches, Frozen,Swetned,W/Vitc</td><td>10 Oz</td><td>0</td><td>265</td><td>68</td><td>2</td><td>0</td><td>284</td><td>0</td></tr>
+<tr><td>Peaches, Raw</td><td>1 Peach</td><td>0</td><td>35</td><td>10</td><td>1</td><td>0</td><td>87</td><td>0</td></tr>
+<tr><td>Peaches, Raw, Sliced</td><td>1 Cup</td><td>0</td><td>75</td><td>19</td><td>1</td><td>0</td><td>170</td><td>0</td></tr>
+<tr><td>Peanut Butter</td><td>1 Tbsp</td><td>8</td><td>95</td><td>3</td><td>5</td><td>0</td><td>16</td><td>1.4</td></tr>
+<tr><td>Peanut Butter Cookie,Home Recp</td><td>4 Cookie</td><td>14</td><td>245</td><td>28</td><td>4</td><td>22</td><td>48</td><td>4</td></tr>
+<tr><td>Peanut Oil</td><td>1 Cup</td><td>216</td><td>1910</td><td>0</td><td>0</td><td>0</td><td>216</td><td>36.5</td></tr>
+<tr><td>Peanut Oil</td><td>1 Tbsp</td><td>14</td><td>125</td><td>0</td><td>0</td><td>0</td><td>14</td><td>2.4</td></tr>
+<tr><td>Peanuts, Oil Roasted, Salted</td><td>1 Cup</td><td>71</td><td>840</td><td>27</td><td>39</td><td>0</td><td>145</td><td>9.9</td></tr>
+<tr><td>Peanuts, Oil Roasted, Salted</td><td>1 Oz</td><td>14</td><td>165</td><td>5</td><td>8</td><td>0</td><td>28.35</td><td>1.9</td></tr>
+<tr><td>Peanuts, Oil Roasted, Unsalted</td><td>1 Cup</td><td>71</td><td>840</td><td>27</td><td>39</td><td>0</td><td>145</td><td>9.9</td></tr>
+<tr><td>Peanuts, Oil Roasted, Unsalted</td><td>1 Oz</td><td>14</td><td>165</td><td>5</td><td>8</td><td>0</td><td>28.35</td><td>1.9</td></tr>
+<tr><td>Pears, Canned, Heavy Syrup</td><td>1 Cup</td><td>0</td><td>190</td><td>49</td><td>1</td><td>0</td><td>255</td><td>0</td></tr>
+<tr><td>Pears, Canned, Heavy Syrup</td><td>1 Half</td><td>0</td><td>60</td><td>15</td><td>0</td><td>0</td><td>79</td><td>0</td></tr>
+<tr><td>Pears, Canned, Juice Pack</td><td>1 Cup</td><td>0</td><td>125</td><td>32</td><td>1</td><td>0</td><td>248</td><td>0</td></tr>
+<tr><td>Pears, Canned, Juice Pack</td><td>1 Half</td><td>0</td><td>40</td><td>10</td><td>0</td><td>0</td><td>77</td><td>0</td></tr>
+<tr><td>Pears, Raw, Bartlett</td><td>1 Pear</td><td>1</td><td>100</td><td>25</td><td>1</td><td>0</td><td>166</td><td>0</td></tr>
+<tr><td>Pears, Raw, Bosc</td><td>1 Pear</td><td>1</td><td>85</td><td>21</td><td>1</td><td>0</td><td>141</td><td>0</td></tr>
+<tr><td>Pears, Raw, D'Anjou</td><td>1 Pear</td><td>1</td><td>120</td><td>30</td><td>1</td><td>0</td><td>200</td><td>0</td></tr>
+<tr><td>Peas, Edible Pod, Cooked,Drned</td><td>1 Cup</td><td>0</td><td>65</td><td>11</td><td>5</td><td>0</td><td>160</td><td>0.1</td></tr>
+<tr><td>Peas, Green,Cnnd,Drnd, W/ Salt</td><td>1 Cup</td><td>1</td><td>115</td><td>21</td><td>8</td><td>0</td><td>170</td><td>0.1</td></tr>
+<tr><td>Peas, Green,Cnnd,Drnd,W/O Salt</td><td>1 Cup</td><td>1</td><td>115</td><td>21</td><td>8</td><td>0</td><td>170</td><td>0.1</td></tr>
+<tr><td>Peas, Split, Dry, Cooked</td><td>1 Cup</td><td>1</td><td>230</td><td>42</td><td>16</td><td>0</td><td>200</td><td>0.1</td></tr>
+<tr><td>Peas,Grn, Frozen Cooked,Draned</td><td>1 Cup</td><td>0</td><td>125</td><td>23</td><td>8</td><td>0</td><td>160</td><td>0.1</td></tr>
+<tr><td>Pea, Green, Soup, Canned</td><td>1 Cup</td><td>3</td><td>165</td><td>27</td><td>9</td><td>0</td><td>250</td><td>1.4</td></tr>
+<tr><td>Pecan Pie</td><td>1 Pie</td><td>189</td><td>3450</td><td>423</td><td>42</td><td>569</td><td>825</td><td>28.1</td></tr>
+<tr><td>Pecan Pie</td><td>1 Piece</td><td>32</td><td>575</td><td>71</td><td>7</td><td>95</td><td>138</td><td>4.7</td></tr>
+<tr><td>Pecans, Halves</td><td>1 Cup</td><td>73</td><td>720</td><td>20</td><td>8</td><td>0</td><td>108</td><td>5.9</td></tr>
+<tr><td>Pecans, Halves</td><td>1 Oz</td><td>19</td><td>190</td><td>5</td><td>2</td><td>0</td><td>28.35</td><td>1.5</td></tr>
+<tr><td>Pepper-Type Soda</td><td>12 Fl Oz</td><td>0</td><td>160</td><td>41</td><td>0</td><td>0</td><td>369</td><td>0</td></tr>
+<tr><td>Peppers, Hot Chili, Raw, Green</td><td>1 Pepper</td><td>0</td><td>20</td><td>4</td><td>1</td><td>0</td><td>45</td><td>0</td></tr>
+<tr><td>Peppers, Hot Chili, Raw, Red</td><td>1 Pepper</td><td>0</td><td>20</td><td>4</td><td>1</td><td>0</td><td>45</td><td>0</td></tr>
+<tr><td>Peppers, Sweet, Cooked, Green</td><td>1 Pepper</td><td>0</td><td>15</td><td>3</td><td>0</td><td>0</td><td>73</td><td>0</td></tr>
+<tr><td>Peppers, Sweet, Cooked, Red</td><td>1 Pepper</td><td>0</td><td>15</td><td>3</td><td>0</td><td>0</td><td>73</td><td>0</td></tr>
+<tr><td>Peppers, Sweet, Raw, Green</td><td>1 Pepper</td><td>0</td><td>20</td><td>4</td><td>1</td><td>0</td><td>74</td><td>0</td></tr>
+<tr><td>Peppers, Sweet, Raw, Red</td><td>1 Pepper</td><td>0</td><td>20</td><td>4</td><td>1</td><td>0</td><td>74</td><td>0</td></tr>
+<tr><td>Pepper, Black</td><td>1 Tsp</td><td>0</td><td>5</td><td>1</td><td>0</td><td>0</td><td>2.1</td><td>0</td></tr>
+<tr><td>Pickles, Cucumber, Dill</td><td>1 Pickle</td><td>0</td><td>5</td><td>1</td><td>0</td><td>0</td><td>65</td><td>0</td></tr>
+<tr><td>Pickles, Cucumber, Fresh Pack</td><td>2 Slices</td><td>0</td><td>10</td><td>3</td><td>0</td><td>0</td><td>15</td><td>0</td></tr>
+<tr><td>Pickles, Cucumber, Swt Gherkin</td><td>1 Pickle</td><td>0</td><td>20</td><td>5</td><td>0</td><td>0</td><td>15</td><td>0</td></tr>
+<tr><td>Piecrust, From Mix</td><td>2 Crust</td><td>93</td><td>1485</td><td>141</td><td>20</td><td>0</td><td>320</td><td>22.7</td></tr>
+<tr><td>Piecrust,From Home Recipe</td><td>1 Shell</td><td>60</td><td>900</td><td>79</td><td>11</td><td>0</td><td>180</td><td>14.8</td></tr>
+<tr><td>Pine Nuts</td><td>1 Oz</td><td>17</td><td>160</td><td>5</td><td>3</td><td>0</td><td>28.35</td><td>2.7</td></tr>
+<tr><td>Pineapple-Grapefruit Juicedrnk</td><td>6 Fl Oz</td><td>0</td><td>90</td><td>23</td><td>0</td><td>0</td><td>187</td><td>0</td></tr>
+<tr><td>Pineapple Juice, Canned,Unswtn</td><td>1 Cup</td><td>0</td><td>140</td><td>34</td><td>1</td><td>0</td><td>250</td><td>0</td></tr>
+<tr><td>Pineapple, Canned, Heavy Syrup</td><td>1 Cup</td><td>0</td><td>200</td><td>52</td><td>1</td><td>0</td><td>255</td><td>0</td></tr>
+<tr><td>Pineapple, Canned, Heavy Syrup</td><td>1 Slice</td><td>0</td><td>45</td><td>12</td><td>0</td><td>0</td><td>58</td><td>0</td></tr>
+<tr><td>Pineapple, Canned, Juice Pack</td><td>1 Cup</td><td>0</td><td>150</td><td>39</td><td>1</td><td>0</td><td>250</td><td>0</td></tr>
+<tr><td>Pineapple, Canned, Juice Pack</td><td>1 Slice</td><td>0</td><td>35</td><td>9</td><td>0</td><td>0</td><td>58</td><td>0</td></tr>
+<tr><td>Pineapple, Raw, Diced</td><td>1 Cup</td><td>1</td><td>75</td><td>19</td><td>1</td><td>0</td><td>155</td><td>0</td></tr>
+<tr><td>Pinto Beans,Dry,Cooked,Drained</td><td>1 Cup</td><td>1</td><td>265</td><td>49</td><td>15</td><td>0</td><td>180</td><td>0.1</td></tr>
+<tr><td>Pistachio Nuts</td><td>1 Oz</td><td>14</td><td>165</td><td>7</td><td>6</td><td>0</td><td>28.35</td><td>1.7</td></tr>
+<tr><td>Pita Bread</td><td>1 Pita</td><td>1</td><td>165</td><td>33</td><td>6</td><td>0</td><td>60</td><td>0.1</td></tr>
+<tr><td>Pizza, Cheese</td><td>1 Slice</td><td>9</td><td>290</td><td>39</td><td>15</td><td>56</td><td>120</td><td>4.1</td></tr>
+<tr><td>Plantains, Cooked</td><td>1 Cup</td><td>0</td><td>180</td><td>48</td><td>1</td><td>0</td><td>154</td><td>0.1</td></tr>
+<tr><td>Plantains, Raw</td><td>1 Plantn</td><td>1</td><td>220</td><td>57</td><td>2</td><td>0</td><td>179</td><td>0.3</td></tr>
+<tr><td>Plums, Canned, Heavy Syrup</td><td>1 Cup</td><td>0</td><td>230</td><td>60</td><td>1</td><td>0</td><td>258</td><td>0</td></tr>
+<tr><td>Plums, Canned, Heavy Syrup</td><td>3 Plums</td><td>0</td><td>120</td><td>31</td><td>0</td><td>0</td><td>133</td><td>0</td></tr>
+<tr><td>Plums, Canned, Juice Pack</td><td>1 Cup</td><td>0</td><td>145</td><td>38</td><td>1</td><td>0</td><td>252</td><td>0</td></tr>
+<tr><td>Plums, Canned, Juice Pack</td><td>3 Plums</td><td>0</td><td>55</td><td>14</td><td>0</td><td>0</td><td>95</td><td>0</td></tr>
+<tr><td>Plums, Raw, 1-1/2-In Diam</td><td>1 Plum</td><td>0</td><td>15</td><td>4</td><td>0</td><td>0</td><td>28</td><td>0</td></tr>
+<tr><td>Plums, Raw, 2-1/8-In Diam</td><td>1 Plum</td><td>0</td><td>35</td><td>9</td><td>1</td><td>0</td><td>66</td><td>0</td></tr>
+<tr><td>Popcorn, Air-Popped, Unsalted</td><td>1 Cup</td><td>0</td><td>30</td><td>6</td><td>1</td><td>0</td><td>8</td><td>0</td></tr>
+<tr><td>Popcorn, Popped, Veg Oil,Saltd</td><td>1 Cup</td><td>3</td><td>55</td><td>6</td><td>1</td><td>0</td><td>11</td><td>0.5</td></tr>
+<tr><td>Popcorn, Sugar Syrup Coated</td><td>1 Cup</td><td>1</td><td>135</td><td>30</td><td>2</td><td>0</td><td>35</td><td>0.1</td></tr>
+<tr><td>Popsicle</td><td>1 Popcle</td><td>0</td><td>70</td><td>18</td><td>0</td><td>0</td><td>95</td><td>0</td></tr>
+<tr><td>Pork Chop, Loin, Broil, Lean</td><td>2.5 Oz</td><td>8</td><td>165</td><td>0</td><td>23</td><td>71</td><td>72</td><td>2.6</td></tr>
+<tr><td>Pork Chop, Loin, Broil, Len+Ft</td><td>3.1 Oz</td><td>19</td><td>275</td><td>0</td><td>24</td><td>84</td><td>87</td><td>7</td></tr>
+<tr><td>Pork Chop, Loin,Panfry, Lean</td><td>2.4 Oz</td><td>11</td><td>180</td><td>0</td><td>19</td><td>72</td><td>67</td><td>3.7</td></tr>
+<tr><td>Pork Chop, Loin,Panfry,Lean+Ft</td><td>3.1 Oz</td><td>27</td><td>335</td><td>0</td><td>21</td><td>92</td><td>89</td><td>9.8</td></tr>
+<tr><td>Pork Fresh Ham, Roastd, Lean</td><td>2.5 Oz</td><td>8</td><td>160</td><td>0</td><td>20</td><td>68</td><td>72</td><td>2.7</td></tr>
+<tr><td>Pork Fresh Ham, Roastd,Lean+Ft</td><td>3 Oz</td><td>18</td><td>250</td><td>0</td><td>21</td><td>79</td><td>85</td><td>6.4</td></tr>
+<tr><td>Pork Fresh Rib, Roastd, Lean</td><td>2.5 Oz</td><td>10</td><td>175</td><td>0</td><td>20</td><td>56</td><td>71</td><td>3.4</td></tr>
+<tr><td>Pork Fresh Rib, Roastd,Lean+Ft</td><td>3 Oz</td><td>20</td><td>270</td><td>0</td><td>21</td><td>69</td><td>85</td><td>7.2</td></tr>
+<tr><td>Pork Shoulder, Braisd, Lean</td><td>2.4 Oz</td><td>8</td><td>165</td><td>0</td><td>22</td><td>76</td><td>67</td><td>2.8</td></tr>
+<tr><td>Pork Shoulder, Braisd,Lean+Fat</td><td>3 Oz</td><td>22</td><td>295</td><td>0</td><td>23</td><td>93</td><td>85</td><td>7.9</td></tr>
+<tr><td>Pork, Cured, Bacon, Regul,Cked</td><td>3 Slice</td><td>9</td><td>110</td><td>0</td><td>6</td><td>16</td><td>19</td><td>3.3</td></tr>
+<tr><td>Pork, Cured, Bacon,Canadn,Cked</td><td>2 Slice</td><td>4</td><td>85</td><td>1</td><td>11</td><td>27</td><td>46</td><td>1.3</td></tr>
+<tr><td>Pork, Cured, Ham, Canned,Roast</td><td>3 Oz</td><td>7</td><td>140</td><td>0</td><td>18</td><td>35</td><td>85</td><td>2.4</td></tr>
+<tr><td>Pork, Cured, Ham, Rosted,Lean</td><td>2.4 Oz</td><td>4</td><td>105</td><td>0</td><td>17</td><td>37</td><td>68</td><td>1.3</td></tr>
+<tr><td>Pork, Cured, Ham, Rosted,Ln+Ft</td><td>3 Oz</td><td>14</td><td>205</td><td>0</td><td>18</td><td>53</td><td>85</td><td>5.1</td></tr>
+<tr><td>Pork, Link, Cooked</td><td>1 Link</td><td>4</td><td>50</td><td>0</td><td>3</td><td>11</td><td>13</td><td>1.4</td></tr>
+<tr><td>Pork, Luncheon Meat,Canned</td><td>2 Slices</td><td>13</td><td>140</td><td>1</td><td>5</td><td>26</td><td>42</td><td>4.5</td></tr>
+<tr><td>Pork, Luncheon Meat,Choppd Ham</td><td>2 Slices</td><td>7</td><td>95</td><td>0</td><td>7</td><td>21</td><td>42</td><td>2.4</td></tr>
+<tr><td>Pork, Luncheon Meat,Ckd Ham,Ln</td><td>2 Slices</td><td>3</td><td>75</td><td>1</td><td>11</td><td>27</td><td>57</td><td>0.9</td></tr>
+<tr><td>Pork, Luncheon Meat,Ckd Ham,Rg</td><td>2 Slices</td><td>6</td><td>105</td><td>2</td><td>10</td><td>32</td><td>57</td><td>1.9</td></tr>
+<tr><td>Potato Chips</td><td>10 Chips</td><td>7</td><td>105</td><td>10</td><td>1</td><td>0</td><td>20</td><td>1.8</td></tr>
+<tr><td>Potato Salad Made W/ Mayonnais</td><td>1 Cup</td><td>21</td><td>360</td><td>28</td><td>7</td><td>170</td><td>250</td><td>3.6</td></tr>
+<tr><td>Potatoes, Au Gratin, From Mix</td><td>1 Cup</td><td>10</td><td>230</td><td>31</td><td>6</td><td>12</td><td>245</td><td>6.3</td></tr>
+<tr><td>Potatoes, Au Gratin, Home Recp</td><td>1 Cup</td><td>19</td><td>325</td><td>28</td><td>12</td><td>56</td><td>245</td><td>11.6</td></tr>
+<tr><td>Potatoes, Baked Flesh Only</td><td>1 Potato</td><td>0</td><td>145</td><td>34</td><td>3</td><td>0</td><td>156</td><td>0</td></tr>
+<tr><td>Potatoes, Baked With Skin</td><td>1 Potato</td><td>0</td><td>220</td><td>51</td><td>5</td><td>0</td><td>202</td><td>0.1</td></tr>
+<tr><td>Potatoes, Boiled, Peeled After</td><td>1 Potato</td><td>0</td><td>120</td><td>27</td><td>3</td><td>0</td><td>136</td><td>0</td></tr>
+<tr><td>Potatoes, Boiled, Peeled Befor</td><td>1 Potato</td><td>0</td><td>115</td><td>27</td><td>2</td><td>0</td><td>135</td><td>0</td></tr>
+<tr><td>Potatoes, Hashed Brown,Fr Frzn</td><td>1 Cup</td><td>18</td><td>340</td><td>44</td><td>5</td><td>0</td><td>156</td><td>7</td></tr>
+<tr><td>Potatoes, Mashed,Frm Dehydrted</td><td>1 Cup</td><td>12</td><td>235</td><td>32</td><td>4</td><td>29</td><td>210</td><td>7.2</td></tr>
+<tr><td>Potatoes, Mashed,Recpe,Mlk+Mar</td><td>1 Cup</td><td>9</td><td>225</td><td>35</td><td>4</td><td>4</td><td>210</td><td>2.2</td></tr>
+<tr><td>Potatoes, Mashed,Recpe,W/ Milk</td><td>1 Cup</td><td>1</td><td>160</td><td>37</td><td>4</td><td>4</td><td>210</td><td>0.7</td></tr>
+<tr><td>Potatoes, Scalloped, From Mix</td><td>1 Cup</td><td>11</td><td>230</td><td>31</td><td>5</td><td>27</td><td>245</td><td>6.5</td></tr>
+<tr><td>Potatoes, Scalloped, Home Recp</td><td>1 Cup</td><td>9</td><td>210</td><td>26</td><td>7</td><td>29</td><td>245</td><td>5.5</td></tr>
+<tr><td>Potatoes,French-Frd,Frzn,Fried</td><td>10 Strip</td><td>8</td><td>160</td><td>20</td><td>2</td><td>0</td><td>50</td><td>2.5</td></tr>
+<tr><td>Potatoes,French-Frd,Frzn,Oven</td><td>10 Strip</td><td>4</td><td>110</td><td>17</td><td>2</td><td>0</td><td>50</td><td>2.1</td></tr>
+<tr><td>Pound Cake, Commercial</td><td>1 Loaf</td><td>94</td><td>1935</td><td>257</td><td>26</td><td>1100</td><td>500</td><td>52</td></tr>
+<tr><td>Pound Cake, Commercial</td><td>1 Slice</td><td>5</td><td>110</td><td>15</td><td>2</td><td>64</td><td>29</td><td>3</td></tr>
+<tr><td>Pound Cake, From Home Recipe</td><td>1 Loaf</td><td>94</td><td>2025</td><td>265</td><td>33</td><td>555</td><td>514</td><td>21.1</td></tr>
+<tr><td>Pound Cake, From Home Recipe</td><td>1 Slice</td><td>5</td><td>120</td><td>15</td><td>2</td><td>32</td><td>30</td><td>1.2</td></tr>
+<tr><td>Pretzels, Stick</td><td>10 Pretz</td><td>0</td><td>10</td><td>2</td><td>0</td><td>0</td><td>3</td><td>0</td></tr>
+<tr><td>Pretzels, Twisted, Dutch</td><td>1 Pretz</td><td>1</td><td>65</td><td>13</td><td>2</td><td>0</td><td>16</td><td>0.1</td></tr>
+<tr><td>Pretzels, Twisted, Thin</td><td>10 Pretz</td><td>2</td><td>240</td><td>48</td><td>6</td><td>0</td><td>60</td><td>0.4</td></tr>
+<tr><td>Product 19 Cereal</td><td>1 Oz</td><td>0</td><td>110</td><td>24</td><td>3</td><td>0</td><td>28.35</td><td>0</td></tr>
+<tr><td>Provolone Cheese</td><td>1 Oz</td><td>8</td><td>100</td><td>1</td><td>7</td><td>20</td><td>28.35</td><td>4.8</td></tr>
+<tr><td>Prune Juice, Canned</td><td>1 Cup</td><td>0</td><td>180</td><td>45</td><td>2</td><td>0</td><td>256</td><td>0</td></tr>
+<tr><td>Prunes, Dried</td><td>5 Large</td><td>0</td><td>115</td><td>31</td><td>1</td><td>0</td><td>49</td><td>0</td></tr>
+<tr><td>Prunes, Dried, Cooked,Unswtned</td><td>1 Cup</td><td>0</td><td>225</td><td>60</td><td>2</td><td>0</td><td>212</td><td>0</td></tr>
+<tr><td>Pudding, Chocolate,Canned</td><td>5 Oz</td><td>11</td><td>205</td><td>30</td><td>3</td><td>1</td><td>142</td><td>9.5</td></tr>
+<tr><td>Pudding, Choc, Cooked From Mix</td><td>1/2 Cup</td><td>4</td><td>150</td><td>25</td><td>4</td><td>15</td><td>130</td><td>2.4</td></tr>
+<tr><td>Pudding, Choc, Instant, Fr Mix</td><td>1/2 Cup</td><td>4</td><td>155</td><td>27</td><td>4</td><td>14</td><td>130</td><td>2.3</td></tr>
+<tr><td>Pudding, Rice, From Mix</td><td>1/2 Cup</td><td>4</td><td>155</td><td>27</td><td>4</td><td>15</td><td>132</td><td>2.3</td></tr>
+<tr><td>Pudding, Tapioca, Canned</td><td>5 Oz</td><td>5</td><td>160</td><td>28</td><td>3</td><td>0</td><td>142</td><td>4.8</td></tr>
+<tr><td>Pudding, Tapioca, From Mix</td><td>1/2 Cup</td><td>4</td><td>145</td><td>25</td><td>4</td><td>15</td><td>130</td><td>2.3</td></tr>
+<tr><td>Pudding, Vanilla, Canned</td><td>5 Oz</td><td>10</td><td>220</td><td>33</td><td>2</td><td>1</td><td>142</td><td>9.5</td></tr>
+<tr><td>Pudding, Vnlla,Cooked From Mix</td><td>1/2 Cup</td><td>4</td><td>145</td><td>25</td><td>4</td><td>15</td><td>130</td><td>2.3</td></tr>
+<tr><td>Pudding, Vnlla,Instant Frm Mix</td><td>1/2 Cup</td><td>4</td><td>150</td><td>27</td><td>4</td><td>15</td><td>130</td><td>2.2</td></tr>
+<tr><td>Pumpernickel Bread</td><td>1 Loaf</td><td>16</td><td>1160</td><td>218</td><td>42</td><td>0</td><td>454</td><td>2.6</td></tr>
+<tr><td>Pumpernickel Bread</td><td>1 Slice</td><td>1</td><td>80</td><td>16</td><td>3</td><td>0</td><td>32</td><td>0.2</td></tr>
+<tr><td>Pumpernickel Bread, Toasted</td><td>1 Slice</td><td>1</td><td>80</td><td>16</td><td>3</td><td>0</td><td>29</td><td>0.2</td></tr>
+<tr><td>Pumpkin And Squash Kernels</td><td>1 Oz</td><td>13</td><td>155</td><td>5</td><td>7</td><td>0</td><td>28.35</td><td>2.5</td></tr>
+<tr><td>Pumpkin Pie</td><td>1 Pie</td><td>102</td><td>1920</td><td>223</td><td>36</td><td>655</td><td>910</td><td>38.2</td></tr>
+<tr><td>Pumpkin Pie</td><td>1 Piece</td><td>17</td><td>320</td><td>37</td><td>6</td><td>109</td><td>152</td><td>6.4</td></tr>
+<tr><td>Pumpkin, Canned</td><td>1 Cup</td><td>1</td><td>85</td><td>20</td><td>3</td><td>0</td><td>245</td><td>0.4</td></tr>
+<tr><td>Pumpkin, Cooked From Raw</td><td>1 Cup</td><td>0</td><td>50</td><td>12</td><td>2</td><td>0</td><td>245</td><td>0.1</td></tr>
+<tr><td>Quiche Lorraine</td><td>1 Slice</td><td>48</td><td>600</td><td>29</td><td>13</td><td>285</td><td>176</td><td>23.2</td></tr>
+<tr><td>Radishes, Raw</td><td>4 Radish</td><td>0</td><td>5</td><td>1</td><td>0</td><td>0</td><td>18</td><td>0</td></tr>
+<tr><td>Raisin Bran, Kellogg'S</td><td>1 Oz</td><td>1</td><td>90</td><td>21</td><td>3</td><td>0</td><td>28.35</td><td>0.1</td></tr>
+<tr><td>Raisin Bran, Post</td><td>1 Oz</td><td>1</td><td>85</td><td>21</td><td>3</td><td>0</td><td>28.35</td><td>0.1</td></tr>
+<tr><td>Raisin Bread</td><td>1 Loaf</td><td>18</td><td>1260</td><td>239</td><td>37</td><td>0</td><td>454</td><td>4.1</td></tr>
+<tr><td>Raisin Bread</td><td>1 Slice</td><td>1</td><td>65</td><td>13</td><td>2</td><td>0</td><td>25</td><td>0.2</td></tr>
+<tr><td>Raisin Bread, Toasted</td><td>1 Slice</td><td>1</td><td>65</td><td>13</td><td>2</td><td>0</td><td>21</td><td>0.2</td></tr>
+<tr><td>Raisins</td><td>1 Cup</td><td>1</td><td>435</td><td>115</td><td>5</td><td>0</td><td>145</td><td>0.2</td></tr>
+<tr><td>Raisins</td><td>1 Packet</td><td>0</td><td>40</td><td>11</td><td>0</td><td>0</td><td>14</td><td>0</td></tr>
+<tr><td>Raspberries, Frozen, Sweetened</td><td>1 Cup</td><td>0</td><td>255</td><td>65</td><td>2</td><td>0</td><td>250</td><td>0</td></tr>
+<tr><td>Raspberries, Frozen, Sweetened</td><td>10 Oz</td><td>0</td><td>295</td><td>74</td><td>2</td><td>0</td><td>284</td><td>0</td></tr>
+<tr><td>Raspberries, Raw</td><td>1 Cup</td><td>1</td><td>60</td><td>14</td><td>1</td><td>0</td><td>123</td><td>0</td></tr>
+<tr><td>Red Kidney Beans, Dry, Canned</td><td>1 Cup</td><td>1</td><td>230</td><td>42</td><td>15</td><td>0</td><td>255</td><td>0.1</td></tr>
+<tr><td>Refried Beans, Canned</td><td>1 Cup</td><td>3</td><td>295</td><td>51</td><td>18</td><td>0</td><td>290</td><td>0.4</td></tr>
+<tr><td>Relish, Sweet</td><td>1 Tbsp</td><td>0</td><td>20</td><td>5</td><td>0</td><td>0</td><td>15</td><td>0</td></tr>
+<tr><td>Rhubarb, Cooked, Added Sugar</td><td>1 Cup</td><td>0</td><td>280</td><td>75</td><td>1</td><td>0</td><td>240</td><td>0</td></tr>
+<tr><td>Rice Krispies Cereal</td><td>1 Oz</td><td>0</td><td>110</td><td>25</td><td>2</td><td>0</td><td>28.35</td><td>0</td></tr>
+<tr><td>Rice, Brown, Cooked</td><td>1 Cup</td><td>1</td><td>230</td><td>50</td><td>5</td><td>0</td><td>195</td><td>0.3</td></tr>
+<tr><td>Rice, White, Cooked</td><td>1 Cup</td><td>0</td><td>225</td><td>50</td><td>4</td><td>0</td><td>205</td><td>0.1</td></tr>
+<tr><td>Rice, White, Instant, Cooked</td><td>1 Cup</td><td>0</td><td>180</td><td>40</td><td>4</td><td>0</td><td>165</td><td>0.1</td></tr>
+<tr><td>Rice, White, Parboiled, Cooked</td><td>1 Cup</td><td>0</td><td>185</td><td>41</td><td>4</td><td>0</td><td>175</td><td>0</td></tr>
+<tr><td>Rice, White, Parboiled, Raw</td><td>1 Cup</td><td>1</td><td>685</td><td>150</td><td>14</td><td>0</td><td>185</td><td>0.1</td></tr>
+<tr><td>Rice, White, Raw</td><td>1 Cup</td><td>1</td><td>670</td><td>149</td><td>12</td><td>0</td><td>185</td><td>0.2</td></tr>
+<tr><td>Ricotta Cheese, Part Skim Milk</td><td>1 Cup</td><td>19</td><td>340</td><td>13</td><td>28</td><td>76</td><td>246</td><td>12.1</td></tr>
+<tr><td>Ricotta Cheese, Whole Milk</td><td>1 Cup</td><td>32</td><td>430</td><td>7</td><td>28</td><td>124</td><td>246</td><td>20.4</td></tr>
+<tr><td>Roast Beef Sandwich</td><td>1 Sandwh</td><td>13</td><td>345</td><td>34</td><td>22</td><td>55</td><td>150</td><td>3.5</td></tr>
+<tr><td>Rolls, Dinner, Commercial</td><td>1 Roll</td><td>2</td><td>85</td><td>14</td><td>2</td><td>0</td><td>28</td><td>0.5</td></tr>
+<tr><td>Rolls, Dinner, Home Recipe</td><td>1 Roll</td><td>3</td><td>120</td><td>20</td><td>3</td><td>12</td><td>35</td><td>0.8</td></tr>
+<tr><td>Rolls, Frankfurter + Hamburger</td><td>1 Roll</td><td>2</td><td>115</td><td>20</td><td>3</td><td>0</td><td>40</td><td>0.5</td></tr>
+<tr><td>Rolls, Hard</td><td>1 Roll</td><td>2</td><td>155</td><td>30</td><td>5</td><td>0</td><td>50</td><td>0.4</td></tr>
+<tr><td>Rolls, Hoagie Or Submarine</td><td>1 Roll</td><td>8</td><td>400</td><td>72</td><td>11</td><td>0</td><td>135</td><td>1.8</td></tr>
+<tr><td>Root Beer</td><td>12 Fl Oz</td><td>0</td><td>165</td><td>42</td><td>0</td><td>0</td><td>370</td><td>0</td></tr>
+<tr><td>Rye Bread, Light</td><td>1 Loaf</td><td>17</td><td>1190</td><td>218</td><td>38</td><td>0</td><td>454</td><td>3.3</td></tr>
+<tr><td>Rye Bread, Light</td><td>1 Slice</td><td>1</td><td>65</td><td>12</td><td>2</td><td>0</td><td>25</td><td>0.2</td></tr>
+<tr><td>Rye Bread, Light, Toasted</td><td>1 Slice</td><td>1</td><td>65</td><td>12</td><td>2</td><td>0</td><td>22</td><td>0.2</td></tr>
+<tr><td>Rye Wafers, Whole-Grain</td><td>2 Wafers</td><td>1</td><td>55</td><td>10</td><td>1</td><td>0</td><td>14</td><td>0.3</td></tr>
+<tr><td>Safflower Oil</td><td>1 Cup</td><td>218</td><td>1925</td><td>0</td><td>0</td><td>0</td><td>218</td><td>19.8</td></tr>
+<tr><td>Safflower Oil</td><td>1 Tbsp</td><td>14</td><td>125</td><td>0</td><td>0</td><td>0</td><td>14</td><td>1.3</td></tr>
+<tr><td>Salami, Cooked Type</td><td>2 Slices</td><td>11</td><td>145</td><td>1</td><td>8</td><td>37</td><td>57</td><td>4.6</td></tr>
+<tr><td>Salami, Dry Type</td><td>2 Slices</td><td>7</td><td>85</td><td>1</td><td>5</td><td>16</td><td>20</td><td>2.4</td></tr>
+<tr><td>Salmon, Baked, Red</td><td>3 Oz</td><td>5</td><td>140</td><td>0</td><td>21</td><td>60</td><td>85</td><td>1.2</td></tr>
+<tr><td>Salmon, Canned, Pink, W/ Bones</td><td>3 Oz</td><td>5</td><td>120</td><td>0</td><td>17</td><td>34</td><td>85</td><td>0.9</td></tr>
+<tr><td>Salmon, Smoked</td><td>3 Oz</td><td>8</td><td>150</td><td>0</td><td>18</td><td>51</td><td>85</td><td>2.6</td></tr>
+<tr><td>Salt</td><td>1 Tsp</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>5.5</td><td>0</td></tr>
+<tr><td>Saltines</td><td>4 Crackr</td><td>1</td><td>50</td><td>9</td><td>1</td><td>4</td><td>12</td><td>0.5</td></tr>
+<tr><td>Sandwich Spread, Pork, Beef</td><td>1 Tbsp</td><td>3</td><td>35</td><td>2</td><td>1</td><td>6</td><td>15</td><td>0.9</td></tr>
+<tr><td>Sandwich Type Cookie</td><td>4 Cookie</td><td>8</td><td>195</td><td>29</td><td>2</td><td>0</td><td>40</td><td>2</td></tr>
+<tr><td>Sardines, Atlntc,Cnned,Oil,Drn</td><td>3 Oz</td><td>9</td><td>175</td><td>0</td><td>20</td><td>85</td><td>85</td><td>2.1</td></tr>
+<tr><td>Sauerkraut, Canned</td><td>1 Cup</td><td>0</td><td>45</td><td>10</td><td>2</td><td>0</td><td>236</td><td>0.1</td></tr>
+<tr><td>Scallops, Breaded, Frzn,Reheat</td><td>6 Scalop</td><td>10</td><td>195</td><td>10</td><td>15</td><td>70</td><td>90</td><td>2.5</td></tr>
+<tr><td>Seaweed, Kelp, Raw</td><td>1 Oz</td><td>0</td><td>10</td><td>3</td><td>0</td><td>0</td><td>28.35</td><td>0.1</td></tr>
+<tr><td>Seaweed, Spirulina, Dried</td><td>1 Oz</td><td>2</td><td>80</td><td>7</td><td>16</td><td>0</td><td>28.35</td><td>0.8</td></tr>
+<tr><td>Self-Rising Flour, Unsifted</td><td>1 Cup</td><td>1</td><td>440</td><td>93</td><td>12</td><td>0</td><td>125</td><td>0.2</td></tr>
+<tr><td>Semisweet Chocolate</td><td>1 Cup</td><td>61</td><td>860</td><td>97</td><td>7</td><td>0</td><td>170</td><td>36.2</td></tr>
+<tr><td>Sesame Seeds</td><td>1 Tbsp</td><td>4</td><td>45</td><td>1</td><td>2</td><td>0</td><td>8</td><td>0.6</td></tr>
+<tr><td>Shakes, Thick, Chocolate</td><td>10 Oz</td><td>8</td><td>335</td><td>60</td><td>9</td><td>30</td><td>283</td><td>4.8</td></tr>
+<tr><td>Shakes, Thick, Vanilla</td><td>10 Oz</td><td>9</td><td>315</td><td>50</td><td>11</td><td>33</td><td>283</td><td>5.3</td></tr>
+<tr><td>Sheetcake W/O Frstng,Homerecip</td><td>1 Cake</td><td>108</td><td>2830</td><td>434</td><td>35</td><td>552</td><td>777</td><td>29.5</td></tr>
+<tr><td>Sheetcake,W/ Whfrstng,Homercip</td><td>1 Cake</td><td>129</td><td>4020</td><td>694</td><td>37</td><td>636</td><td>1096</td><td>41.6</td></tr>
+<tr><td>Sheetcake,W/ Whfrstng,Homercip</td><td>1 Piece</td><td>14</td><td>445</td><td>77</td><td>4</td><td>70</td><td>121</td><td>4.6</td></tr>
+<tr><td>Sheetcake,W/O Frstng,Homerecip</td><td>1 Piece</td><td>12</td><td>315</td><td>48</td><td>4</td><td>61</td><td>86</td><td>3.3</td></tr>
+<tr><td>Sherbet, 2% Fat</td><td>1 Cup</td><td>4</td><td>270</td><td>59</td><td>2</td><td>14</td><td>193</td><td>2.4</td></tr>
+<tr><td>Sherbet, 2% Fat</td><td>1/2 Gal</td><td>31</td><td>2160</td><td>469</td><td>17</td><td>113</td><td>1542</td><td>19</td></tr>
+<tr><td>Shortbread Cookie, Commercial</td><td>4 Cookie</td><td>8</td><td>155</td><td>20</td><td>2</td><td>27</td><td>32</td><td>2.9</td></tr>
+<tr><td>Shortbread Cookie, Home Recipe</td><td>2 Cookie</td><td>8</td><td>145</td><td>17</td><td>2</td><td>0</td><td>28</td><td>1.3</td></tr>
+<tr><td>Shredded Wheat Cereal</td><td>1 Oz</td><td>1</td><td>100</td><td>23</td><td>3</td><td>0</td><td>28.35</td><td>0.1</td></tr>
+<tr><td>Shrimp, Canned, Drained</td><td>3 Oz</td><td>1</td><td>100</td><td>1</td><td>21</td><td>128</td><td>85</td><td>0.2</td></tr>
+<tr><td>Shrimp, French Fried</td><td>3 Oz</td><td>10</td><td>200</td><td>11</td><td>16</td><td>168</td><td>85</td><td>2.5</td></tr>
+<tr><td>Snack Cakes,Devils Food,Cremfl</td><td>Sm Cake</td><td>4</td><td>105</td><td>17</td><td>1</td><td>15</td><td>28</td><td>1.7</td></tr>
+<tr><td>Snack Cakes,Sponge Creme Fllng</td><td>Sm Cake</td><td>5</td><td>155</td><td>27</td><td>1</td><td>7</td><td>42</td><td>2.3</td></tr>
+<tr><td>Snack Type Crackers</td><td>1 Crackr</td><td>1</td><td>15</td><td>2</td><td>0</td><td>0</td><td>3</td><td>0.2</td></tr>
+<tr><td>Snap Bean,Cnnd,Drnd,Green,Salt</td><td>1 Cup</td><td>0</td><td>25</td><td>6</td><td>2</td><td>0</td><td>135</td><td>0</td></tr>
+<tr><td>Snap Bean,Cnnd,Drnd,Grn,Nosalt</td><td>1 Cup</td><td>0</td><td>25</td><td>6</td><td>2</td><td>0</td><td>135</td><td>0</td></tr>
+<tr><td>Snap Bean,Cnnd,Drnd,Yllw, Salt</td><td>1 Cup</td><td>0</td><td>25</td><td>6</td><td>2</td><td>0</td><td>135</td><td>0</td></tr>
+<tr><td>Snap Bean,Cnnd,Drnd,Yllw,Nosal</td><td>1 Cup</td><td>0</td><td>25</td><td>6</td><td>2</td><td>0</td><td>135</td><td>0</td></tr>
+<tr><td>Snap Bean,Frz,Ckd,Drnd,Green</td><td>1 Cup</td><td>0</td><td>35</td><td>8</td><td>2</td><td>0</td><td>135</td><td>0</td></tr>
+<tr><td>Snap Bean,Frz,Ckd,Drnd,Yellow</td><td>1 Cup</td><td>0</td><td>35</td><td>8</td><td>2</td><td>0</td><td>135</td><td>0</td></tr>
+<tr><td>Snap Bean,Raw,Ckd,Drnd,Green</td><td>1 Cup</td><td>0</td><td>45</td><td>10</td><td>2</td><td>0</td><td>125</td><td>0.1</td></tr>
+<tr><td>Snap Bean,Raw,Ckd,Drnd,Yellow</td><td>1 Cup</td><td>0</td><td>45</td><td>10</td><td>2</td><td>0</td><td>125</td><td>0.1</td></tr>
+<tr><td>Sour Cream</td><td>1 Cup</td><td>48</td><td>495</td><td>10</td><td>7</td><td>102</td><td>230</td><td>30</td></tr>
+<tr><td>Sour Cream</td><td>1 Tbsp</td><td>3</td><td>25</td><td>1</td><td>0</td><td>5</td><td>12</td><td>1.6</td></tr>
+<tr><td>Soy Sauce</td><td>1 Tbsp</td><td>0</td><td>10</td><td>2</td><td>2</td><td>0</td><td>18</td><td>0</td></tr>
+<tr><td>Soybean-Cottonseed Oil, Hydrgn</td><td>1 Cup</td><td>218</td><td>1925</td><td>0</td><td>0</td><td>0</td><td>218</td><td>39.2</td></tr>
+<tr><td>Soybean-Cottonseed Oil, Hydrgn</td><td>1 Tbsp</td><td>14</td><td>125</td><td>0</td><td>0</td><td>0</td><td>14</td><td>2.5</td></tr>
+<tr><td>Soybean Oil, Hydrogenated</td><td>1 Cup</td><td>218</td><td>1925</td><td>0</td><td>0</td><td>0</td><td>218</td><td>32.5</td></tr>
+<tr><td>Soybean Oil, Hydrogenated</td><td>1 Tbsp</td><td>14</td><td>125</td><td>0</td><td>0</td><td>0</td><td>14</td><td>2.1</td></tr>
+<tr><td>Soybeans, Dry, Cooked, Drained</td><td>1 Cup</td><td>10</td><td>235</td><td>19</td><td>20</td><td>0</td><td>180</td><td>1.3</td></tr>
+<tr><td>Spaghetti, Cooked, Firm</td><td>1 Cup</td><td>1</td><td>190</td><td>39</td><td>7</td><td>0</td><td>130</td><td>0.1</td></tr>
+<tr><td>Spaghetti, Cooked, Tender</td><td>1 Cup</td><td>1</td><td>155</td><td>32</td><td>5</td><td>0</td><td>140</td><td>0.1</td></tr>
+<tr><td>Spaghetti, Tom Sauce Chees,Cnd</td><td>1 Cup</td><td>2</td><td>190</td><td>39</td><td>6</td><td>3</td><td>250</td><td>0.4</td></tr>
+<tr><td>Spaghetti, Tom Sauce Chee,Hmrp</td><td>1 Cup</td><td>9</td><td>260</td><td>37</td><td>9</td><td>8</td><td>250</td><td>3</td></tr>
+<tr><td>Spaghetti,Meatballs,Tomsac,Cnd</td><td>1 Cup</td><td>10</td><td>260</td><td>29</td><td>12</td><td>23</td><td>250</td><td>2.4</td></tr>
+<tr><td>Spaghetti,Meatballs,Tomsa,Hmrp</td><td>1 Cup</td><td>12</td><td>330</td><td>39</td><td>19</td><td>89</td><td>248</td><td>3.9</td></tr>
+<tr><td>Special K Cereal</td><td>1 Oz</td><td>0</td><td>110</td><td>21</td><td>6</td><td>0</td><td>28.35</td><td>0</td></tr>
+<tr><td>Spinach Souffle</td><td>1 Cup</td><td>18</td><td>220</td><td>3</td><td>11</td><td>184</td><td>136</td><td>7.1</td></tr>
+<tr><td>Spinach, Canned, Drnd,W/ Salt</td><td>1 Cup</td><td>1</td><td>50</td><td>7</td><td>6</td><td>0</td><td>214</td><td>0.2</td></tr>
+<tr><td>Spinach, Canned, Drnd,W/O Salt</td><td>1 Cup</td><td>1</td><td>50</td><td>7</td><td>6</td><td>0</td><td>214</td><td>0.2</td></tr>
+<tr><td>Spinach, Cooked Fr Frzen, Drnd</td><td>1 Cup</td><td>0</td><td>55</td><td>10</td><td>6</td><td>0</td><td>190</td><td>0.1</td></tr>
+<tr><td>Spinach, Cooked From Raw, Drnd</td><td>1 Cup</td><td>0</td><td>40</td><td>7</td><td>5</td><td>0</td><td>180</td><td>0.1</td></tr>
+<tr><td>Spinach, Raw</td><td>1 Cup</td><td>0</td><td>10</td><td>2</td><td>2</td><td>0</td><td>55</td><td>0</td></tr>
+<tr><td>Squash, Summer, Cooked, Draind</td><td>1 Cup</td><td>1</td><td>35</td><td>8</td><td>2</td><td>0</td><td>180</td><td>0.1</td></tr>
+<tr><td>Squash, Winter, Baked</td><td>1 Cup</td><td>1</td><td>80</td><td>18</td><td>2</td><td>0</td><td>205</td><td>0.3</td></tr>
+<tr><td>Strawberries, Frozen, Sweetend</td><td>1 Cup</td><td>0</td><td>245</td><td>66</td><td>1</td><td>0</td><td>255</td><td>0</td></tr>
+<tr><td>Strawberries, Frozen, Sweetend</td><td>10 Oz</td><td>0</td><td>275</td><td>74</td><td>2</td><td>0</td><td>284</td><td>0</td></tr>
+<tr><td>Strawberries, Raw</td><td>1 Cup</td><td>1</td><td>45</td><td>10</td><td>1</td><td>0</td><td>149</td><td>0</td></tr>
+<tr><td>Sugar Cookie, From Refrig Dogh</td><td>4 Cookie</td><td>12</td><td>235</td><td>31</td><td>2</td><td>29</td><td>48</td><td>2.3</td></tr>
+<tr><td>Sugar Frosted Flakes, Kellogg</td><td>1 Oz</td><td>0</td><td>110</td><td>26</td><td>1</td><td>0</td><td>28.35</td><td>0</td></tr>
+<tr><td>Sugar Smacks Cereal</td><td>1 Oz</td><td>1</td><td>105</td><td>25</td><td>2</td><td>0</td><td>28.35</td><td>0.1</td></tr>
+<tr><td>Sugar, Brown, Pressed Down</td><td>1 Cup</td><td>0</td><td>820</td><td>212</td><td>0</td><td>0</td><td>220</td><td>0</td></tr>
+<tr><td>Sugar, Powdered, Sifted</td><td>1 Cup</td><td>0</td><td>385</td><td>100</td><td>0</td><td>0</td><td>100</td><td>0</td></tr>
+<tr><td>Sugar, White, Granulated</td><td>1 Cup</td><td>0</td><td>770</td><td>199</td><td>0</td><td>0</td><td>200</td><td>0</td></tr>
+<tr><td>Sugar, White, Granulated</td><td>1 Pkt</td><td>0</td><td>25</td><td>6</td><td>0</td><td>0</td><td>6</td><td>0</td></tr>
+<tr><td>Sugar, White, Granulated</td><td>1 Tbsp</td><td>0</td><td>45</td><td>12</td><td>0</td><td>0</td><td>12</td><td>0</td></tr>
+<tr><td>Sunflower Oil</td><td>1 Cup</td><td>218</td><td>1925</td><td>0</td><td>0</td><td>0</td><td>218</td><td>22.5</td></tr>
+<tr><td>Sunflower Oil</td><td>1 Tbsp</td><td>14</td><td>125</td><td>0</td><td>0</td><td>0</td><td>14</td><td>1.4</td></tr>
+<tr><td>Sunflower Seeds</td><td>1 Oz</td><td>14</td><td>160</td><td>5</td><td>6</td><td>0</td><td>28.35</td><td>1.5</td></tr>
+<tr><td>Super Sugar Crisp Cereal</td><td>1 Oz</td><td>0</td><td>105</td><td>26</td><td>2</td><td>0</td><td>28.35</td><td>0</td></tr>
+<tr><td>Sweet (Dark) Chocolate</td><td>1 Oz</td><td>10</td><td>150</td><td>16</td><td>1</td><td>0</td><td>28.35</td><td>5.9</td></tr>
+<tr><td>Sweetened Condensed Milk Cnnd</td><td>1 Cup</td><td>27</td><td>980</td><td>166</td><td>24</td><td>104</td><td>306</td><td>16.8</td></tr>
+<tr><td>Sweetpotatoes, Baked, Peeled</td><td>1 Potato</td><td>0</td><td>115</td><td>28</td><td>2</td><td>0</td><td>114</td><td>0</td></tr>
+<tr><td>Sweetpotatoes, Boiled W/O Peel</td><td>1 Potato</td><td>0</td><td>160</td><td>37</td><td>2</td><td>0</td><td>151</td><td>0.1</td></tr>
+<tr><td>Sweetpotatoes, Candied</td><td>1 Piece</td><td>3</td><td>145</td><td>29</td><td>1</td><td>8</td><td>105</td><td>1.4</td></tr>
+<tr><td>Sweetpotatoes, Canned, Mashed</td><td>1 Cup</td><td>1</td><td>260</td><td>59</td><td>5</td><td>0</td><td>255</td><td>0.1</td></tr>
+<tr><td>Sweetpotatoes, Cnned, Vac Pack</td><td>1 Piece</td><td>0</td><td>35</td><td>8</td><td>1</td><td>0</td><td>40</td><td>0</td></tr>
+<tr><td>Swiss Cheese</td><td>1 Oz</td><td>8</td><td>105</td><td>1</td><td>8</td><td>26</td><td>28.35</td><td>5</td></tr>
+<tr><td>Syrup, Chocolate Flavored Thin</td><td>2 Tbsp</td><td>0</td><td>85</td><td>22</td><td>1</td><td>0</td><td>38</td><td>0.2</td></tr>
+<tr><td>Syrup, Chocolate Flvred, Fudge</td><td>2 Tbsp</td><td>5</td><td>125</td><td>21</td><td>2</td><td>0</td><td>38</td><td>3.1</td></tr>
+<tr><td>Table Syrup (Corn And Maple)</td><td>2 Tbsp</td><td>0</td><td>122</td><td>32</td><td>0</td><td>0</td><td>42</td><td>0</td></tr>
+<tr><td>Taco</td><td>1 Taco</td><td>11</td><td>195</td><td>15</td><td>9</td><td>21</td><td>81</td><td>4.1</td></tr>
+<tr><td>Tahini</td><td>1 Tbsp</td><td>8</td><td>90</td><td>3</td><td>3</td><td>0</td><td>15</td><td>1.1</td></tr>
+<tr><td>Tangerine Juice, Canned,Swtned</td><td>1 Cup</td><td>0</td><td>125</td><td>30</td><td>1</td><td>0</td><td>249</td><td>0</td></tr>
+<tr><td>Tangerines, Canned, Light Syrp</td><td>1 Cup</td><td>0</td><td>155</td><td>41</td><td>1</td><td>0</td><td>252</td><td>0</td></tr>
+<tr><td>Tangerines, Raw</td><td>1 Tangrn</td><td>0</td><td>35</td><td>9</td><td>1</td><td>0</td><td>84</td><td>0</td></tr>
+<tr><td>Tartar Sauce</td><td>1 Tbsp</td><td>8</td><td>75</td><td>1</td><td>0</td><td>4</td><td>14</td><td>1.2</td></tr>
+<tr><td>Tea, Brewed</td><td>8 Fl Oz</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>240</td><td>0</td></tr>
+<tr><td>Tea, Instant,Preprd,Unsweetend</td><td>8 Fl Oz</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td><td>241</td><td>0</td></tr>
+<tr><td>Tea,Instant,Prepard,Sweetened</td><td>8 Fl Oz</td><td>0</td><td>85</td><td>22</td><td>0</td><td>0</td><td>262</td><td>0</td></tr>
+<tr><td>Toaster Pastries</td><td>1 Pastry</td><td>6</td><td>210</td><td>38</td><td>2</td><td>0</td><td>54</td><td>1.7</td></tr>
+<tr><td>Tofu</td><td>1 Piece</td><td>5</td><td>85</td><td>3</td><td>9</td><td>0</td><td>120</td><td>0.7</td></tr>
+<tr><td>Tomato Juice, Canned With Salt</td><td>1 Cup</td><td>0</td><td>40</td><td>10</td><td>2</td><td>0</td><td>244</td><td>0</td></tr>
+<tr><td>Tomato Juice, Canned W/O Salt</td><td>1 Cup</td><td>0</td><td>40</td><td>10</td><td>2</td><td>0</td><td>244</td><td>0</td></tr>
+<tr><td>Tomato Paste, Canned With Salt</td><td>1 Cup</td><td>2</td><td>220</td><td>49</td><td>10</td><td>0</td><td>262</td><td>0.3</td></tr>
+<tr><td>Tomato Paste, Canned W/O Salt</td><td>1 Cup</td><td>2</td><td>220</td><td>49</td><td>10</td><td>0</td><td>262</td><td>0.3</td></tr>
+<tr><td>Tomato Puree, Canned With Salt</td><td>1 Cup</td><td>0</td><td>105</td><td>25</td><td>4</td><td>0</td><td>250</td><td>0</td></tr>
+<tr><td>Tomato Puree, Canned W/O Salt</td><td>1 Cup</td><td>0</td><td>105</td><td>25</td><td>4</td><td>0</td><td>250</td><td>0</td></tr>
+<tr><td>Tomato Sauce, Canned With Salt</td><td>1 Cup</td><td>0</td><td>75</td><td>18</td><td>3</td><td>0</td><td>245</td><td>0.1</td></tr>
+<tr><td>Tomato Soup With Milk, Canned</td><td>1 Cup</td><td>6</td><td>160</td><td>22</td><td>6</td><td>17</td><td>248</td><td>2.9</td></tr>
+<tr><td>Tomato Soup W/ Water, Canned</td><td>1 Cup</td><td>2</td><td>85</td><td>17</td><td>2</td><td>0</td><td>244</td><td>0.4</td></tr>
+<tr><td>Tomato Veg Soup, Dehyd,Prepred</td><td>1 Pkt</td><td>1</td><td>40</td><td>8</td><td>1</td><td>0</td><td>189</td><td>0.3</td></tr>
+<tr><td>Tomatoes, Canned, S+L, W/ Salt</td><td>1 Cup</td><td>1</td><td>50</td><td>10</td><td>2</td><td>0</td><td>240</td><td>0.1</td></tr>
+<tr><td>Tomatoes, Canned, S+L,W/O Salt</td><td>1 Cup</td><td>1</td><td>50</td><td>10</td><td>2</td><td>0</td><td>240</td><td>0.1</td></tr>
+<tr><td>Tomatoes, Raw</td><td>1 Tomato</td><td>0</td><td>25</td><td>5</td><td>1</td><td>0</td><td>123</td><td>0</td></tr>
+<tr><td>Tortillas, Corn</td><td>1 Tortla</td><td>1</td><td>65</td><td>13</td><td>2</td><td>0</td><td>30</td><td>0.1</td></tr>
+<tr><td>Total Cereal</td><td>1 Oz</td><td>1</td><td>100</td><td>22</td><td>3</td><td>0</td><td>28.35</td><td>0.1</td></tr>
+<tr><td>Trix Cereal</td><td>1 Oz</td><td>0</td><td>110</td><td>25</td><td>2</td><td>0</td><td>28.35</td><td>0.2</td></tr>
+<tr><td>Trout, Broiled, W/ Buttr,Lemju</td><td>3 Oz</td><td>9</td><td>175</td><td>0</td><td>21</td><td>71</td><td>85</td><td>4.1</td></tr>
+<tr><td>Tuna Salad</td><td>1 Cup</td><td>19</td><td>375</td><td>19</td><td>33</td><td>80</td><td>205</td><td>3.3</td></tr>
+<tr><td>Tuna, Cannd, Drnd,Oil,Chk,Lght</td><td>3 Oz</td><td>7</td><td>165</td><td>0</td><td>24</td><td>55</td><td>85</td><td>1.4</td></tr>
+<tr><td>Tuna, Cannd, Drnd,Watr, White</td><td>3 Oz</td><td>1</td><td>135</td><td>0</td><td>30</td><td>48</td><td>85</td><td>0.3</td></tr>
+<tr><td>Turkey Ham, Cured Turkey Thigh</td><td>2 Slices</td><td>3</td><td>75</td><td>0</td><td>11</td><td>32</td><td>57</td><td>1</td></tr>
+<tr><td>Turkey Loaf, Breast Meat W/O C</td><td>2 Slices</td><td>1</td><td>45</td><td>0</td><td>10</td><td>17</td><td>42</td><td>0.2</td></tr>
+<tr><td>Turkey Loaf, Breast Meat, W/ C</td><td>2 Slices</td><td>1</td><td>45</td><td>0</td><td>10</td><td>17</td><td>42</td><td>0.2</td></tr>
+<tr><td>Turkey Patties, Brd,Battd,Frid</td><td>1 Patty</td><td>12</td><td>180</td><td>10</td><td>9</td><td>40</td><td>64</td><td>3</td></tr>
+<tr><td>Turkey Roast, Frzn,Lght+Drk,Ck</td><td>3 Oz</td><td>5</td><td>130</td><td>3</td><td>18</td><td>45</td><td>85</td><td>1.6</td></tr>
+<tr><td>Turkey, Roasted, Dark Meat</td><td>4 Pieces</td><td>6</td><td>160</td><td>0</td><td>24</td><td>72</td><td>85</td><td>2.1</td></tr>
+<tr><td>Turkey, Roasted, Light Meat</td><td>2 Pieces</td><td>3</td><td>135</td><td>0</td><td>25</td><td>59</td><td>85</td><td>0.9</td></tr>
+<tr><td>Turkey, Roasted, Light + Dark</td><td>1 Cup</td><td>7</td><td>240</td><td>0</td><td>41</td><td>106</td><td>140</td><td>2.3</td></tr>
+<tr><td>Turkey, Roasted, Light + Dark</td><td>3 Pieces</td><td>4</td><td>145</td><td>0</td><td>25</td><td>65</td><td>85</td><td>1.4</td></tr>
+<tr><td>Turnip Greens, Cked Frm Frozen</td><td>1 Cup</td><td>1</td><td>50</td><td>8</td><td>5</td><td>0</td><td>164</td><td>0.2</td></tr>
+<tr><td>Turnip Greens, Cooked From Raw</td><td>1 Cup</td><td>0</td><td>30</td><td>6</td><td>2</td><td>0</td><td>144</td><td>0.1</td></tr>
+<tr><td>Turnips, Cooked, Diced</td><td>1 Cup</td><td>0</td><td>30</td><td>8</td><td>1</td><td>0</td><td>156</td><td>0</td></tr>
+<tr><td>Vanilla Wafers</td><td>10 Cooke</td><td>7</td><td>185</td><td>29</td><td>2</td><td>25</td><td>40</td><td>1.8</td></tr>
+<tr><td>Veal Cutlet, Med Fat,Brsd,Brld</td><td>3 Oz</td><td>9</td><td>185</td><td>0</td><td>23</td><td>86</td><td>85</td><td>4.1</td></tr>
+<tr><td>Veal Rib, Med Fat, Roasted</td><td>3 Oz</td><td>14</td><td>230</td><td>0</td><td>23</td><td>109</td><td>85</td><td>6</td></tr>
+<tr><td>Vegetable Beef Soup, Canned</td><td>1 Cup</td><td>2</td><td>80</td><td>10</td><td>6</td><td>5</td><td>244</td><td>0.9</td></tr>
+<tr><td>Vegetable Juice Cocktail, Cnnd</td><td>1 Cup</td><td>0</td><td>45</td><td>11</td><td>2</td><td>0</td><td>242</td><td>0</td></tr>
+<tr><td>Vegetables, Mixed, Canned</td><td>1 Cup</td><td>0</td><td>75</td><td>15</td><td>4</td><td>0</td><td>163</td><td>0.1</td></tr>
+<tr><td>Vegetables, Mixed, Cked Fr Frz</td><td>1 Cup</td><td>0</td><td>105</td><td>24</td><td>5</td><td>0</td><td>182</td><td>0.1</td></tr>
+<tr><td>Vegetarian Soup, Canned</td><td>1 Cup</td><td>2</td><td>70</td><td>12</td><td>2</td><td>0</td><td>241</td><td>0.3</td></tr>
+<tr><td>Vienna Bread</td><td>1 Slice</td><td>1</td><td>70</td><td>13</td><td>2</td><td>0</td><td>25</td><td>0.2</td></tr>
+<tr><td>Vienna Sausage</td><td>1 Sausag</td><td>4</td><td>45</td><td>0</td><td>2</td><td>8</td><td>16</td><td>1.5</td></tr>
+<tr><td>Vinegar And Oil Salad Dressing</td><td>1 Tbsp</td><td>8</td><td>70</td><td>0</td><td>0</td><td>0</td><td>16</td><td>1.5</td></tr>
+<tr><td>Vinegar, Cider</td><td>1 Tbsp</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td><td>15</td><td>0</td></tr>
+<tr><td>Waffles, From Home Recipe</td><td>1 Waffle</td><td>13</td><td>245</td><td>26</td><td>7</td><td>102</td><td>75</td><td>4</td></tr>
+<tr><td>Waffles, From Mix</td><td>1 Waffle</td><td>8</td><td>205</td><td>27</td><td>7</td><td>59</td><td>75</td><td>2.7</td></tr>
+<tr><td>Walnuts, Black, Chopped</td><td>1 Cup</td><td>71</td><td>760</td><td>15</td><td>30</td><td>0</td><td>125</td><td>4.5</td></tr>
+<tr><td>Walnuts, Black, Chopped</td><td>1 Oz</td><td>16</td><td>170</td><td>3</td><td>7</td><td>0</td><td>28.35</td><td>1</td></tr>
+<tr><td>Walnuts, English, Pieces</td><td>1 Cup</td><td>74</td><td>770</td><td>22</td><td>17</td><td>0</td><td>120</td><td>6.7</td></tr>
+<tr><td>Walnuts, English, Pieces</td><td>1 Oz</td><td>18</td><td>180</td><td>5</td><td>4</td><td>0</td><td>28.35</td><td>1.6</td></tr>
+<tr><td>Water Chestnuts, Canned</td><td>1 Cup</td><td>0</td><td>70</td><td>17</td><td>1</td><td>0</td><td>140</td><td>0</td></tr>
+<tr><td>Watermelon, Raw</td><td>1 Piece</td><td>2</td><td>155</td><td>35</td><td>3</td><td>0</td><td>482</td><td>0.3</td></tr>
+<tr><td>Watermelon, Raw, Diced</td><td>1 Cup</td><td>1</td><td>50</td><td>11</td><td>1</td><td>0</td><td>160</td><td>0.1</td></tr>
+<tr><td>Wheat Bread</td><td>1 Loaf</td><td>19</td><td>1160</td><td>213</td><td>43</td><td>0</td><td>454</td><td>3.9</td></tr>
+<tr><td>Wheat Bread</td><td>1 Slice</td><td>1</td><td>65</td><td>12</td><td>2</td><td>0</td><td>25</td><td>0.2</td></tr>
+<tr><td>Wheat Bread, Toasted</td><td>1 Slice</td><td>1</td><td>65</td><td>12</td><td>3</td><td>0</td><td>23</td><td>0.2</td></tr>
+<tr><td>Wheat Flour, All-Purpose,Siftd</td><td>1 Cup</td><td>1</td><td>420</td><td>88</td><td>12</td><td>0</td><td>115</td><td>0.2</td></tr>
+<tr><td>Wheat Flour, All-Purpose,Unsif</td><td>1 Cup</td><td>1</td><td>455</td><td>95</td><td>13</td><td>0</td><td>125</td><td>0.2</td></tr>
+<tr><td>Wheaties Cereal</td><td>1 Oz</td><td>0</td><td>100</td><td>23</td><td>3</td><td>0</td><td>28.35</td><td>0.1</td></tr>
+<tr><td>Wheat, Thin Crackers</td><td>4 Crackr</td><td>1</td><td>35</td><td>5</td><td>1</td><td>0</td><td>8</td><td>0.5</td></tr>
+<tr><td>Whipped Topping, Pressurized</td><td>1 Cup</td><td>13</td><td>155</td><td>7</td><td>2</td><td>46</td><td>60</td><td>8.3</td></tr>
+<tr><td>Whipped Topping, Pressurized</td><td>1 Tbsp</td><td>1</td><td>10</td><td>0</td><td>0</td><td>2</td><td>3</td><td>0.4</td></tr>
+<tr><td>Whipping Cream, Unwhiped,Heavy</td><td>1 Cup</td><td>88</td><td>820</td><td>7</td><td>5</td><td>326</td><td>238</td><td>54.8</td></tr>
+<tr><td>Whipping Cream, Unwhiped,Heavy</td><td>1 Tbsp</td><td>6</td><td>50</td><td>0</td><td>0</td><td>21</td><td>15</td><td>3.5</td></tr>
+<tr><td>Whipping Cream, Unwhiped,Light</td><td>1 Cup</td><td>74</td><td>700</td><td>7</td><td>5</td><td>265</td><td>239</td><td>46.2</td></tr>
+<tr><td>Whipping Cream, Unwhiped,Light</td><td>1 Tbsp</td><td>5</td><td>45</td><td>0</td><td>0</td><td>17</td><td>15</td><td>2.9</td></tr>
+<tr><td>White Bread</td><td>1 Loaf</td><td>18</td><td>1210</td><td>222</td><td>38</td><td>0</td><td>454</td><td>5.6</td></tr>
+<tr><td>White Bread Crumbs, Soft</td><td>1 Cup</td><td>2</td><td>120</td><td>22</td><td>4</td><td>0</td><td>45</td><td>0.6</td></tr>
+<tr><td>White Bread Cubes</td><td>1 Cup</td><td>1</td><td>80</td><td>15</td><td>2</td><td>0</td><td>30</td><td>0.4</td></tr>
+<tr><td>White Bread, Slice 18 Per Loaf</td><td>1 Slice</td><td>1</td><td>65</td><td>12</td><td>2</td><td>0</td><td>25</td><td>0.3</td></tr>
+<tr><td>White Bread, Slice 22 Per Loaf</td><td>1 Slice</td><td>1</td><td>55</td><td>10</td><td>2</td><td>0</td><td>20</td><td>0.2</td></tr>
+<tr><td>White Bread, Toasted 18 Per</td><td>1 Slice</td><td>1</td><td>65</td><td>12</td><td>2</td><td>0</td><td>22</td><td>0.3</td></tr>
+<tr><td>White Bread, Toasted 22 Per</td><td>1 Slice</td><td>1</td><td>55</td><td>10</td><td>2</td><td>0</td><td>17</td><td>0.2</td></tr>
+<tr><td>White Cake W/ Wht Frstng,Comml</td><td>1 Cake</td><td>148</td><td>4170</td><td>670</td><td>43</td><td>46</td><td>1140</td><td>33.1</td></tr>
+<tr><td>White Cake W/ Wht Frstng,Comml</td><td>1 Piece</td><td>9</td><td>260</td><td>42</td><td>3</td><td>3</td><td>71</td><td>2.1</td></tr>
+<tr><td>White Sauce W/ Milk From Mix</td><td>1 Cup</td><td>13</td><td>240</td><td>21</td><td>10</td><td>34</td><td>264</td><td>6.4</td></tr>
+<tr><td>White Sauce, Medium, Home Recp</td><td>1 Cup</td><td>30</td><td>395</td><td>24</td><td>10</td><td>32</td><td>250</td><td>9.1</td></tr>
+<tr><td>Whole-Wheat Bread</td><td>1 Loaf</td><td>20</td><td>1110</td><td>206</td><td>44</td><td>0</td><td>454</td><td>5.8</td></tr>
+<tr><td>Whole-Wheat Bread</td><td>1 Slice</td><td>1</td><td>70</td><td>13</td><td>3</td><td>0</td><td>28</td><td>0.4</td></tr>
+<tr><td>Whole-Wheat Bread, Toasted</td><td>1 Slice</td><td>1</td><td>70</td><td>13</td><td>3</td><td>0</td><td>25</td><td>0.4</td></tr>
+<tr><td>Whole-Wheat Flour,Hrd Wht,Stir</td><td>1 Cup</td><td>2</td><td>400</td><td>85</td><td>16</td><td>0</td><td>120</td><td>0.3</td></tr>
+<tr><td>Whole-Wheat Wafers, Crackers</td><td>2 Crackr</td><td>2</td><td>35</td><td>5</td><td>1</td><td>0</td><td>8</td><td>0.5</td></tr>
+<tr><td>Wine, Dessert</td><td>3.5 F Oz</td><td>0</td><td>140</td><td>8</td><td>0</td><td>0</td><td>103</td><td>0</td></tr>
+<tr><td>Wine, Table, Red</td><td>3.5 F Oz</td><td>0</td><td>75</td><td>3</td><td>0</td><td>0</td><td>102</td><td>0</td></tr>
+<tr><td>Wine, Table, White</td><td>3.5 F Oz</td><td>0</td><td>80</td><td>3</td><td>0</td><td>0</td><td>102</td><td>0</td></tr>
+<tr><td>Yeast, Bakers, Dry, Active</td><td>1 Pkg</td><td>0</td><td>20</td><td>3</td><td>3</td><td>0</td><td>7</td><td>0</td></tr>
+<tr><td>Yeast, Brewers, Dry</td><td>1 Tbsp</td><td>0</td><td>25</td><td>3</td><td>3</td><td>0</td><td>8</td><td>0</td></tr>
+<tr><td>Yellow Cake W/ Choc Frst,Frmix</td><td>1 Cake</td><td>125</td><td>3735</td><td>638</td><td>45</td><td>576</td><td>1108</td><td>47.8</td></tr>
+<tr><td>Yellow Cake W/ Choc Frst,Frmix</td><td>1 Piece</td><td>8</td><td>235</td><td>40</td><td>3</td><td>36</td><td>69</td><td>3</td></tr>
+<tr><td>Yellowcake W/ Chocfrstng,Comml</td><td>1 Cake</td><td>175</td><td>3895</td><td>620</td><td>40</td><td>609</td><td>1108</td><td>92</td></tr>
+<tr><td>Yellowcake W/ Chocfrstng,Comml</td><td>1 Piece</td><td>11</td><td>245</td><td>39</td><td>2</td><td>38</td><td>69</td><td>5.7</td></tr>
+<tr><td>Yogurt, W/ Lofat Milk, Plain</td><td>8 Oz</td><td>4</td><td>145</td><td>16</td><td>12</td><td>14</td><td>227</td><td>2.3</td></tr>
+<tr><td>Yogurt, W/ Lofat Milk,Fruitflv</td><td>8 Oz</td><td>2</td><td>230</td><td>43</td><td>10</td><td>10</td><td>227</td><td>1.6</td></tr>
+<tr><td>Yogurt, W/ Nonfat Milk</td><td>8 Oz</td><td>0</td><td>125</td><td>17</td><td>13</td><td>4</td><td>227</td><td>0.3</td></tr>
+<tr><td>Yogurt, W/ Whole Milk</td><td>8 Oz</td><td>7</td><td>140</td><td>11</td><td>8</td><td>29</td><td>227</td><td>4.8</td></tr>
+</table>
+
+<script>
+function FilterTableByTypedText() {
+  var input, filter, table, tr, td, i;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTable");
+  tr = table.getElementsByTagName("tr");
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[0];  // Food
+    td1 =  tr[i].getElementsByTagName("td")[1]; //Quantity
+    if (td) {
+      if (td.innerHTML.toUpperCase().indexOf(filter) > -1 || td1.innerHTML.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }       
+  }
+}
+
+function FilterTableByDayCode(filter) {
+  var input, filter0, table, tr, td, i;
+  filter= filter.toUpperCase();
+  table = document.getElementById("myTable");
+  tr = table.getElementsByTagName("tr");
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[3];
+    if (td) {
+    	if ( filter == "ALL") {
+    		 tr[i].style.display = "";
+    	} else {
+         if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+           tr[i].style.display = "";
+         } else {
+           tr[i].style.display = "none";
+         }
+      }
+    }       
+  }
+}
+
+</script>
+<br>
+<div id="sourceLink"><a href="https://github.com/arun-ks/GymSchedule">Source</a></div>
+</body>
+</html>
