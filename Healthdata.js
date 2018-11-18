@@ -1,4 +1,4 @@
-var myGenrDate = "2018-11-12 01:07:05"; 
+var myGenrDate = "2018-11-18 23:07:45"; 
 var myData0 = [
    {
      type: "line", showInLegend: true, legendText: "Weight", name: "Weight",
@@ -721,6 +721,13 @@ var myData0 = [
        { x: new Date(2018,10,9,13,1,1), y: 75.2},
        { x: new Date(2018,10,10,13,1,1), y: 75.3},
        { x: new Date(2018,10,11,13,1,1), y: 75.3},
+       { x: new Date(2018,10,12,13,1,1), y: 75.6},
+       { x: new Date(2018,10,13,13,1,1), y: 75.3},
+       { x: new Date(2018,10,14,13,1,1), y: 76.3},
+       { x: new Date(2018,10,15,13,1,1), y: 75.3},
+       { x: new Date(2018,10,16,13,1,1), y: 75},
+       { x: new Date(2018,10,17,13,1,1), y: 75.3},
+       { x: new Date(2018,10,18,13,1,1), y: 74.6},
      ]
    },
    {
