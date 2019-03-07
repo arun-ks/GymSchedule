@@ -1,4 +1,4 @@
-var myGenrDate = "2019-03-04 02:15:02"; 
+var myGenrDate = "2019-03-07 21:45:36"; 
 var myData0 = [
    {
      type: "line", showInLegend: true, legendText: "Weight", name: "Weight",
@@ -822,6 +822,10 @@ var myData0 = [
        { x: new Date(2019,2,1,13,1,1), y: 75.6},
        { x: new Date(2019,2,2,13,1,1), y: 74.9},
        { x: new Date(2019,2,3,13,1,1), y: 75},
+       { x: new Date(2019,2,4,13,1,1), y: 75.2},
+       { x: new Date(2019,2,5,13,1,1), y: 75.3},
+       { x: new Date(2019,2,6,13,1,1), y: 75.3},
+       { x: new Date(2019,2,7,13,1,1), y: 75},
      ]
    },
    {
@@ -1273,6 +1277,7 @@ var myData0 = [
        { x: new Date(2019,1,23,13,1,1), y: 500},
        { x: new Date(2019,2,2,13,1,1), y: 500},
        { x: new Date(2019,2,3,13,1,1), y: 500},
+       { x: new Date(2019,2,7,13,1,1), y: 500},
      ]
    },
    {
@@ -1438,6 +1443,15 @@ var myData0 = [
        { x: new Date(2019,0,28,13,1,1), y: 500},
        { x: new Date(2019,1,21,13,1,1), y: 500},
        { x: new Date(2019,2,2,13,1,1), y: 500},
+     ]
+   },
+   {
+     type: "column", showInLegend: true, legendText: "Running (+15m)", name: "Running (+15m)",
+     dataPoints: [
+       { x: new Date(2017,2,18,13,1,1), y: 500},
+       { x: new Date(2017,6,23,13,1,1), y: 500},
+       { x: new Date(2019,0,24,13,1,1), y: 500},
+       { x: new Date(2019,2,4,13,1,1), y: 500},
      ]
    },
  ];
