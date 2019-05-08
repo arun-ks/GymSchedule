@@ -1,4 +1,4 @@
-var myGenrDate = "2019-05-08 20:41:09"; 
+var myGenrDate = "2019-05-08 21:02:27"; 
 var myData0 = [
    {
      type: "line", showInLegend: true, legendText: "Weight", name: "Weight",
