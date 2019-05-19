@@ -17,10 +17,15 @@
             contentFormatter: function(e){
                 var str = "";
 				    for (var i = 0; i < e.entries.length; i++){
-                      var  temp = e.entries[i].dataSeries.name + ": <strong>"+  e.entries[i].dataPoint.y + "</strong> <br/>"  ; 
+				    	        if ( e.entries[i].dataPoint.y == 500) {
+                            var  temp = e.entries[i].dataSeries.name + "<br/>"  ; 
+                      } else {
+                            var  temp = e.entries[i].dataSeries.name + ": <strong>"+  e.entries[i].dataPoint.y + "</strong> <br/>"  ; 
+                      }
                       str = str.concat(temp);
                 }
-				str = e.entries[i-1].dataPoint.x.toISOString().slice(0,10) + ": <br/>" + str;
+				    //str = e.entries[i-1].dataPoint.x.toISOString().slice(0,10) + ": <br/>" + str;
+				    str = e.entries[i-1].dataPoint.x.toDateString().slice(0,10) + ": <br/>" + str;        
                 return (str);
             }
          },
