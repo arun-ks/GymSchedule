@@ -1,4 +1,4 @@
-var myGenrDate = "2021-01-25 18:11:46"; 
+var myGenrDate = "2021-02-12 02:33:52"; 
 var myData0 = [
    {
      type: "line", showInLegend: true, legendText: "Weight", name: "Weight",
@@ -1499,6 +1499,18 @@ var myData0 = [
        { x: new Date(2021,0,23,13,1,1), y: 75.5 , notes: "" },
        { x: new Date(2021,0,24,13,1,1), y: 76.4 , notes: "" },
        { x: new Date(2021,0,25,13,1,1), y: 75.7 , notes: "" },
+       { x: new Date(2021,0,27,13,1,1), y: 75.3 , notes: "" },
+       { x: new Date(2021,1,1,13,1,1), y: 75.3 , notes: "" },
+       { x: new Date(2021,1,2,13,1,1), y: 75.5 , notes: "" },
+       { x: new Date(2021,1,3,13,1,1), y: 75.1 , notes: "" },
+       { x: new Date(2021,1,4,13,1,1), y: 74.4 , notes: "" },
+       { x: new Date(2021,1,5,13,1,1), y: 74 , notes: "" },
+       { x: new Date(2021,1,6,13,1,1), y: 75 , notes: "" },
+       { x: new Date(2021,1,7,13,1,1), y: 75.1 , notes: "" },
+       { x: new Date(2021,1,8,13,1,1), y: 75 , notes: "" },
+       { x: new Date(2021,1,9,13,1,1), y: 75.2 , notes: "" },
+       { x: new Date(2021,1,10,13,1,1), y: 74.6 , notes: "" },
+       { x: new Date(2021,1,11,13,1,1), y: 73.8 , notes: "" },
      ]
    },
    {
@@ -2432,6 +2444,7 @@ var myData0 = [
        { x: new Date(2021,0,15,13,1,1), y: 500 , notes: "Running - 26 min, 4.2 KM @Mines Southern Lake" },
        { x: new Date(2021,0,17,13,1,1), y: 500 , notes: "Running - 77 min, 10.4 KM @Mines Southern Lake" },
        { x: new Date(2021,0,20,13,1,1), y: 500 , notes: "Running - 25 min, 4.2 KM @Mines Southern Lake" },
+       { x: new Date(2021,1,11,13,1,1), y: 500 , notes: "Running - 40 min, 6.1 KM @Country Heights" },
      ]
    },
    {
@@ -2526,6 +2539,7 @@ var myData0 = [
        { x: new Date(2020,8,26,13,1,1), y: 500 , notes: "Walking - 2.63 km in 51 min @Petaling Street, Pudu" },
        { x: new Date(2020,10,1,13,1,1), y: 500 , notes: "Cycling - 10.8 km in 52 min @Mines Southern Lake, MIECC & Senja" },
        { x: new Date(2020,11,7,13,1,1), y: 500 , notes: "Walking - 2.87 km in 33 min @Bank Negara" },
+       { x: new Date(2021,1,6,13,1,1), y: 500 , notes: "Walking - 1.8 km in 43 min @Country Heights" },
      ]
    },
    {
@@ -2940,6 +2954,7 @@ var myData0 = [
        { x: new Date(2020,11,5,13,1,1), y: 500 , notes: "The Magic of Reality - Richard Dawkins" },
        { x: new Date(2020,11,20,13,1,1), y: 500 , notes: "The Magic of Reality - Richard Dawkins" },
        { x: new Date(2021,0,2,13,1,1), y: 500 , notes: "Gitanjali -  Rabindranath Tagore" },
+       { x: new Date(2021,1,1,13,1,1), y: 500 , notes: "The Magic of Reality - Richard Dawkins" },
      ]
    },
  ];
