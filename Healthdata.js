@@ -1,4 +1,4 @@
-var myGenrDate = "2021-02-12 02:33:52"; 
+var myGenrDate = "2021-02-16 10:36:46"; 
 var myData0 = [
    {
      type: "line", showInLegend: true, legendText: "Weight", name: "Weight",
@@ -1511,6 +1511,11 @@ var myData0 = [
        { x: new Date(2021,1,9,13,1,1), y: 75.2 , notes: "" },
        { x: new Date(2021,1,10,13,1,1), y: 74.6 , notes: "" },
        { x: new Date(2021,1,11,13,1,1), y: 73.8 , notes: "" },
+       { x: new Date(2021,1,12,13,1,1), y: 74.8 , notes: "" },
+       { x: new Date(2021,1,13,13,1,1), y: 74.8 , notes: "" },
+       { x: new Date(2021,1,14,13,1,1), y: 73.7 , notes: "" },
+       { x: new Date(2021,1,15,13,1,1), y: 74.8 , notes: "" },
+       { x: new Date(2021,1,16,13,1,1), y: 75 , notes: "" },
      ]
    },
    {
@@ -2445,6 +2450,7 @@ var myData0 = [
        { x: new Date(2021,0,17,13,1,1), y: 500 , notes: "Running - 77 min, 10.4 KM @Mines Southern Lake" },
        { x: new Date(2021,0,20,13,1,1), y: 500 , notes: "Running - 25 min, 4.2 KM @Mines Southern Lake" },
        { x: new Date(2021,1,11,13,1,1), y: 500 , notes: "Running - 40 min, 6.1 KM @Country Heights" },
+       { x: new Date(2021,1,14,13,1,1), y: 500 , notes: "Running - 47 min, 7.1 KM @Country Heights" },
      ]
    },
    {
@@ -2540,6 +2546,8 @@ var myData0 = [
        { x: new Date(2020,10,1,13,1,1), y: 500 , notes: "Cycling - 10.8 km in 52 min @Mines Southern Lake, MIECC & Senja" },
        { x: new Date(2020,11,7,13,1,1), y: 500 , notes: "Walking - 2.87 km in 33 min @Bank Negara" },
        { x: new Date(2021,1,6,13,1,1), y: 500 , notes: "Walking - 1.8 km in 43 min @Country Heights" },
+       { x: new Date(2021,1,13,13,1,1), y: 500 , notes: "Walking - 1.7 km in 32 min @Country Heights" },
+       { x: new Date(2021,1,14,13,1,1), y: 500 , notes: "Walking - 1.5 km in 32 min @Country Heights" },
      ]
    },
    {
