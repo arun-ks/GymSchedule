@@ -1,4 +1,4 @@
-var myGenrDate = "2021-02-16 10:36:46"; 
+var myGenrDate = "2021-03-07 22:27:02"; 
 var myData0 = [
    {
      type: "line", showInLegend: true, legendText: "Weight", name: "Weight",
@@ -1515,7 +1515,26 @@ var myData0 = [
        { x: new Date(2021,1,13,13,1,1), y: 74.8 , notes: "" },
        { x: new Date(2021,1,14,13,1,1), y: 73.7 , notes: "" },
        { x: new Date(2021,1,15,13,1,1), y: 74.8 , notes: "" },
-       { x: new Date(2021,1,16,13,1,1), y: 75 , notes: "" },
+       { x: new Date(2021,1,16,13,1,1), y: 74.9 , notes: "" },
+       { x: new Date(2021,1,17,13,1,1), y: 74.4 , notes: "" },
+       { x: new Date(2021,1,18,13,1,1), y: 74 , notes: "" },
+       { x: new Date(2021,1,19,13,1,1), y: 73.8 , notes: "" },
+       { x: new Date(2021,1,20,13,1,1), y: 75 , notes: "" },
+       { x: new Date(2021,1,21,13,1,1), y: 75.2 , notes: "" },
+       { x: new Date(2021,1,22,13,1,1), y: 73.4 , notes: "" },
+       { x: new Date(2021,1,23,13,1,1), y: 74.4 , notes: "" },
+       { x: new Date(2021,1,24,13,1,1), y: 75.4 , notes: "" },
+       { x: new Date(2021,1,25,13,1,1), y: 75.7 , notes: "" },
+       { x: new Date(2021,1,26,13,1,1), y: 75 , notes: "" },
+       { x: new Date(2021,1,27,13,1,1), y: 74.8 , notes: "" },
+       { x: new Date(2021,1,28,13,1,1), y: 74.7 , notes: "" },
+       { x: new Date(2021,2,1,13,1,1), y: 75 , notes: "" },
+       { x: new Date(2021,2,2,13,1,1), y: 75.1 , notes: "" },
+       { x: new Date(2021,2,3,13,1,1), y: 74.8 , notes: "" },
+       { x: new Date(2021,2,4,13,1,1), y: 75.3 , notes: "" },
+       { x: new Date(2021,2,5,13,1,1), y: 75 , notes: "" },
+       { x: new Date(2021,2,5,13,1,1), y: 75.6 , notes: "" },
+       { x: new Date(2021,2,7,13,1,1), y: 75.2 , notes: "" },
      ]
    },
    {
@@ -2548,6 +2567,7 @@ var myData0 = [
        { x: new Date(2021,1,6,13,1,1), y: 500 , notes: "Walking - 1.8 km in 43 min @Country Heights" },
        { x: new Date(2021,1,13,13,1,1), y: 500 , notes: "Walking - 1.7 km in 32 min @Country Heights" },
        { x: new Date(2021,1,14,13,1,1), y: 500 , notes: "Walking - 1.5 km in 32 min @Country Heights" },
+       { x: new Date(2021,2,3,13,1,1), y: 500 , notes: "Cycling - 8.6 km in 40 min @Mines Southern Lake, Shopping & Senja" },
      ]
    },
    {
@@ -2700,6 +2720,10 @@ var myData0 = [
        { x: new Date(2020,11,11,13,1,1), y: 500 , notes: "VBA" },
        { x: new Date(2020,11,31,13,1,1), y: 500 , notes: "VBA" },
        { x: new Date(2021,0,16,13,1,1), y: 500 , notes: "Autohotkey, VBA, HTML5" },
+       { x: new Date(2021,1,20,13,1,1), y: 500 , notes: "Python Scrapping" },
+       { x: new Date(2021,2,1,13,1,1), y: 500 , notes: "VBA" },
+       { x: new Date(2021,2,4,13,1,1), y: 500 , notes: "VBA" },
+       { x: new Date(2021,2,6,13,1,1), y: 500 , notes: "Microsoft Power Automate" },
      ]
    },
    {
@@ -2963,6 +2987,7 @@ var myData0 = [
        { x: new Date(2020,11,20,13,1,1), y: 500 , notes: "The Magic of Reality - Richard Dawkins" },
        { x: new Date(2021,0,2,13,1,1), y: 500 , notes: "Gitanjali -  Rabindranath Tagore" },
        { x: new Date(2021,1,1,13,1,1), y: 500 , notes: "The Magic of Reality - Richard Dawkins" },
+       { x: new Date(2021,1,28,13,1,1), y: 500 , notes: "The Magic of Reality - Richard Dawkins" },
      ]
    },
  ];
