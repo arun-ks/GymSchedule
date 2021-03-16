@@ -1,4 +1,4 @@
-var myGenrDate = "2021-03-07 22:27:02"; 
+var myGenrDate = "2021-03-17 02:50:21"; 
 var myData0 = [
    {
      type: "line", showInLegend: true, legendText: "Weight", name: "Weight",
@@ -1535,6 +1535,15 @@ var myData0 = [
        { x: new Date(2021,2,5,13,1,1), y: 75 , notes: "" },
        { x: new Date(2021,2,5,13,1,1), y: 75.6 , notes: "" },
        { x: new Date(2021,2,7,13,1,1), y: 75.2 , notes: "" },
+       { x: new Date(2021,2,8,13,1,1), y: 75.4 , notes: "" },
+       { x: new Date(2021,2,9,13,1,1), y: 74.7 , notes: "" },
+       { x: new Date(2021,2,10,13,1,1), y: 75.5 , notes: "" },
+       { x: new Date(2021,2,11,13,1,1), y: 75.4 , notes: "" },
+       { x: new Date(2021,2,12,13,1,1), y: 75.5 , notes: "" },
+       { x: new Date(2021,2,13,13,1,1), y: 75.6 , notes: "" },
+       { x: new Date(2021,2,14,13,1,1), y: 75.6 , notes: "" },
+       { x: new Date(2021,2,15,13,1,1), y: 75.5 , notes: "" },
+       { x: new Date(2021,2,16,13,1,1), y: 75.3 , notes: "" },
      ]
    },
    {
@@ -2724,6 +2733,7 @@ var myData0 = [
        { x: new Date(2021,2,1,13,1,1), y: 500 , notes: "VBA" },
        { x: new Date(2021,2,4,13,1,1), y: 500 , notes: "VBA" },
        { x: new Date(2021,2,6,13,1,1), y: 500 , notes: "Microsoft Power Automate" },
+       { x: new Date(2021,2,12,13,1,1), y: 500 , notes: "VBA" },
      ]
    },
    {
