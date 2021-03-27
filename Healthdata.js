@@ -1,4 +1,4 @@
-var myGenrDate = "2021-03-21 23:40:50"; 
+var myGenrDate = "2021-03-27 15:00:01"; 
 var myData0 = [
    {
      type: "line", showInLegend: true, legendText: "Weight", name: "Weight",
@@ -1545,8 +1545,16 @@ var myData0 = [
        { x: new Date(2021,2,15,13,1,1), y: 75.5 , notes: "" },
        { x: new Date(2021,2,16,13,1,1), y: 75.3 , notes: "" },
        { x: new Date(2021,2,17,13,1,1), y: 75.6 , notes: "" },
+       { x: new Date(2021,2,18,13,1,1), y: 76 , notes: "" },
+       { x: new Date(2021,2,19,13,1,1), y: 75.8 , notes: "" },
        { x: new Date(2021,2,20,13,1,1), y: 75.4 , notes: "" },
        { x: new Date(2021,2,21,13,1,1), y: 75.8 , notes: "" },
+       { x: new Date(2021,2,22,13,1,1), y: 76.3 , notes: "" },
+       { x: new Date(2021,2,23,13,1,1), y: 76.6 , notes: "" },
+       { x: new Date(2021,2,24,13,1,1), y: 76.2 , notes: "" },
+       { x: new Date(2021,2,25,13,1,1), y: 76.2 , notes: "" },
+       { x: new Date(2021,2,26,13,1,1), y: 76.1 , notes: "" },
+       { x: new Date(2021,2,27,13,1,1), y: 75.2 , notes: "" },
      ]
    },
    {
@@ -2740,6 +2748,7 @@ var myData0 = [
        { x: new Date(2021,2,12,13,1,1), y: 500 , notes: "VBA" },
        { x: new Date(2021,2,18,13,1,1), y: 500 , notes: "VBA" },
        { x: new Date(2021,2,21,13,1,1), y: 500 , notes: "Python" },
+       { x: new Date(2021,2,26,13,1,1), y: 500 , notes: "Excel" },
      ]
    },
    {
