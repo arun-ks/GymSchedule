@@ -1,4 +1,4 @@
-var myGenrDate = "2021-03-27 15:00:01"; 
+var myGenrDate = "2021-03-28 01:35:11"; 
 var myData0 = [
    {
      type: "line", showInLegend: true, legendText: "Weight", name: "Weight",
@@ -2589,6 +2589,7 @@ var myData0 = [
        { x: new Date(2021,1,13,13,1,1), y: 500 , notes: "Walking - 1.7 km in 32 min @Country Heights" },
        { x: new Date(2021,1,14,13,1,1), y: 500 , notes: "Walking - 1.5 km in 32 min @Country Heights" },
        { x: new Date(2021,2,3,13,1,1), y: 500 , notes: "Cycling - 8.6 km in 40 min @Mines Southern Lake, Shopping & Senja" },
+       { x: new Date(2021,2,27,13,1,1), y: 500 , notes: "Cycling - 22.1 km in 113 min @Mines Southern Lake, MIECC & Senja" },
      ]
    },
    {
