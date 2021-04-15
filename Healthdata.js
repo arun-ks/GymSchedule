@@ -1,4 +1,4 @@
-var myGenrDate = "2021-04-03 20:34:37"; 
+var myGenrDate = "2021-04-16 01:38:47"; 
 var myData0 = [
    {
      type: "line", showInLegend: true, legendText: "Weight", name: "Weight",
@@ -1562,6 +1562,18 @@ var myData0 = [
        { x: new Date(2021,3,1,13,1,1), y: 76.6 , notes: "" },
        { x: new Date(2021,3,2,13,1,1), y: 76.9 , notes: "" },
        { x: new Date(2021,3,3,13,1,1), y: 75.3 , notes: "" },
+       { x: new Date(2021,3,4,13,1,1), y: 76 , notes: "" },
+       { x: new Date(2021,3,5,13,1,1), y: 76.6 , notes: "" },
+       { x: new Date(2021,3,6,13,1,1), y: 76.7 , notes: "" },
+       { x: new Date(2021,3,7,13,1,1), y: 76.6 , notes: "" },
+       { x: new Date(2021,3,8,13,1,1), y: 76.5 , notes: "" },
+       { x: new Date(2021,3,9,13,1,1), y: 75.9 , notes: "" },
+       { x: new Date(2021,3,10,13,1,1), y: 75.1 , notes: "" },
+       { x: new Date(2021,3,11,13,1,1), y: 76.6 , notes: "" },
+       { x: new Date(2021,3,12,13,1,1), y: 76.9 , notes: "" },
+       { x: new Date(2021,3,13,13,1,1), y: 76.8 , notes: "" },
+       { x: new Date(2021,3,14,13,1,1), y: 76.6 , notes: "" },
+       { x: new Date(2021,3,15,13,1,1), y: 76 , notes: "" },
      ]
    },
    {
@@ -2499,7 +2511,9 @@ var myData0 = [
        { x: new Date(2021,1,14,13,1,1), y: 500 , notes: "Running - 47 min, 7.1 KM @Country Heights" },
        { x: new Date(2021,2,17,13,1,1), y: 500 , notes: "Running - 28 min, 4.2 KM @Mines Southern Lake" },
        { x: new Date(2021,2,30,13,1,1), y: 500 , notes: "Running - 28 min, 4.3 KM @Mines Southern Lake" },
-       { x: new Date(2021,3,3,13,1,1), y: 500 , notes: "Running - 36 min, 5.4 KM @Mines Southern Lake" },
+       { x: new Date(2021,3,3,13,1,1), y: 500 , notes: "Running - 36 min, 5.4 KM @Mines Southern Lake & Lakeside Reclamation" },
+       { x: new Date(2021,3,10,13,1,1), y: 500 , notes: "Running - 36 min, 5.3 KM @Mines Southern Lake & Lakeside Reclamation" },
+       { x: new Date(2021,3,15,13,1,1), y: 500 , notes: "Running - 28 min, 4.3 KM @Mines Southern Lake" },
      ]
    },
    {
@@ -2759,6 +2773,10 @@ var myData0 = [
        { x: new Date(2021,2,18,13,1,1), y: 500 , notes: "VBA" },
        { x: new Date(2021,2,21,13,1,1), y: 500 , notes: "Python" },
        { x: new Date(2021,2,26,13,1,1), y: 500 , notes: "Excel" },
+       { x: new Date(2021,3,5,13,1,1), y: 500 , notes: "VBA,Python" },
+       { x: new Date(2021,3,9,13,1,1), y: 500 , notes: "Excel" },
+       { x: new Date(2021,3,14,13,1,1), y: 500 , notes: "VBA" },
+       { x: new Date(2021,3,16,13,1,1), y: 500 , notes: "Autohotkey & Excel" },
      ]
    },
    {
@@ -3023,6 +3041,7 @@ var myData0 = [
        { x: new Date(2021,0,2,13,1,1), y: 500 , notes: "Gitanjali -  Rabindranath Tagore" },
        { x: new Date(2021,1,1,13,1,1), y: 500 , notes: "The Magic of Reality - Richard Dawkins" },
        { x: new Date(2021,1,28,13,1,1), y: 500 , notes: "The Magic of Reality - Richard Dawkins" },
+       { x: new Date(2021,3,13,13,1,1), y: 500 , notes: "The Magic of Reality - Richard Dawkins" },
      ]
    },
  ];
