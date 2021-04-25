@@ -1,4 +1,4 @@
-var myGenrDate = "2021-04-16 01:38:47"; 
+var myGenrDate = "2021-04-25 22:47:17"; 
 var myData0 = [
    {
      type: "line", showInLegend: true, legendText: "Weight", name: "Weight",
@@ -1574,6 +1574,16 @@ var myData0 = [
        { x: new Date(2021,3,13,13,1,1), y: 76.8 , notes: "" },
        { x: new Date(2021,3,14,13,1,1), y: 76.6 , notes: "" },
        { x: new Date(2021,3,15,13,1,1), y: 76 , notes: "" },
+       { x: new Date(2021,3,16,13,1,1), y: 76.8 , notes: "" },
+       { x: new Date(2021,3,17,13,1,1), y: 76 , notes: "" },
+       { x: new Date(2021,3,18,13,1,1), y: 77.8 , notes: "" },
+       { x: new Date(2021,3,19,13,1,1), y: 77.6 , notes: "" },
+       { x: new Date(2021,3,20,13,1,1), y: 76.9 , notes: "" },
+       { x: new Date(2021,3,21,13,1,1), y: 76.4 , notes: "" },
+       { x: new Date(2021,3,22,13,1,1), y: 77 , notes: "" },
+       { x: new Date(2021,3,23,13,1,1), y: 77 , notes: "" },
+       { x: new Date(2021,3,24,13,1,1), y: 77.3 , notes: "" },
+       { x: new Date(2021,3,25,13,1,1), y: 76.3 , notes: "" },
      ]
    },
    {
@@ -2514,6 +2524,8 @@ var myData0 = [
        { x: new Date(2021,3,3,13,1,1), y: 500 , notes: "Running - 36 min, 5.4 KM @Mines Southern Lake & Lakeside Reclamation" },
        { x: new Date(2021,3,10,13,1,1), y: 500 , notes: "Running - 36 min, 5.3 KM @Mines Southern Lake & Lakeside Reclamation" },
        { x: new Date(2021,3,15,13,1,1), y: 500 , notes: "Running - 28 min, 4.3 KM @Mines Southern Lake" },
+       { x: new Date(2021,3,17,13,1,1), y: 500 , notes: "Running - 75 min, 9.3 KM @Mines Southern Lake & Lakeside Reclamation" },
+       { x: new Date(2021,3,21,13,1,1), y: 500 , notes: "Running - 27 min, 4.4 KM @Mines Southern Lake" },
      ]
    },
    {
@@ -2777,6 +2789,8 @@ var myData0 = [
        { x: new Date(2021,3,9,13,1,1), y: 500 , notes: "Excel" },
        { x: new Date(2021,3,14,13,1,1), y: 500 , notes: "VBA" },
        { x: new Date(2021,3,16,13,1,1), y: 500 , notes: "Autohotkey & Excel" },
+       { x: new Date(2021,3,21,13,1,1), y: 500 , notes: "Excel, VBA" },
+       { x: new Date(2021,3,25,13,1,1), y: 500 , notes: "Vite" },
      ]
    },
    {
@@ -3042,6 +3056,8 @@ var myData0 = [
        { x: new Date(2021,1,1,13,1,1), y: 500 , notes: "The Magic of Reality - Richard Dawkins" },
        { x: new Date(2021,1,28,13,1,1), y: 500 , notes: "The Magic of Reality - Richard Dawkins" },
        { x: new Date(2021,3,13,13,1,1), y: 500 , notes: "The Magic of Reality - Richard Dawkins" },
+       { x: new Date(2021,3,23,13,1,1), y: 500 , notes: "The Magic of Reality - Richard Dawkins" },
+       { x: new Date(2021,3,25,13,1,1), y: 500 , notes: "The Terrible and Wonderful Reasons Why I Run Long Distances - Matthew Inman" },
      ]
    },
  ];
