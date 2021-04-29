@@ -1,4 +1,4 @@
-var myGenrDate = "2021-04-25 22:47:17"; 
+var myGenrDate = "2021-04-30 02:40:21"; 
 var myData0 = [
    {
      type: "line", showInLegend: true, legendText: "Weight", name: "Weight",
@@ -1584,6 +1584,10 @@ var myData0 = [
        { x: new Date(2021,3,23,13,1,1), y: 77 , notes: "" },
        { x: new Date(2021,3,24,13,1,1), y: 77.3 , notes: "" },
        { x: new Date(2021,3,25,13,1,1), y: 76.3 , notes: "" },
+       { x: new Date(2021,3,26,13,1,1), y: 77.4 , notes: "" },
+       { x: new Date(2021,3,27,13,1,1), y: 77.7 , notes: "" },
+       { x: new Date(2021,3,28,13,1,1), y: 77.4 , notes: "" },
+       { x: new Date(2021,3,29,13,1,1), y: 77.4 , notes: "" },
      ]
    },
    {
@@ -3058,6 +3062,9 @@ var myData0 = [
        { x: new Date(2021,3,13,13,1,1), y: 500 , notes: "The Magic of Reality - Richard Dawkins" },
        { x: new Date(2021,3,23,13,1,1), y: 500 , notes: "The Magic of Reality - Richard Dawkins" },
        { x: new Date(2021,3,25,13,1,1), y: 500 , notes: "The Terrible and Wonderful Reasons Why I Run Long Distances - Matthew Inman" },
+       { x: new Date(2021,3,27,13,1,1), y: 500 , notes: "The Terrible and Wonderful Reasons Why I Run Long Distances - Matthew Inman" },
+       { x: new Date(2021,3,28,13,1,1), y: 500 , notes: "The Terrible and Wonderful Reasons Why I Run Long Distances - Matthew Inman" },
+       { x: new Date(2021,3,29,13,1,1), y: 500 , notes: "The Terrible and Wonderful Reasons Why I Run Long Distances - Matthew Inman" },
      ]
    },
  ];
