@@ -1,4 +1,4 @@
-var myGenrDate = "2021-04-30 02:40:21"; 
+var myGenrDate = "2021-05-08 23:30:00"; 
 var myData0 = [
    {
      type: "line", showInLegend: true, legendText: "Weight", name: "Weight",
@@ -1588,6 +1588,15 @@ var myData0 = [
        { x: new Date(2021,3,27,13,1,1), y: 77.7 , notes: "" },
        { x: new Date(2021,3,28,13,1,1), y: 77.4 , notes: "" },
        { x: new Date(2021,3,29,13,1,1), y: 77.4 , notes: "" },
+       { x: new Date(2021,3,30,13,1,1), y: 77.8 , notes: "" },
+       { x: new Date(2021,4,1,13,1,1), y: 76.4 , notes: "" },
+       { x: new Date(2021,4,2,13,1,1), y: 77.1 , notes: "" },
+       { x: new Date(2021,4,3,13,1,1), y: 76.6 , notes: "" },
+       { x: new Date(2021,4,4,13,1,1), y: 76.8 , notes: "" },
+       { x: new Date(2021,4,5,13,1,1), y: 77.8 , notes: "" },
+       { x: new Date(2021,4,6,13,1,1), y: 76.9 , notes: "" },
+       { x: new Date(2021,4,7,13,1,1), y: 77.3 , notes: "" },
+       { x: new Date(2021,4,8,13,1,1), y: 77.1 , notes: "" },
      ]
    },
    {
@@ -2530,6 +2539,9 @@ var myData0 = [
        { x: new Date(2021,3,15,13,1,1), y: 500 , notes: "Running - 28 min, 4.3 KM @Mines Southern Lake" },
        { x: new Date(2021,3,17,13,1,1), y: 500 , notes: "Running - 75 min, 9.3 KM @Mines Southern Lake & Lakeside Reclamation" },
        { x: new Date(2021,3,21,13,1,1), y: 500 , notes: "Running - 27 min, 4.4 KM @Mines Southern Lake" },
+       { x: new Date(2021,4,1,13,1,1), y: 500 , notes: "Running - 28 min, 4.4 KM @Mines Southern Lake" },
+       { x: new Date(2021,4,4,13,1,1), y: 500 , notes: "Running - 26 min, 4.2 KM @Mines Southern Lake" },
+       { x: new Date(2021,4,6,13,1,1), y: 500 , notes: "Running - 26 min, 4.2 KM @Mines Southern Lake" },
      ]
    },
    {
@@ -3065,6 +3077,12 @@ var myData0 = [
        { x: new Date(2021,3,27,13,1,1), y: 500 , notes: "The Terrible and Wonderful Reasons Why I Run Long Distances - Matthew Inman" },
        { x: new Date(2021,3,28,13,1,1), y: 500 , notes: "The Terrible and Wonderful Reasons Why I Run Long Distances - Matthew Inman" },
        { x: new Date(2021,3,29,13,1,1), y: 500 , notes: "The Terrible and Wonderful Reasons Why I Run Long Distances - Matthew Inman" },
+       { x: new Date(2021,3,30,13,1,1), y: 500 , notes: "The Magic of Reality - Richard Dawkins" },
+       { x: new Date(2021,4,1,13,1,1), y: 500 , notes: "The Magic of Reality - Richard Dawkins" },
+       { x: new Date(2021,4,1,13,1,1), y: 500 , notes: "A Case of Exploding Mangoes - Mohammed Hanif" },
+       { x: new Date(2021,4,2,13,1,1), y: 500 , notes: "A Case of Exploding Mangoes - Mohammed Hanif" },
+       { x: new Date(2021,4,7,13,1,1), y: 500 , notes: "The Magic of Reality - Richard Dawkins" },
+       { x: new Date(2021,4,7,13,1,1), y: 500 , notes: "Gitanjali -  Rabindranath Tagore" },
      ]
    },
  ];
