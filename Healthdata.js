@@ -1,4 +1,4 @@
-var myGenrDate = "2021-05-15 00:58:23"; 
+var myGenrDate = "2021-05-26 18:48:22"; 
 var myData0 = [
    {
      type: "line", showInLegend: true, legendText: "Weight", name: "Weight",
@@ -1603,6 +1603,18 @@ var myData0 = [
        { x: new Date(2021,4,12,13,1,1), y: 76.8 , notes: "" },
        { x: new Date(2021,4,13,13,1,1), y: 76.7 , notes: "" },
        { x: new Date(2021,4,14,13,1,1), y: 75.8 , notes: "" },
+       { x: new Date(2021,4,15,13,1,1), y: 77.3 , notes: "" },
+       { x: new Date(2021,4,16,13,1,1), y: 76.8 , notes: "" },
+       { x: new Date(2021,4,17,13,1,1), y: 77.4 , notes: "" },
+       { x: new Date(2021,4,18,13,1,1), y: 77 , notes: "" },
+       { x: new Date(2021,4,19,13,1,1), y: 76.8 , notes: "" },
+       { x: new Date(2021,4,20,13,1,1), y: 76.3 , notes: "" },
+       { x: new Date(2021,4,21,13,1,1), y: 77 , notes: "" },
+       { x: new Date(2021,4,22,13,1,1), y: 76.6 , notes: "" },
+       { x: new Date(2021,4,23,13,1,1), y: 76.3 , notes: "" },
+       { x: new Date(2021,4,24,13,1,1), y: 76.9 , notes: "" },
+       { x: new Date(2021,4,25,13,1,1), y: 76.5 , notes: "" },
+       { x: new Date(2021,4,26,13,1,1), y: 75.5 , notes: "" },
      ]
    },
    {
@@ -2550,6 +2562,8 @@ var myData0 = [
        { x: new Date(2021,4,6,13,1,1), y: 500 , notes: "Running - 26 min, 4.2 KM @Mines Southern Lake" },
        { x: new Date(2021,4,11,13,1,1), y: 500 , notes: "Running - 27 min, 4.4 KM @Mines Southern Lake" },
        { x: new Date(2021,4,14,13,1,1), y: 500 , notes: "Running - 75 min, 10.2 KM @Mines Southern Lake & MIECC" },
+       { x: new Date(2021,4,22,13,1,1), y: 500 , notes: "Running - 28 min, 4.3 KM @Mines Southern Lake" },
+       { x: new Date(2021,4,26,13,1,1), y: 500 , notes: "Running - 63 min, 8.4 KM @Mines Southern Lake" },
      ]
    },
    {
@@ -3091,6 +3105,12 @@ var myData0 = [
        { x: new Date(2021,4,2,13,1,1), y: 500 , notes: "A Case of Exploding Mangoes - Mohammed Hanif" },
        { x: new Date(2021,4,7,13,1,1), y: 500 , notes: "The Magic of Reality - Richard Dawkins" },
        { x: new Date(2021,4,7,13,1,1), y: 500 , notes: "Gitanjali -  Rabindranath Tagore" },
+       { x: new Date(2021,4,15,13,1,1), y: 500 , notes: "A Case of Exploding Mangoes - Mohammed Hanif" },
+       { x: new Date(2021,4,16,13,1,1), y: 500 , notes: "A Case of Exploding Mangoes - Mohammed Hanif" },
+       { x: new Date(2021,4,21,13,1,1), y: 500 , notes: "The Magic of Reality - Richard Dawkins" },
+       { x: new Date(2021,4,22,13,1,1), y: 500 , notes: "The Magic of Reality - Richard Dawkins" },
+       { x: new Date(2021,4,23,13,1,1), y: 500 , notes: "A Case of Exploding Mangoes - Mohammed Hanif" },
+       { x: new Date(2021,4,26,13,1,1), y: 500 , notes: "A Case of Exploding Mangoes - Mohammed Hanif" },
      ]
    },
  ];
