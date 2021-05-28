@@ -1,4 +1,4 @@
-var myGenrDate = "2021-05-26 18:48:22"; 
+var myGenrDate = "2021-05-28 17:32:28"; 
 var myData0 = [
    {
      type: "line", showInLegend: true, legendText: "Weight", name: "Weight",
@@ -1615,6 +1615,8 @@ var myData0 = [
        { x: new Date(2021,4,24,13,1,1), y: 76.9 , notes: "" },
        { x: new Date(2021,4,25,13,1,1), y: 76.5 , notes: "" },
        { x: new Date(2021,4,26,13,1,1), y: 75.5 , notes: "" },
+       { x: new Date(2021,4,27,13,1,1), y: 77.1 , notes: "" },
+       { x: new Date(2021,4,28,13,1,1), y: 76.2 , notes: "" },
      ]
    },
    {
@@ -2564,6 +2566,7 @@ var myData0 = [
        { x: new Date(2021,4,14,13,1,1), y: 500 , notes: "Running - 75 min, 10.2 KM @Mines Southern Lake & MIECC" },
        { x: new Date(2021,4,22,13,1,1), y: 500 , notes: "Running - 28 min, 4.3 KM @Mines Southern Lake" },
        { x: new Date(2021,4,26,13,1,1), y: 500 , notes: "Running - 63 min, 8.4 KM @Mines Southern Lake" },
+       { x: new Date(2021,4,28,13,1,1), y: 500 , notes: "Running - 27 min, 4.4 KM @Mines Southern Lake" },
      ]
    },
    {
