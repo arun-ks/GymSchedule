@@ -1,4 +1,4 @@
-var myGenrDate = "2021-06-14 00:21:34"; 
+var myGenrDate = "2021-06-20 21:51:53"; 
 var myData0 = [
    {
      type: "line", showInLegend: true, legendText: "Weight", name: "Weight",
@@ -1633,6 +1633,13 @@ var myData0 = [
        { x: new Date(2021,5,11,13,1,1), y: 77.6 , notes: "" },
        { x: new Date(2021,5,12,13,1,1), y: 78.4 , notes: "" },
        { x: new Date(2021,5,13,13,1,1), y: 77.1 , notes: "" },
+       { x: new Date(2021,5,14,13,1,1), y: 78.2 , notes: "" },
+       { x: new Date(2021,5,15,13,1,1), y: 77.9 , notes: "" },
+       { x: new Date(2021,5,16,13,1,1), y: 77.9 , notes: "" },
+       { x: new Date(2021,5,17,13,1,1), y: 77.1 , notes: "" },
+       { x: new Date(2021,5,18,13,1,1), y: 77.9 , notes: "" },
+       { x: new Date(2021,5,19,13,1,1), y: 77.8 , notes: "" },
+       { x: new Date(2021,5,20,13,1,1), y: 77.6 , notes: "" },
      ]
    },
    {
@@ -2588,6 +2595,9 @@ var myData0 = [
        { x: new Date(2021,5,5,13,1,1), y: 500 , notes: "Running - 77 min, 10.6 KM @Mines Southern Lake & Jalan Anggerik" },
        { x: new Date(2021,5,11,13,1,1), y: 500 , notes: "Running - 16 min, 2.8 KM @Jalan Anggerik & Senja" },
        { x: new Date(2021,5,13,13,1,1), y: 500 , notes: "Running - 59 min, 8.4 KM @Mines Southern Lake & Senja" },
+       { x: new Date(2021,5,15,13,1,1), y: 500 , notes: "Running - 27 min, 4.2 KM @Mines Southern Lake " },
+       { x: new Date(2021,5,17,13,1,1), y: 500 , notes: "Running - 27 min, 4.4 KM @Mines Southern Lake " },
+       { x: new Date(2021,5,20,13,1,1), y: 500 , notes: "Running - 27 min, 4.2 KM @Jalan Anggerik" },
      ]
    },
    {
@@ -2687,6 +2697,7 @@ var myData0 = [
        { x: new Date(2021,1,14,13,1,1), y: 500 , notes: "Walking - 1.5 km in 32 min @Country Heights" },
        { x: new Date(2021,2,3,13,1,1), y: 500 , notes: "Cycling - 8.6 km in 40 min @Mines Southern Lake, Shopping & Senja" },
        { x: new Date(2021,2,27,13,1,1), y: 500 , notes: "Cycling - 22.1 km in 113 min @Mines Southern Lake, MIECC & Senja" },
+       { x: new Date(2021,5,15,13,1,1), y: 500 , notes: "Cycling - 6.4 km in 35 min @Mines Southern Lake" },
      ]
    },
    {
@@ -3143,6 +3154,8 @@ var myData0 = [
        { x: new Date(2021,5,6,13,1,1), y: 500 , notes: "The Magic of Reality - Richard Dawkins" },
        { x: new Date(2021,5,12,13,1,1), y: 500 , notes: "First As Tragedy, Then As Farce - Slavoj Žižek" },
        { x: new Date(2021,5,13,13,1,1), y: 500 , notes: "First As Tragedy, Then As Farce - Slavoj Žižek" },
+       { x: new Date(2021,5,15,13,1,1), y: 500 , notes: "First As Tragedy, Then As Farce - Slavoj Žižek" },
+       { x: new Date(2021,5,17,13,1,1), y: 500 , notes: "First As Tragedy, Then As Farce - Slavoj Žižek" },
      ]
    },
  ];
