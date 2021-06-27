@@ -1,4 +1,4 @@
-var myGenrDate = "2021-06-20 21:51:53"; 
+var myGenrDate = "2021-06-28 00:27:16"; 
 var myData0 = [
    {
      type: "line", showInLegend: true, legendText: "Weight", name: "Weight",
@@ -1640,6 +1640,13 @@ var myData0 = [
        { x: new Date(2021,5,18,13,1,1), y: 77.9 , notes: "" },
        { x: new Date(2021,5,19,13,1,1), y: 77.8 , notes: "" },
        { x: new Date(2021,5,20,13,1,1), y: 77.6 , notes: "" },
+       { x: new Date(2021,5,21,13,1,1), y: 78 , notes: "" },
+       { x: new Date(2021,5,22,13,1,1), y: 77.3 , notes: "" },
+       { x: new Date(2021,5,23,13,1,1), y: 77.7 , notes: "" },
+       { x: new Date(2021,5,24,13,1,1), y: 77.6 , notes: "" },
+       { x: new Date(2021,5,25,13,1,1), y: 77.6 , notes: "" },
+       { x: new Date(2021,5,26,13,1,1), y: 77.9 , notes: "" },
+       { x: new Date(2021,5,27,13,1,1), y: 76.9 , notes: "" },
      ]
    },
    {
@@ -2598,6 +2605,8 @@ var myData0 = [
        { x: new Date(2021,5,15,13,1,1), y: 500 , notes: "Running - 27 min, 4.2 KM @Mines Southern Lake " },
        { x: new Date(2021,5,17,13,1,1), y: 500 , notes: "Running - 27 min, 4.4 KM @Mines Southern Lake " },
        { x: new Date(2021,5,20,13,1,1), y: 500 , notes: "Running - 27 min, 4.2 KM @Jalan Anggerik" },
+       { x: new Date(2021,5,22,13,1,1), y: 500 , notes: "Running - 28 min, 4.4 KM @Jalan Anggerik" },
+       { x: new Date(2021,5,27,13,1,1), y: 500 , notes: "Running - 64 min, 8.3 KM @Mines Southern Lake & Senja" },
      ]
    },
    {
@@ -3156,6 +3165,9 @@ var myData0 = [
        { x: new Date(2021,5,13,13,1,1), y: 500 , notes: "First As Tragedy, Then As Farce - Slavoj Žižek" },
        { x: new Date(2021,5,15,13,1,1), y: 500 , notes: "First As Tragedy, Then As Farce - Slavoj Žižek" },
        { x: new Date(2021,5,17,13,1,1), y: 500 , notes: "First As Tragedy, Then As Farce - Slavoj Žižek" },
+       { x: new Date(2021,5,21,13,1,1), y: 500 , notes: "First As Tragedy, Then As Farce - Slavoj Žižek" },
+       { x: new Date(2021,5,26,13,1,1), y: 500 , notes: "First As Tragedy, Then As Farce - Slavoj Žižek" },
+       { x: new Date(2021,5,27,13,1,1), y: 500 , notes: "First As Tragedy, Then As Farce - Slavoj Žižek" },
      ]
    },
  ];
