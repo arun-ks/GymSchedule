@@ -1,4 +1,4 @@
-var myGenrDate = "2021-06-28 00:27:16"; 
+var myGenrDate = "2021-07-11 01:25:49"; 
 var myData0 = [
    {
      type: "line", showInLegend: true, legendText: "Weight", name: "Weight",
@@ -1647,6 +1647,19 @@ var myData0 = [
        { x: new Date(2021,5,25,13,1,1), y: 77.6 , notes: "" },
        { x: new Date(2021,5,26,13,1,1), y: 77.9 , notes: "" },
        { x: new Date(2021,5,27,13,1,1), y: 76.9 , notes: "" },
+       { x: new Date(2021,5,28,13,1,1), y: 77.8 , notes: "" },
+       { x: new Date(2021,5,29,13,1,1), y: 77.9 , notes: "" },
+       { x: new Date(2021,5,30,13,1,1), y: 78.4 , notes: "" },
+       { x: new Date(2021,6,1,13,1,1), y: 77.9 , notes: "" },
+       { x: new Date(2021,6,2,13,1,1), y: 77.7 , notes: "" },
+       { x: new Date(2021,6,3,13,1,1), y: 77.4 , notes: "" },
+       { x: new Date(2021,6,4,13,1,1), y: 77.8 , notes: "" },
+       { x: new Date(2021,6,5,13,1,1), y: 77.4 , notes: "" },
+       { x: new Date(2021,6,6,13,1,1), y: 77.8 , notes: "" },
+       { x: new Date(2021,6,7,13,1,1), y: 78.4 , notes: "" },
+       { x: new Date(2021,6,8,13,1,1), y: 78 , notes: "" },
+       { x: new Date(2021,6,9,13,1,1), y: 78.4 , notes: "" },
+       { x: new Date(2021,6,11,13,1,1), y: 77.2 , notes: "" },
      ]
    },
    {
@@ -2607,6 +2620,8 @@ var myData0 = [
        { x: new Date(2021,5,20,13,1,1), y: 500 , notes: "Running - 27 min, 4.2 KM @Jalan Anggerik" },
        { x: new Date(2021,5,22,13,1,1), y: 500 , notes: "Running - 28 min, 4.4 KM @Jalan Anggerik" },
        { x: new Date(2021,5,27,13,1,1), y: 500 , notes: "Running - 64 min, 8.3 KM @Mines Southern Lake & Senja" },
+       { x: new Date(2021,5,29,13,1,1), y: 500 , notes: "Running - 28 min, 4.9 KM @Jalan Anggerik" },
+       { x: new Date(2021,6,1,13,1,1), y: 500 , notes: "Running - 17 min, 3.3 KM @Jalan Anggerik" },
      ]
    },
    {
@@ -2874,6 +2889,8 @@ var myData0 = [
        { x: new Date(2021,3,21,13,1,1), y: 500 , notes: "Excel, VBA" },
        { x: new Date(2021,3,25,13,1,1), y: 500 , notes: "Vite" },
        { x: new Date(2021,4,29,13,1,1), y: 500 , notes: "Excel, VBA" },
+       { x: new Date(2021,6,6,13,1,1), y: 500 , notes: "Excel" },
+       { x: new Date(2021,6,7,13,1,1), y: 500 , notes: "Excel" },
      ]
    },
    {
@@ -3168,6 +3185,8 @@ var myData0 = [
        { x: new Date(2021,5,21,13,1,1), y: 500 , notes: "First As Tragedy, Then As Farce - Slavoj Žižek" },
        { x: new Date(2021,5,26,13,1,1), y: 500 , notes: "First As Tragedy, Then As Farce - Slavoj Žižek" },
        { x: new Date(2021,5,27,13,1,1), y: 500 , notes: "First As Tragedy, Then As Farce - Slavoj Žižek" },
+       { x: new Date(2021,6,8,13,1,1), y: 500 , notes: "First As Tragedy, Then As Farce - Slavoj Žižek" },
+       { x: new Date(2021,6,10,13,1,1), y: 500 , notes: "First As Tragedy, Then As Farce - Slavoj Žižek" },
      ]
    },
  ];
