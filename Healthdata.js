@@ -1,4 +1,4 @@
-var myGenrDate = "2021-07-25 23:19:37"; 
+var myGenrDate = "2021-08-01 01:40:03"; 
 var myData0 = [
    {
      type: "line", showInLegend: true, legendText: "Weight", name: "Weight",
@@ -1675,6 +1675,12 @@ var myData0 = [
        { x: new Date(2021,6,23,13,1,1), y: 78.1 , notes: "" },
        { x: new Date(2021,6,24,13,1,1), y: 76.6 , notes: "" },
        { x: new Date(2021,6,25,13,1,1), y: 77.6 , notes: "" },
+       { x: new Date(2021,6,26,13,1,1), y: 77.1 , notes: "" },
+       { x: new Date(2021,6,27,13,1,1), y: 77.6 , notes: "" },
+       { x: new Date(2021,6,28,13,1,1), y: 77.5 , notes: "" },
+       { x: new Date(2021,6,29,13,1,1), y: 77.6 , notes: "" },
+       { x: new Date(2021,6,30,13,1,1), y: 77.9 , notes: "" },
+       { x: new Date(2021,6,31,13,1,1), y: 77 , notes: "" },
      ]
    },
    {
@@ -2640,6 +2646,9 @@ var myData0 = [
        { x: new Date(2021,6,17,13,1,1), y: 500 , notes: "Running - 40 min, 5.8 KM @Mines Southern Lake & Jalan Anggerik" },
        { x: new Date(2021,6,20,13,1,1), y: 500 , notes: "Running - 55 min, 7.6 KM @Mines Southern Lake" },
        { x: new Date(2021,6,24,13,1,1), y: 500 , notes: "Running - 54 min, 7.7 KM @Mines Southern Lake" },
+       { x: new Date(2021,6,26,13,1,1), y: 500 , notes: "Running - 32 min, 4.9 KM @Jalan Anggerik " },
+       { x: new Date(2021,6,28,13,1,1), y: 500 , notes: "Running - 21 min, 3.4 KM @Jalan Anggerik" },
+       { x: new Date(2021,6,31,13,1,1), y: 500 , notes: "Running - 43 min, 6.4 KM @Mines Southern Lake & Jalan Anggerik" },
      ]
    },
    {
@@ -2911,6 +2920,7 @@ var myData0 = [
        { x: new Date(2021,6,7,13,1,1), y: 500 , notes: "Excel" },
        { x: new Date(2021,6,11,13,1,1), y: 500 , notes: "JavaScript,Python" },
        { x: new Date(2021,6,22,13,1,1), y: 500 , notes: "VBA" },
+       { x: new Date(2021,6,27,13,1,1), y: 500 , notes: "Octave" },
      ]
    },
    {
@@ -3209,6 +3219,7 @@ var myData0 = [
        { x: new Date(2021,6,10,13,1,1), y: 500 , notes: "First As Tragedy, Then As Farce - Slavoj Žižek" },
        { x: new Date(2021,6,17,13,1,1), y: 500 , notes: "First As Tragedy, Then As Farce - Slavoj Žižek" },
        { x: new Date(2021,6,17,13,1,1), y: 500 , notes: "A Case of Exploding Mangoes - Mohammed Hanif" },
+       { x: new Date(2021,6,31,13,1,1), y: 500 , notes: "First As Tragedy, Then As Farce - Slavoj Žižek" },
      ]
    },
  ];
