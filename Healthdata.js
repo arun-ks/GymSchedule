@@ -1,4 +1,4 @@
-var myGenrDate = "2021-08-01 01:40:03"; 
+var myGenrDate = "2021-08-08 21:02:59"; 
 var myData0 = [
    {
      type: "line", showInLegend: true, legendText: "Weight", name: "Weight",
@@ -1681,6 +1681,14 @@ var myData0 = [
        { x: new Date(2021,6,29,13,1,1), y: 77.6 , notes: "" },
        { x: new Date(2021,6,30,13,1,1), y: 77.9 , notes: "" },
        { x: new Date(2021,6,31,13,1,1), y: 77 , notes: "" },
+       { x: new Date(2021,7,1,13,1,1), y: 78.6 , notes: "" },
+       { x: new Date(2021,7,2,13,1,1), y: 78.6 , notes: "" },
+       { x: new Date(2021,7,3,13,1,1), y: 76.9 , notes: "" },
+       { x: new Date(2021,7,4,13,1,1), y: 76.7 , notes: "" },
+       { x: new Date(2021,7,5,13,1,1), y: 77.1 , notes: "" },
+       { x: new Date(2021,7,6,13,1,1), y: 77.4 , notes: "" },
+       { x: new Date(2021,7,7,13,1,1), y: 77.3 , notes: "" },
+       { x: new Date(2021,7,8,13,1,1), y: 76.2 , notes: "" },
      ]
    },
    {
@@ -2649,6 +2657,10 @@ var myData0 = [
        { x: new Date(2021,6,26,13,1,1), y: 500 , notes: "Running - 32 min, 4.9 KM @Jalan Anggerik " },
        { x: new Date(2021,6,28,13,1,1), y: 500 , notes: "Running - 21 min, 3.4 KM @Jalan Anggerik" },
        { x: new Date(2021,6,31,13,1,1), y: 500 , notes: "Running - 43 min, 6.4 KM @Mines Southern Lake & Jalan Anggerik" },
+       { x: new Date(2021,7,3,13,1,1), y: 500 , notes: "Running - 25 min, 4.2 KM @Jalan Anggerik" },
+       { x: new Date(2021,7,4,13,1,1), y: 500 , notes: "Running - 24 min, 3.7 KM @Jalan Anggerik" },
+       { x: new Date(2021,7,6,13,1,1), y: 500 , notes: "Running - 16 min, 2.8 KM @Jalan Anggerik" },
+       { x: new Date(2021,7,8,13,1,1), y: 500 , notes: "Running - 58 min, 8.3 KM @Mines Southern Lake & Jalan Anggerik" },
      ]
    },
    {
