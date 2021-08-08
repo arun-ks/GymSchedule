@@ -1,4 +1,4 @@
-var myGenrDate = "2021-08-08 21:02:59"; 
+var myGenrDate = "2021-08-09 06:29:34"; 
 var myData0 = [
    {
      type: "line", showInLegend: true, legendText: "Weight", name: "Weight",
@@ -3232,6 +3232,7 @@ var myData0 = [
        { x: new Date(2021,6,17,13,1,1), y: 500 , notes: "First As Tragedy, Then As Farce - Slavoj Žižek" },
        { x: new Date(2021,6,17,13,1,1), y: 500 , notes: "A Case of Exploding Mangoes - Mohammed Hanif" },
        { x: new Date(2021,6,31,13,1,1), y: 500 , notes: "First As Tragedy, Then As Farce - Slavoj Žižek" },
+       { x: new Date(2021,7,8,13,1,1), y: 500 , notes: "First As Tragedy, Then As Farce - Slavoj Žižek" },
      ]
    },
  ];
