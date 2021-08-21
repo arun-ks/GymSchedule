@@ -1,4 +1,4 @@
-var myGenrDate = "2021-08-09 06:29:34"; 
+var myGenrDate = "2021-08-22 00:34:15"; 
 var myData0 = [
    {
      type: "line", showInLegend: true, legendText: "Weight", name: "Weight",
@@ -1689,6 +1689,19 @@ var myData0 = [
        { x: new Date(2021,7,6,13,1,1), y: 77.4 , notes: "" },
        { x: new Date(2021,7,7,13,1,1), y: 77.3 , notes: "" },
        { x: new Date(2021,7,8,13,1,1), y: 76.2 , notes: "" },
+       { x: new Date(2021,7,9,13,1,1), y: 76.9 , notes: "" },
+       { x: new Date(2021,7,10,13,1,1), y: 76.6 , notes: "" },
+       { x: new Date(2021,7,11,13,1,1), y: 76.5 , notes: "" },
+       { x: new Date(2021,7,12,13,1,1), y: 76.6 , notes: "" },
+       { x: new Date(2021,7,13,13,1,1), y: 77.5 , notes: "" },
+       { x: new Date(2021,7,14,13,1,1), y: 75.7 , notes: "" },
+       { x: new Date(2021,7,15,13,1,1), y: 76.9 , notes: "" },
+       { x: new Date(2021,7,16,13,1,1), y: 77.1 , notes: "" },
+       { x: new Date(2021,7,17,13,1,1), y: 76.9 , notes: "" },
+       { x: new Date(2021,7,18,13,1,1), y: 77.2 , notes: "" },
+       { x: new Date(2021,7,19,13,1,1), y: 76.8 , notes: "" },
+       { x: new Date(2021,7,20,13,1,1), y: 77.3 , notes: "" },
+       { x: new Date(2021,7,21,13,1,1), y: 76 , notes: "" },
      ]
    },
    {
@@ -2661,6 +2674,12 @@ var myData0 = [
        { x: new Date(2021,7,4,13,1,1), y: 500 , notes: "Running - 24 min, 3.7 KM @Jalan Anggerik" },
        { x: new Date(2021,7,6,13,1,1), y: 500 , notes: "Running - 16 min, 2.8 KM @Jalan Anggerik" },
        { x: new Date(2021,7,8,13,1,1), y: 500 , notes: "Running - 58 min, 8.3 KM @Mines Southern Lake & Jalan Anggerik" },
+       { x: new Date(2021,7,10,13,1,1), y: 500 , notes: "Running - 33 min, 4.9 KM @Jalan Anggerik" },
+       { x: new Date(2021,7,12,13,1,1), y: 500 , notes: "Running - 19 min, 2.9 KM @Jalan Anggerik & Senja" },
+       { x: new Date(2021,7,14,13,1,1), y: 500 , notes: "Running - 77 min, 10.5 KM @Mines Southern Lake" },
+       { x: new Date(2021,7,17,13,1,1), y: 500 , notes: "Running - 26 min, 4.2 KM @Jalan Anggerik & Senja" },
+       { x: new Date(2021,7,19,13,1,1), y: 500 , notes: "Running - 26 min, 4.1 KM @Jalan Anggerik" },
+       { x: new Date(2021,7,21,13,1,1), y: 500 , notes: "Running - 89 min, 11.3 KM @Mines Southern Lake & Blu Constellation" },
      ]
    },
    {
@@ -2933,6 +2952,7 @@ var myData0 = [
        { x: new Date(2021,6,11,13,1,1), y: 500 , notes: "JavaScript,Python" },
        { x: new Date(2021,6,22,13,1,1), y: 500 , notes: "VBA" },
        { x: new Date(2021,6,27,13,1,1), y: 500 , notes: "Octave" },
+       { x: new Date(2021,7,11,13,1,1), y: 500 , notes: "VBA" },
      ]
    },
    {
@@ -3233,6 +3253,7 @@ var myData0 = [
        { x: new Date(2021,6,17,13,1,1), y: 500 , notes: "A Case of Exploding Mangoes - Mohammed Hanif" },
        { x: new Date(2021,6,31,13,1,1), y: 500 , notes: "First As Tragedy, Then As Farce - Slavoj Žižek" },
        { x: new Date(2021,7,8,13,1,1), y: 500 , notes: "First As Tragedy, Then As Farce - Slavoj Žižek" },
+       { x: new Date(2021,7,15,13,1,1), y: 500 , notes: "First As Tragedy, Then As Farce - Slavoj Žižek" },
      ]
    },
  ];
