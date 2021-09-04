@@ -1,4 +1,4 @@
-var myGenrDate = "2021-08-22 00:34:15"; 
+var myGenrDate = "2021-09-05 01:22:21"; 
 var myData0 = [
    {
      type: "line", showInLegend: true, legendText: "Weight", name: "Weight",
@@ -1701,7 +1701,21 @@ var myData0 = [
        { x: new Date(2021,7,18,13,1,1), y: 77.2 , notes: "" },
        { x: new Date(2021,7,19,13,1,1), y: 76.8 , notes: "" },
        { x: new Date(2021,7,20,13,1,1), y: 77.3 , notes: "" },
-       { x: new Date(2021,7,21,13,1,1), y: 76 , notes: "" },
+       { x: new Date(2021,7,21,13,1,1), y: 76.1 , notes: "" },
+       { x: new Date(2021,7,22,13,1,1), y: 76.8 , notes: "" },
+       { x: new Date(2021,7,23,13,1,1), y: 77.7 , notes: "" },
+       { x: new Date(2021,7,24,13,1,1), y: 76.9 , notes: "" },
+       { x: new Date(2021,7,25,13,1,1), y: 78 , notes: "" },
+       { x: new Date(2021,7,26,13,1,1), y: 76.9 , notes: "" },
+       { x: new Date(2021,7,27,13,1,1), y: 77.2 , notes: "" },
+       { x: new Date(2021,7,28,13,1,1), y: 76.9 , notes: "" },
+       { x: new Date(2021,7,29,13,1,1), y: 77.7 , notes: "" },
+       { x: new Date(2021,7,30,13,1,1), y: 78.2 , notes: "" },
+       { x: new Date(2021,7,31,13,1,1), y: 76.7 , notes: "" },
+       { x: new Date(2021,8,1,13,1,1), y: 77.1 , notes: "" },
+       { x: new Date(2021,8,2,13,1,1), y: 76.9 , notes: "" },
+       { x: new Date(2021,8,3,13,1,1), y: 77.7 , notes: "" },
+       { x: new Date(2021,8,4,13,1,1), y: 76 , notes: "" },
      ]
    },
    {
@@ -2544,23 +2558,23 @@ var myData0 = [
    {
      type: "column", showInLegend: true, legendText: "Running (+15m)", name: "Running (+15m)",
      dataPoints: [
-       { x: new Date(2017,2,12,13,1,1), y: 500 , notes: "Running - 22 min @Sanctum" },
-       { x: new Date(2017,2,18,13,1,1), y: 500 , notes: "Running  - 24 min, 5 KM @Limassol Marathon Corporate Run 5KM" },
+       { x: new Date(2017,2,12,13,1,1), y: 500 , notes: "Running - 22 min, 4.3 KM @Sanctum" },
+       { x: new Date(2017,2,18,13,1,1), y: 500 , notes: "Running - 24 min, 5 KM @Limassol Marathon Corporate Run 5KM" },
        { x: new Date(2017,6,23,13,1,1), y: 500 , notes: "Running - 50 min, 7 KM @Run 4 Peace Klang 7KM" },
        { x: new Date(2019,0,24,13,1,1), y: 500 , notes: "Running - 23 min, 3.5 KM @Mines Southern Lake" },
-       { x: new Date(2019,2,4,13,1,1), y: 500 , notes: "Running - 16 min @Senja Gym" },
-       { x: new Date(2019,2,25,13,1,1), y: 500 , notes: "Running - 16 min @Senja Gym" },
-       { x: new Date(2019,3,15,13,1,1), y: 500 , notes: "Running - 15 min @Senja Gym" },
-       { x: new Date(2019,3,18,13,1,1), y: 500 , notes: "Running - 18 min, 2.5 km @Senja Gym" },
-       { x: new Date(2019,3,19,13,1,1), y: 500 , notes: "Running - 15 min @Senja Gym" },
+       { x: new Date(2019,2,4,13,1,1), y: 500 , notes: "Running - 16 min, 2.1 KM @Senja Gym" },
+       { x: new Date(2019,2,25,13,1,1), y: 500 , notes: "Running - 16 min, 2.2 KM @Senja Gym" },
+       { x: new Date(2019,3,15,13,1,1), y: 500 , notes: "Running - 15 min, 2 KM @Senja Gym" },
+       { x: new Date(2019,3,18,13,1,1), y: 500 , notes: "Running - 18 min, 2.5 KM @Senja Gym" },
+       { x: new Date(2019,3,19,13,1,1), y: 500 , notes: "Running - 15 min, 2 KM @Senja Gym" },
        { x: new Date(2019,3,25,13,1,1), y: 500 , notes: "Running - 20 min, 3 KM @Senja Gym" },
        { x: new Date(2019,4,1,13,1,1), y: 500 , notes: "Running - 30 min, 4.4 KM @Celebrity Fitness" },
        { x: new Date(2019,4,5,13,1,1), y: 500 , notes: "Running - 42 min, 7.3 KM @WorldVision Run" },
-       { x: new Date(2019,4,8,13,1,1), y: 500 , notes: "Running - 15 min, 2.3 KM  @Senja Gym" },
-       { x: new Date(2019,4,12,13,1,1), y: 500 , notes: "Running - 17 min, 2.5 KM  @Celebrity Fitness" },
-       { x: new Date(2019,4,29,13,1,1), y: 500 , notes: "Running - 20  min, 3.2 KM  @Mines Southern Lake" },
-       { x: new Date(2019,5,5,13,1,1), y: 500 , notes: "Running - 17  min, 2.6 KM  @DVCI Gym" },
-       { x: new Date(2019,5,6,13,1,1), y: 500 , notes: "Running - 15  min, 2.6 KM  @DVCI Gym" },
+       { x: new Date(2019,4,8,13,1,1), y: 500 , notes: "Running - 15 min, 2.3 KM @Senja Gym" },
+       { x: new Date(2019,4,12,13,1,1), y: 500 , notes: "Running - 17 min, 2.5 KM @Celebrity Fitness" },
+       { x: new Date(2019,4,29,13,1,1), y: 500 , notes: "Running - 20 min, 3.2 KM @Mines Southern Lake" },
+       { x: new Date(2019,5,5,13,1,1), y: 500 , notes: "Running - 17 min, 2.6 KM @DVCI Gym" },
+       { x: new Date(2019,5,6,13,1,1), y: 500 , notes: "Running - 15 min, 2.6 KM @DVCI Gym" },
        { x: new Date(2019,5,16,13,1,1), y: 500 , notes: "Running - 67 min, 10 KM @Run Out Cyberjaya 10KM" },
        { x: new Date(2019,5,27,13,1,1), y: 500 , notes: "Running - 27 min, 4 KM @Mines Southern Lake" },
        { x: new Date(2019,6,12,13,1,1), y: 500 , notes: "Running - 24 min, 4 KM @Mines Southern Lake" },
@@ -2657,8 +2671,8 @@ var myData0 = [
        { x: new Date(2021,5,5,13,1,1), y: 500 , notes: "Running - 77 min, 10.6 KM @Mines Southern Lake & Jalan Anggerik" },
        { x: new Date(2021,5,11,13,1,1), y: 500 , notes: "Running - 16 min, 2.8 KM @Jalan Anggerik & Senja" },
        { x: new Date(2021,5,13,13,1,1), y: 500 , notes: "Running - 59 min, 8.4 KM @Mines Southern Lake & Senja" },
-       { x: new Date(2021,5,15,13,1,1), y: 500 , notes: "Running - 27 min, 4.2 KM @Mines Southern Lake " },
-       { x: new Date(2021,5,17,13,1,1), y: 500 , notes: "Running - 27 min, 4.4 KM @Mines Southern Lake " },
+       { x: new Date(2021,5,15,13,1,1), y: 500 , notes: "Running - 27 min, 4.2 KM @Mines Southern Lake" },
+       { x: new Date(2021,5,17,13,1,1), y: 500 , notes: "Running - 27 min, 4.4 KM @Mines Southern Lake" },
        { x: new Date(2021,5,20,13,1,1), y: 500 , notes: "Running - 27 min, 4.2 KM @Jalan Anggerik" },
        { x: new Date(2021,5,22,13,1,1), y: 500 , notes: "Running - 28 min, 4.4 KM @Jalan Anggerik" },
        { x: new Date(2021,5,27,13,1,1), y: 500 , notes: "Running - 64 min, 8.3 KM @Mines Southern Lake & Senja" },
@@ -2667,7 +2681,7 @@ var myData0 = [
        { x: new Date(2021,6,17,13,1,1), y: 500 , notes: "Running - 40 min, 5.8 KM @Mines Southern Lake & Jalan Anggerik" },
        { x: new Date(2021,6,20,13,1,1), y: 500 , notes: "Running - 55 min, 7.6 KM @Mines Southern Lake" },
        { x: new Date(2021,6,24,13,1,1), y: 500 , notes: "Running - 54 min, 7.7 KM @Mines Southern Lake" },
-       { x: new Date(2021,6,26,13,1,1), y: 500 , notes: "Running - 32 min, 4.9 KM @Jalan Anggerik " },
+       { x: new Date(2021,6,26,13,1,1), y: 500 , notes: "Running - 32 min, 4.9 KM @Jalan Anggerik" },
        { x: new Date(2021,6,28,13,1,1), y: 500 , notes: "Running - 21 min, 3.4 KM @Jalan Anggerik" },
        { x: new Date(2021,6,31,13,1,1), y: 500 , notes: "Running - 43 min, 6.4 KM @Mines Southern Lake & Jalan Anggerik" },
        { x: new Date(2021,7,3,13,1,1), y: 500 , notes: "Running - 25 min, 4.2 KM @Jalan Anggerik" },
@@ -2680,6 +2694,11 @@ var myData0 = [
        { x: new Date(2021,7,17,13,1,1), y: 500 , notes: "Running - 26 min, 4.2 KM @Jalan Anggerik & Senja" },
        { x: new Date(2021,7,19,13,1,1), y: 500 , notes: "Running - 26 min, 4.1 KM @Jalan Anggerik" },
        { x: new Date(2021,7,21,13,1,1), y: 500 , notes: "Running - 89 min, 11.3 KM @Mines Southern Lake & Blu Constellation" },
+       { x: new Date(2021,7,24,13,1,1), y: 500 , notes: "Running - 34 min, 5.2 KM @Mines Southern Lake & Jalan Anggerik" },
+       { x: new Date(2021,7,26,13,1,1), y: 500 , notes: "Running - 26 min, 4.2 KM @Mines Southern Lake" },
+       { x: new Date(2021,7,31,13,1,1), y: 500 , notes: "Running - 76 min, 11 KM @Mines Southern Lake & Sungai Besi Indah II" },
+       { x: new Date(2021,8,2,13,1,1), y: 500 , notes: "Running - 26 min, 4.3 KM @Mines Southern Lake" },
+       { x: new Date(2021,8,4,13,1,1), y: 500 , notes: "Running - 52 min, 7.3 KM @Mines Southern Lake" },
      ]
    },
    {
@@ -2780,6 +2799,7 @@ var myData0 = [
        { x: new Date(2021,2,3,13,1,1), y: 500 , notes: "Cycling - 8.6 km in 40 min @Mines Southern Lake, Shopping & Senja" },
        { x: new Date(2021,2,27,13,1,1), y: 500 , notes: "Cycling - 22.1 km in 113 min @Mines Southern Lake, MIECC & Senja" },
        { x: new Date(2021,5,15,13,1,1), y: 500 , notes: "Cycling - 6.4 km in 35 min @Mines Southern Lake" },
+       { x: new Date(2021,7,29,13,1,1), y: 500 , notes: "Cycling - 11.9 km in 71 min @Mines Southern Lake, MIECC & Sungai Besi Indah" },
      ]
    },
    {
@@ -2953,6 +2973,7 @@ var myData0 = [
        { x: new Date(2021,6,22,13,1,1), y: 500 , notes: "VBA" },
        { x: new Date(2021,6,27,13,1,1), y: 500 , notes: "Octave" },
        { x: new Date(2021,7,11,13,1,1), y: 500 , notes: "VBA" },
+       { x: new Date(2021,8,3,13,1,1), y: 500 , notes: "VBA" },
      ]
    },
    {
@@ -3137,6 +3158,12 @@ var myData0 = [
        { x: new Date(2020,8,15,13,1,1), y: 500 , notes: "Chinese - Pim 112" },
        { x: new Date(2020,8,22,13,1,1), y: 500 , notes: "Chinese - Pim 112" },
        { x: new Date(2020,8,29,13,1,1), y: 500 , notes: "Chinese - Pim 113,114" },
+       { x: new Date(2021,7,23,13,1,1), y: 500 , notes: "Malay" },
+       { x: new Date(2021,7,24,13,1,1), y: 500 , notes: "Malay" },
+       { x: new Date(2021,7,25,13,1,1), y: 500 , notes: "Malay - FlashCards" },
+       { x: new Date(2021,7,31,13,1,1), y: 500 , notes: "Malay,Chinese,Spanish & German - WotD" },
+       { x: new Date(2021,8,2,13,1,1), y: 500 , notes: "Malay - FlashCards" },
+       { x: new Date(2021,8,4,13,1,1), y: 500 , notes: "Malay - FlashCards" },
      ]
    },
    {
