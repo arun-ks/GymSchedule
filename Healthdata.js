@@ -1,4 +1,4 @@
-var myGenrDate = "2021-09-05 01:22:21"; 
+var myGenrDate = "2021-09-13 02:25:30"; 
 var myData0 = [
    {
      type: "line", showInLegend: true, legendText: "Weight", name: "Weight",
@@ -1716,6 +1716,14 @@ var myData0 = [
        { x: new Date(2021,8,2,13,1,1), y: 76.9 , notes: "" },
        { x: new Date(2021,8,3,13,1,1), y: 77.7 , notes: "" },
        { x: new Date(2021,8,4,13,1,1), y: 76 , notes: "" },
+       { x: new Date(2021,8,5,13,1,1), y: 76.7 , notes: "" },
+       { x: new Date(2021,8,6,13,1,1), y: 76.2 , notes: "" },
+       { x: new Date(2021,8,7,13,1,1), y: 76 , notes: "" },
+       { x: new Date(2021,8,8,13,1,1), y: 76.9 , notes: "" },
+       { x: new Date(2021,8,9,13,1,1), y: 77.1 , notes: "" },
+       { x: new Date(2021,8,10,13,1,1), y: 77.1 , notes: "" },
+       { x: new Date(2021,8,11,13,1,1), y: 76.7 , notes: "" },
+       { x: new Date(2021,8,12,13,1,1), y: 75.5 , notes: "" },
      ]
    },
    {
@@ -1943,6 +1951,7 @@ var myData0 = [
        { x: new Date(2020,1,4,13,1,1), y: 52 , notes: "on Crunch Board @CelebrityFitness" },
        { x: new Date(2020,6,7,13,1,1), y: 62 , notes: "on Crunch Board @Home" },
        { x: new Date(2020,8,4,13,1,1), y: 40 , notes: "on Crunch Board @Senja" },
+       { x: new Date(2021,8,8,13,1,1), y: 80 , notes: "on InstantAbs @Home" },
      ]
    },
    {
@@ -2696,9 +2705,11 @@ var myData0 = [
        { x: new Date(2021,7,21,13,1,1), y: 500 , notes: "Running - 89 min, 11.3 KM @Mines Southern Lake & Blu Constellation" },
        { x: new Date(2021,7,24,13,1,1), y: 500 , notes: "Running - 34 min, 5.2 KM @Mines Southern Lake & Jalan Anggerik" },
        { x: new Date(2021,7,26,13,1,1), y: 500 , notes: "Running - 26 min, 4.2 KM @Mines Southern Lake" },
-       { x: new Date(2021,7,31,13,1,1), y: 500 , notes: "Running - 76 min, 11 KM @Mines Southern Lake & Sungai Besi Indah II" },
+       { x: new Date(2021,7,31,13,1,1), y: 500 , notes: "Running - 76 min, 11 KM @Mines Southern Lake & Taman Sungai Besi Indah II" },
        { x: new Date(2021,8,2,13,1,1), y: 500 , notes: "Running - 26 min, 4.3 KM @Mines Southern Lake" },
        { x: new Date(2021,8,4,13,1,1), y: 500 , notes: "Running - 52 min, 7.3 KM @Mines Southern Lake" },
+       { x: new Date(2021,8,6,13,1,1), y: 500 , notes: "Running - 28 min, 4.4 KM @Mines Southern Lake & Taman Sungai Besi Indah II" },
+       { x: new Date(2021,8,12,13,1,1), y: 500 , notes: "Running - 55 min, 8.1 KM @Mines Southern Lake & Taman Sungai Besi Indah II" },
      ]
    },
    {
@@ -2785,7 +2796,7 @@ var myData0 = [
        { x: new Date(2020,4,9,13,1,1), y: 500 , notes: "Cycling - 10.4 km in 37 min @Senja" },
        { x: new Date(2020,4,24,13,1,1), y: 500 , notes: "Cycling - 9.4 km in 37 min @Senja" },
        { x: new Date(2020,4,29,13,1,1), y: 500 , notes: "Cycling - 8.7 km in 31 min @Mines Southern Lake & Senja" },
-       { x: new Date(2020,6,26,13,1,1), y: 500 , notes: "Cycling - 12 km in 63 min @Taman Sungai Besi Indah 2" },
+       { x: new Date(2020,6,26,13,1,1), y: 500 , notes: "Cycling - 12 km in 63 min @Taman Sungai Besi Indah" },
        { x: new Date(2020,7,15,13,1,1), y: 500 , notes: "Walking - 4 km in 70 min @Bandar Makhota Cheras" },
        { x: new Date(2020,7,22,13,1,1), y: 500 , notes: "Walking - 6.8 km in 94 min @Bandar Sri Petaling" },
        { x: new Date(2020,7,30,13,1,1), y: 500 , notes: "Cycling - 7.6 km in 36 min @Mines Southern Lake & Senja" },
@@ -2799,7 +2810,8 @@ var myData0 = [
        { x: new Date(2021,2,3,13,1,1), y: 500 , notes: "Cycling - 8.6 km in 40 min @Mines Southern Lake, Shopping & Senja" },
        { x: new Date(2021,2,27,13,1,1), y: 500 , notes: "Cycling - 22.1 km in 113 min @Mines Southern Lake, MIECC & Senja" },
        { x: new Date(2021,5,15,13,1,1), y: 500 , notes: "Cycling - 6.4 km in 35 min @Mines Southern Lake" },
-       { x: new Date(2021,7,29,13,1,1), y: 500 , notes: "Cycling - 11.9 km in 71 min @Mines Southern Lake, MIECC & Sungai Besi Indah" },
+       { x: new Date(2021,7,29,13,1,1), y: 500 , notes: "Cycling - 11.9 km in 71 min @Mines Southern Lake, MIECC & Taman Sungai Besi Indah II" },
+       { x: new Date(2021,8,11,13,1,1), y: 500 , notes: "Walking - 2.1 km in 39 min @Bandar Makhota Cheras" },
      ]
    },
    {
@@ -3164,6 +3176,12 @@ var myData0 = [
        { x: new Date(2021,7,31,13,1,1), y: 500 , notes: "Malay,Chinese,Spanish & German - WotD" },
        { x: new Date(2021,8,2,13,1,1), y: 500 , notes: "Malay - FlashCards" },
        { x: new Date(2021,8,4,13,1,1), y: 500 , notes: "Malay - FlashCards" },
+       { x: new Date(2021,8,5,13,1,1), y: 500 , notes: "Malay - FlashCards" },
+       { x: new Date(2021,8,7,13,1,1), y: 500 , notes: "Malay - FlashCards" },
+       { x: new Date(2021,8,8,13,1,1), y: 500 , notes: "Malay - FlashCards & Pgoh 01" },
+       { x: new Date(2021,8,9,13,1,1), y: 500 , notes: "Malay - Pgoh 05" },
+       { x: new Date(2021,8,11,13,1,1), y: 500 , notes: "Malay - Pgoh 07" },
+       { x: new Date(2021,8,12,13,1,1), y: 500 , notes: "Malay - FlashCards & Wikpedia" },
      ]
    },
    {
