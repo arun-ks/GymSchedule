@@ -1,4 +1,4 @@
-var myGenrDate = "2021-09-13 02:25:30"; 
+var myGenrDate = "2021-09-17 17:30:33"; 
 var myData0 = [
    {
      type: "line", showInLegend: true, legendText: "Weight", name: "Weight",
@@ -1724,6 +1724,11 @@ var myData0 = [
        { x: new Date(2021,8,10,13,1,1), y: 77.1 , notes: "" },
        { x: new Date(2021,8,11,13,1,1), y: 76.7 , notes: "" },
        { x: new Date(2021,8,12,13,1,1), y: 75.5 , notes: "" },
+       { x: new Date(2021,8,13,13,1,1), y: 75.8 , notes: "" },
+       { x: new Date(2021,8,14,13,1,1), y: 76.6 , notes: "" },
+       { x: new Date(2021,8,15,13,1,1), y: 76.6 , notes: "" },
+       { x: new Date(2021,8,16,13,1,1), y: 76.5 , notes: "" },
+       { x: new Date(2021,8,17,13,1,1), y: 76.4 , notes: "" },
      ]
    },
    {
@@ -2986,6 +2991,10 @@ var myData0 = [
        { x: new Date(2021,6,27,13,1,1), y: 500 , notes: "Octave" },
        { x: new Date(2021,7,11,13,1,1), y: 500 , notes: "VBA" },
        { x: new Date(2021,8,3,13,1,1), y: 500 , notes: "VBA" },
+       { x: new Date(2021,8,14,13,1,1), y: 500 , notes: "VBA" },
+       { x: new Date(2021,8,15,13,1,1), y: 500 , notes: "Autohotkey" },
+       { x: new Date(2021,8,17,13,1,1), y: 500 , notes: "Autohotkey" },
+       { x: new Date(2021,8,17,13,1,1), y: 500 , notes: "VBA" },
      ]
    },
    {
@@ -3182,6 +3191,10 @@ var myData0 = [
        { x: new Date(2021,8,9,13,1,1), y: 500 , notes: "Malay - Pgoh 05" },
        { x: new Date(2021,8,11,13,1,1), y: 500 , notes: "Malay - Pgoh 07" },
        { x: new Date(2021,8,12,13,1,1), y: 500 , notes: "Malay - FlashCards & Wikpedia" },
+       { x: new Date(2021,8,13,13,1,1), y: 500 , notes: "Malay - Pgoh 10" },
+       { x: new Date(2021,8,14,13,1,1), y: 500 , notes: "Malay - Pgoh 11" },
+       { x: new Date(2021,8,15,13,1,1), y: 500 , notes: "Malay - Pgoh 14" },
+       { x: new Date(2021,8,16,13,1,1), y: 500 , notes: "Malay - Pgoh 17" },
      ]
    },
    {
