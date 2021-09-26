@@ -1,4 +1,4 @@
-var myGenrDate = "2021-09-17 17:30:33"; 
+var myGenrDate = "2021-09-26 11:21:42"; 
 var myData0 = [
    {
      type: "line", showInLegend: true, legendText: "Weight", name: "Weight",
@@ -1729,6 +1729,15 @@ var myData0 = [
        { x: new Date(2021,8,15,13,1,1), y: 76.6 , notes: "" },
        { x: new Date(2021,8,16,13,1,1), y: 76.5 , notes: "" },
        { x: new Date(2021,8,17,13,1,1), y: 76.4 , notes: "" },
+       { x: new Date(2021,8,18,13,1,1), y: 75.5 , notes: "" },
+       { x: new Date(2021,8,19,13,1,1), y: 76.5 , notes: "" },
+       { x: new Date(2021,8,20,13,1,1), y: 76.5 , notes: "" },
+       { x: new Date(2021,8,21,13,1,1), y: 76.1 , notes: "" },
+       { x: new Date(2021,8,22,13,1,1), y: 76.1 , notes: "" },
+       { x: new Date(2021,8,23,13,1,1), y: 75.3 , notes: "" },
+       { x: new Date(2021,8,24,13,1,1), y: 76.1 , notes: "" },
+       { x: new Date(2021,8,25,13,1,1), y: 75.8 , notes: "" },
+       { x: new Date(2021,8,26,13,1,1), y: 74.9 , notes: "" },
      ]
    },
    {
@@ -1957,6 +1966,7 @@ var myData0 = [
        { x: new Date(2020,6,7,13,1,1), y: 62 , notes: "on Crunch Board @Home" },
        { x: new Date(2020,8,4,13,1,1), y: 40 , notes: "on Crunch Board @Senja" },
        { x: new Date(2021,8,8,13,1,1), y: 80 , notes: "on InstantAbs @Home" },
+       { x: new Date(2021,8,24,13,1,1), y: 60 , notes: "on InstantAbs @Home" },
      ]
    },
    {
@@ -2715,6 +2725,10 @@ var myData0 = [
        { x: new Date(2021,8,4,13,1,1), y: 500 , notes: "Running - 52 min, 7.3 KM @Mines Southern Lake" },
        { x: new Date(2021,8,6,13,1,1), y: 500 , notes: "Running - 28 min, 4.4 KM @Mines Southern Lake & Taman Sungai Besi Indah II" },
        { x: new Date(2021,8,12,13,1,1), y: 500 , notes: "Running - 55 min, 8.1 KM @Mines Southern Lake & Taman Sungai Besi Indah II" },
+       { x: new Date(2021,8,18,13,1,1), y: 500 , notes: "Running - 37 min, 6.7 KM @Mines Southern Lake" },
+       { x: new Date(2021,8,21,13,1,1), y: 500 , notes: "Running - 24 min, 4.6 KM @Mines Southern Lake" },
+       { x: new Date(2021,8,23,13,1,1), y: 500 , notes: "Running - 26 min, 4.5 KM @Mines Southern Lake" },
+       { x: new Date(2021,8,26,13,1,1), y: 500 , notes: "Running - 58 min, 8.4 KM @Mines Southern Lake & Blu Constellation" },
      ]
    },
    {
@@ -3195,6 +3209,11 @@ var myData0 = [
        { x: new Date(2021,8,14,13,1,1), y: 500 , notes: "Malay - Pgoh 11" },
        { x: new Date(2021,8,15,13,1,1), y: 500 , notes: "Malay - Pgoh 14" },
        { x: new Date(2021,8,16,13,1,1), y: 500 , notes: "Malay - Pgoh 17" },
+       { x: new Date(2021,8,18,13,1,1), y: 500 , notes: "Malay - Pgoh 19" },
+       { x: new Date(2021,8,19,13,1,1), y: 500 , notes: "Malay - FlashCards" },
+       { x: new Date(2021,8,20,13,1,1), y: 500 , notes: "Malay - Pgoh 21" },
+       { x: new Date(2021,8,24,13,1,1), y: 500 , notes: "Malay - Pgoh 25" },
+       { x: new Date(2021,8,26,13,1,1), y: 500 , notes: "Malay - Pgoh 27" },
      ]
    },
    {
@@ -3312,6 +3331,7 @@ var myData0 = [
        { x: new Date(2021,6,31,13,1,1), y: 500 , notes: "First As Tragedy, Then As Farce - Slavoj Žižek" },
        { x: new Date(2021,7,8,13,1,1), y: 500 , notes: "First As Tragedy, Then As Farce - Slavoj Žižek" },
        { x: new Date(2021,7,15,13,1,1), y: 500 , notes: "First As Tragedy, Then As Farce - Slavoj Žižek" },
+       { x: new Date(2021,8,26,13,1,1), y: 500 , notes: "First As Tragedy, Then As Farce - Slavoj Žižek" },
      ]
    },
  ];
