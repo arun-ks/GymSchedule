@@ -4,13 +4,15 @@
   <title>Progress </title>
   <link rel="icon" href="css/favicon.ico" />
   <link rel="stylesheet" type="text/css" href="css/style.css">
-  <script type="text/javascript" src="Healthdata.js"></script> 
+  <script type="text/javascript" src="Healthdata.js"></script>
   <script type="text/javascript">
   window.onload = function () {
-     var chart1 = new CanvasJS.Chart("chart1",
+     var chart1 = new CanvasJS.Chart("chartContainer",
      {
          zoomEnabled: true,
+         zoomType: "xy",
          animationEnabled: true,
+          animationDuration: 2000,
          //title:{ text: "Weight Tracking"  },
 		 toolTip: {
             shared: true,
@@ -35,7 +37,7 @@
          axisY2:{title: "Kgs", minimum:69, maximum:81 },
          axisX2:{title: "Date", valueFormatString: "DD-MMM YY" , labelAngle: -50},
          legend: { horizontalAlign: "right", verticalAlign: "top"}, 
-         data: myData0 ,
+         data: myData0,
          legend: {
   	         cursor: "pointer",
   	         itemclick: function (e) {
@@ -58,7 +60,7 @@
  
 <!---button id="Food"    class="button buttonforLink" onclick="location.href='keto.html';">Food</button>
 <button id="Exercise"    class="button buttonforLink" onclick="location.href='index.html';">Exercise</button!--->
-<div id="chart1" style="height: 800px; width: 100%;"></div>
+<div id="chartContainer" style="height: 800px; width: 100%;"></div>
 
 </body>
 </html>
