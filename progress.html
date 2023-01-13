@@ -27,15 +27,16 @@
                       str = str.concat(temp);
                 }
 				    //str = e.entries[i-1].dataPoint.x.toISOString().slice(0,10) + ": <br/>" + str;
-				    str = e.entries[i-1].dataPoint.x.toDateString().slice(0,10) + ": <br/>" + str;        
+				    //str = e.entries[i-1].dataPoint.x.toDateString().slice(0,10) + ": <br/>" + str;      
+				    str = e.entries[i-1].dataPoint.x.toDateString() + ": <br/>" + str;   
                 return (str);
             }
          },
          //toolTip: { shared: "false" },
-         axisX:{title: "Date", valueFormatString: "DD-MMM YY" , labelAngle: -50},
+         axisX:{title: "Date", valueFormatString: "DD-MMM,YY" , labelAngle: -50},
          axisY:{title: "Count", maximum:315},  
          axisY2:{title: "Kgs", minimum:69, maximum:81 },
-         axisX2:{title: "Date", valueFormatString: "DD-MMM YY" , labelAngle: -50},
+         axisX2:{title: "Date", valueFormatString: "DD-MMM,YY" , labelAngle: -50},
          legend: { horizontalAlign: "right", verticalAlign: "top"}, 
          data: myData0,
          legend: {
