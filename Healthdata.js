@@ -1,4 +1,4 @@
-var myGenrDate = "2023-06-25 02:36:59"; 
+var myGenrDate = "2023-06-26 00:38:10"; 
 var myData0 = [
    {
      type: "line", showInLegend: true, legendText: "Weight", name: "Weight",
@@ -2362,6 +2362,7 @@ var myData0 = [
        { x: new Date(2023,5,22,13,1,1), y: 76.7 },
        { x: new Date(2023,5,23,13,1,1), y: 77.6 },
        { x: new Date(2023,5,24,13,1,1), y: 77.3 },
+       { x: new Date(2023,5,25,13,1,1), y: 76.4 },
      ]
    },
    {
@@ -3489,6 +3490,7 @@ var myData0 = [
        { x: new Date(2023,5,2,13,1,1), y: 500 },
        { x: new Date(2023,5,7,13,1,1), y: 500 },
        { x: new Date(2023,5,11,13,1,1), y: 500 },
+       { x: new Date(2023,5,25,13,1,1), y: 500 },
      ]
    },
    {
