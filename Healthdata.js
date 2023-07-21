@@ -1,4 +1,4 @@
-var myGenrDate = "2023-07-22 02:01:14"; 
+var myGenrDate = "2023-07-22 02:06:14"; 
 var myData0 = [
    {
      type: "line", showInLegend: true, legendText: "Weight", name: "Weight",
@@ -4416,7 +4416,7 @@ var myData0 = [
      ]
    },
    {
-     type: "column", showInLegend: true, legendText: "Misc (+20m)", name: "Misc (+20m)",
+     type: "column", showInLegend: true, legendText: "Trainings (+20m)", name: "Trainings (+20m)",
      visible: false,
      dataPoints: [
        { x: new Date(2019,1,25,13,1,1), y: 500 },
