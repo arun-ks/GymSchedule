@@ -1,4 +1,4 @@
-var myGenrDate = "2025-04-11 14:16:51"; 
+var myGenrDate = "2025-04-19 16:09:20"; 
 var myData0 = [
    {
      type: "line", showInLegend: true, legendText: "Weight", name: "Weight",
@@ -3021,6 +3021,14 @@ var myData0 = [
        { x: new Date(2025,3,9,13,1,1), y: 77.7 },
        { x: new Date(2025,3,10,13,1,1), y: 77.7 },
        { x: new Date(2025,3,11,13,1,1), y: 78.2 },
+       { x: new Date(2025,3,12,13,1,1), y: 76.5 },
+       { x: new Date(2025,3,13,13,1,1), y: 77.1 },
+       { x: new Date(2025,3,14,13,1,1), y: 77.7 },
+       { x: new Date(2025,3,15,13,1,1), y: 78 },
+       { x: new Date(2025,3,16,13,1,1), y: 77.7 },
+       { x: new Date(2025,3,17,13,1,1), y: 77.4 },
+       { x: new Date(2025,3,18,13,1,1), y: 77.4 },
+       { x: new Date(2025,3,19,13,1,1), y: 76.4 },
      ]
    },
    {
@@ -3870,6 +3878,7 @@ var myData0 = [
    },
    {
      type: "column", showInLegend: true, legendText: "Running (+15m)", name: "Running (+15m)",
+     visible: false,
      dataPoints: [
        { x: new Date(2017,2,12,13,1,1), y: 500 },
        { x: new Date(2017,2,18,13,1,1), y: 500 },
@@ -4207,7 +4216,6 @@ var myData0 = [
    },
    {
      type: "column", showInLegend: true, legendText: "Outdoor (+30m)", name: "Outdoor (+30m)",
-     visible: false,
      dataPoints: [
        { x: new Date(2016,10,12,13,1,1), y: 500 },
        { x: new Date(2017,6,12,13,1,1), y: 500 },
@@ -4432,6 +4440,8 @@ var myData0 = [
        { x: new Date(2025,2,30,13,1,1), y: 500 },
        { x: new Date(2025,2,31,13,1,1), y: 500 },
        { x: new Date(2025,3,5,13,1,1), y: 500 },
+       { x: new Date(2025,3,12,13,1,1), y: 500 },
+       { x: new Date(2025,3,19,13,1,1), y: 500 },
      ]
    },
    {
@@ -4966,6 +4976,9 @@ var myData0 = [
        { x: new Date(2025,3,4,13,1,1), y: 500 },
        { x: new Date(2025,3,8,13,1,1), y: 500 },
        { x: new Date(2025,3,10,13,1,1), y: 500 },
+       { x: new Date(2025,3,14,13,1,1), y: 500 },
+       { x: new Date(2025,3,16,13,1,1), y: 500 },
+       { x: new Date(2025,3,19,13,1,1), y: 500 },
      ]
    },
    {
@@ -5212,7 +5225,6 @@ var myData0 = [
    },
    {
      type: "column", showInLegend: true, legendText: "Book (+3 pages)", name: "Book (+3 pages)",
-     visible: false,
      dataPoints: [
        { x: new Date(2019,0,31,13,1,1), y: 500 },
        { x: new Date(2019,1,4,13,1,1), y: 500 },
@@ -5497,6 +5509,9 @@ var myData0 = [
        { x: new Date(2025,3,7,13,1,1), y: 500 },
        { x: new Date(2025,3,9,13,1,1), y: 500 },
        { x: new Date(2025,3,11,13,1,1), y: 500 },
+       { x: new Date(2025,3,14,13,1,1), y: 500 },
+       { x: new Date(2025,3,15,13,1,1), y: 500 },
+       { x: new Date(2025,3,18,13,1,1), y: 500 },
      ]
    },
    {
